@@ -1,0 +1,464 @@
+\documentclass[a4paper, portrait,12pt]{report}
+\usepackage[verbose,a4paper,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{polski}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{lastpage}
+\usepackage{indentfirst}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{graphicx}
+\usepackage{fancyhdr}
+\usepackage{multirow}
+\usepackage{array}
+\usepackage{multicol}
+\usepackage{tabu}
+\usepackage{fancyhdr}
+\usepackage{enumitem}
+\pagestyle{fancy}
+\frenchspacing
+\pagestyle{fancyplain}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\newcommand{\degree}{\ensuremath{^{\circ}}} 
+\fancyhead[L]{WYDZIAŁ FIZYKI TECHNICZNEJ, INFORMATYKI i MATEMATYKI STOSOWANEJ \\
+Instytut Fizyki PŁ}
+\lhead{\small WYDZIAŁ FIZYKI TECHNICZNEJ, INFORMATYKI i MATEMATYKI STOSOWANEJ \\ Instytut Fizyki PŁ,}
+\fancyfoot[C]{\thepage}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\setcounter{page}{1}
+\usepackage{listings}
+
+
+\usepackage{xcolor}
+\lstset { %
+    language=C++,
+    backgroundcolor=\color{black!5}, % set backgroundcolor
+    basicstyle=\footnotesize,% basic font setting
+}
+
+
+\begin{document}
+\tableofcontents    % generuje spis treści ze stronami !!! 
+\newpage
+
+\chapter{Wstęp} \label{rozdz.wstep}
+Niniejsza praca dotyczy zakresu inżynierii oprogramowania sprzętu pomiarowego w celu wykorzystania go w badaniu charakterystyk laserów półprzewodnikowych w laboratorium fotoniki Politechniki Łódzkiej. \\
+
+Głównym celem pracy jest przedstawienie wykorzystania systemu Linux oraz opro-
+gramowania open source w badaniach naukowych na przykładzie stworzenia interfejsu
+pomiarowego w laboratorium fononiki do badania charakterystyk laserów półprzewodnikowych. \\
+
+W ostatnich latach obserwuje się gwałtowny rozwój wykorzystania oprogramowania
+open source w codziennej pracy naukowej. Coraz większą popularność zdobywa język Py-
+thon. Od dawana podstawowym system operacyjnym używanym przez naukowców są róż-
+ne odmiany systemu Unix. Jest to spowodowane dostępnością wielu narzędzi (C, Python,
+Gnuplot) których naturalnym środowiskiem jest środowisko Linux, ułatwiającym pracę naukową. Inna
+zaletą środowiska Unix jest możliwością korzystanie z linii poleceń, która ułatwia wiele
+zadań. Szukając informacji o wykorzystaniu języka python do komunikacji ze sprzętem pomiarowym można zauważyć pewną lukę, którą moja praca ma cel wypełnić. Korzystając
+z strony oraz dokumentacji firmy Thorlabs, której sprzęt jest używany w laboratorium
+fononiki, należy zauważyć brak programu do komunikacji ze sprzętem na platformach Linux.
+Dostępne są jedynie wysokopoziomowe API do systemu Windows oraz możliwość użycia
+LabVIEW. Minusów środowiska Windows nie sposób wymienić w kilku zdaniach. Program
+LabVIEW jest programem płatnym. Rozwiązaniem wszystkich problemów jest użycie środowiska Liniux, gdzie wszystko jest plikiem, także sprzęt połączony przez usb z komputerem, dzięki czemu możemy się z nim komunikować używając standardu komend SCPI przez
+wykorzystanie wywołań systemowych. Dzięki temu mamy możliwość dostępu do wszystkich możliwych funkcji sprzętu pomiarowego bez ponoszenie kosztów. Umożliwia nam to
+sterowania sprzętu za pomocą komputera oraz wizualizacje i analizę danych w sposób, jaki
+potrzebujemy. A wszystko to dzięki połączeniu możliwości środowiska Linux oraz języka Python \\
+
+Głównymi celem mojej pracy jest przedstawienie wykorzystanie oprogramowania
+open source takiego jak Python, C/C++ oraz systemu Linux do stworzenia stanowiska pomiarowego w celu bdania laserów półprzewodnikowych. Korzy-
+stając z tych technologi mam zamiar stworzyć interfejs pomiarowy na platformę Ubuntu
+w laboratorium fotoniki. \\
+
+Dzięki mojej pracy możliwe będzie wykonywanie w szybki sposób charakterystyk laserów półprzewnodnikowcyh.
+
+
+
+\chapter{Komunikacja z urządzeniami pomiarowymi na platformie Linux}
+\section{Programowane urządzenia pomiarowe}
+Przez  programowane urządzenia pomiarowe rozumiemy sprzęt mogący dokonywać pomiarów wielkości elektrycznych i nieelektrycznych, który wyposzażony jest w interfejs umożliwiający sterowanie nimi przy pomocy komputera. Przykładami takich urządzeń, którymi zajmuje się w swojej pracy są:
+\begin{itemize}
+\item Zasilacza diód laserowych firmy Thorlabs model LDC4005.
+\item Miernik mocy firmy Thorlas firmy Thorlabs model PM100.
+\end{itemize}
+Z wyżej wymienionymi urządzeniami możliwa jest fizyczna komunikacja za pomocą interfejsu USB przy pomocy standardu komend SCPI, który zostanie opiszany w dalszej cześci rozdziału.
+
+\section{Komunikacja}
+W systemach Unix z którego dziedziczy system Linux, wszystko jest plikiem. Linuksowy sterownik znakowy (ang. \textit{char driver}) pozwala na reprezentowanie urządzenia za pomocą specjalnych plików wirtualnych, które znajdują się w przestrzeni użytkownika w katalogu $\mathtt{/dev/<nazwa>}$. Obsługa tych plików możliwa jest za pomocą wywołań systemowych (ang. \textit{system call}), które stanowią API za pomocą którego użytkowniki może komunikować się ze sprzętem. Podstawowe wywołaniami systemowymi, które należy użyć do komunikacji ze sprzętem:
+\begin{itemize}
+\item $\mathtt{open}$ --- służy do połaczenia się z urządzeniem, zwraca deskrypotor pliku.
+\item $\mathtt{write}$ --- funkcja służaca do pisania komend do pliku.
+\item $\mathtt{read}$ --- funckja służąca do odczytywania buffora z pliku.
+\item $\mathtt{close}$ --- funkcja zamykająca połączenie.
+\end{itemize}
+Funckje te mają swoją implementacje w języku C w bibliotecze $<\mathtt{fcntl.h}>$, oraz w języku Python w bibliotecze $\mathtt{os}$.
+\section{SCPI --- standard komend do komunikacji z urządzeniami}
+SCPI  (ang. \textit{Standard  Commands  for  Programmable  Instruments} ) jest tekstowym interfejsem ASCII do programowanych urządzeń pomiarowych mający na celu standaryzacje polecenie używanych w systemach pomiarowym. Dzięki temu możliwa jest obsługa tych urządzeń przy wykorzystaniu komputera. Cechą  poleceń  wspólnych  (ang.  common)  jest  ich  implementacja  przez  każde urządzenie. Czyli to samo polecenie będzie działać na każdym oscyloskopie bez względu na producenta. Można wyróżnić dwie grupy poleceń:
+\begin{itemize}
+\item Polecenia dla każdego urządzenia pomiarowego nie zależnie od jego przeznacznia. Takimi komendami są m.in.
+\begin{itemize}
+\item $\mathtt{*idn?}$ --- odczytuje identyfikator urządzenia. 
+\item $\mathtt{*rst}$ --- powduje przywrócenie ustawień początkowych urządzenia.
+\item $\mathtt{*cls}$ --- powduje wyzerowanie informacji o błędach.
+\item $\mathtt{*opc?}$  --- (ang.  operation  complete)  zapytanie  o  zakończenie  wykonania
+poprzedzających poleceń. \\
+W  odpowiedzi  na  zapytanie  po  zakończeniu  wykonywania  poprzedzają-
+cych poleceń urządzenie prześle wartość 1.
+\item $\mathtt{*wai}$ ---  (ang.  wait)  oczekiwanie  na  zakończenie  wykonania  poprzedzających poleceń.
+\end{itemize}
+
+\item Polecenia charakterystyczne dla danego urządzenia pomiarowego zgodnie z jego przeznaczeniem. Przykładowe polecenie które będzie działać na każdym zasilaczu korzystającym z standardu SCPI:
+\begin{itemize}
+\item Służacę do ustawienie wartości prądu na 0.01 A \\ "SOURce:CURRent:LEVel:AMPLitude  0.01" 
+\end{itemize}
+\end{itemize}
+
+\newpage
+\section{Przykładowe programy do sterowania sprzętem}
+Przykładowy program w języku python do zapytania sprzętu o jego nazwe.
+\lstinputlisting{deviceio.py}
+Przykładowy program w języku C do zapytania sprzętu o jego nazwe.
+\begin{lstlisting}
+#include<errno.h>
+#include<fcnl.h>
+#include<unistd.h>
+#include<stdio.h>
+
+int main()
+{
+    int fd = open("/dev/usbtmc0", O_RDWR | O_NOCITY);
+    if(fd == -1) {
+        perror("open");
+        exit(EXIT_FAILURE);
+    } else {
+        write(fd, "*IDN?", 100);
+        char buffor[128];
+        read(fd, buffor, 128);
+        printf(buffor);
+    }
+}
+
+\end{lstlisting}
+
+
+\chapter{Eksperyment} \label{Eksperyment}
+\section{Teoria}
+Wśród laserów półprzewodnikowych możemy wyróżnić lasery krawędziowe oraz lasery o emisji powierzchniowej z pionową wnęką rezonansową tzw. Lasery VCSEL (ang. \textit{Vertical Cavity Surface Emitting Laser}) będące obiektem moich badań. Aby scharakteryzować lasery, można wykonać ich charakterystyki, które przedstawiają, jak zmienia się moc wyjściowa oraz napięcie lasera w funkcji zadanego prądu. \\
+
+Ważnym parametrem laserów krawędziowych jest prąd progowy (z ang. \textit{threshold
+current}) który określa wartość prądu przy którym zaczyna zachodzić akcja laserowa czyli
+rośnie gwałtownie natężenie promieniowania i maleje szerokość linii emisyjnej.
+Zależności prądu progowego I th od temperatury T możemy wyrazić za pomocą równania:
+\begin{equation}
+I_{th} = I_0 \exp \left( \frac{T}{T_0} \right)
+\end{equation}
+Wartości parametrów $I_0$ oraz $T_0$ możemy wyznaczyć na podstawie charakterystyk
+emisyjnych lasera w różnych temperaturach $T$
+Przez zlogarytmowanie wartości prądu oraz podstawienie otrzymujemy:
+\begin{equation}
+ln(I_{th}) =   ln \left(\frac{T}{T_0} \right) + ln(I_0)
+\end{equation}
+\begin{equation}
+I_{th} = \frac{T}{T_0} + I_0
+\end{equation}
+Mając wartości prądu progowego w danej temperaturze  można do nich dopasować funkcje liniową w postaci:
+\begin{equation}
+y = a \cdot x + b
+\end{equation}
+Gdzie:
+\begin{equation}
+a = \frac{1}{T_0}
+\end{equation}
+
+\begin{equation}
+b = ln(I_0)
+\end{equation}
+
+Na tej podstawie możemy znaleźć poszukiwane parametry $I_0$ oraz $T_0$ :
+\begin{equation}
+I_0 = \mathtt{e}^b
+\end{equation}
+
+\begin{equation}
+T_0 = \frac{1}{a}
+\end{equation}
+
+Korzystając z różniczki zupełnej można obliczyć wartości błędów wyznaczonych wartości:
+\begin{equation}
+\Delta I_0 = | \frac{\partial I_{0}}{\partial b} | \cdot \Delta b = | b \mathtt{e}^b | \cdot \Delta b
+\end{equation}
+
+\begin{equation}
+\Delta T_0 = | \frac{\partial T_{0}}{\partial a} | \cdot \Delta a = |-\frac{1}{a^2} | \cdot \Delta a
+\end{equation}
+
+Dzięki analizie charakterystyk możliwe jest także obliczenie przyrostowej sprawności rożniczkowej
+ $\eta_{SE}$ (ang. \textit{slope efficiency}), która odpowiada nachyleniu charakterystyki mocy wyjściowej $P_{wyj}$ lasera w funkcji prądu zasilającego $I$ powyżej progowej wartości prądu progowego $I_{th}$ dla akcji laserowej:
+ \begin{equation}
+ \eta_{SE} = \frac{d P_{wyj}}{d I}
+ \end{equation}
+
+\begin{figure}[h]
+\center
+  \includegraphics[scale=0.40]{slope.png}
+  \label{rys1}
+  \caption{Przyrostowa sprawność różniczkowa.} 
+\end{figure}
+
+\newpage
+
+\section{Badanie lasera}
+Podpunkt ten zawiera wyniki pomiarów dla lasera krawędziowego o emitowanej fali długości 980 nm.
+Pomiar polegał w pierwszej części na wykonaniu charakterystyk prądowo-napięciowych
+oraz prądowo-oświetleniowych lasera w temperaturze lasera od 283 K do 363 K krokiem co 10 K.
+Na podstawie otrzymanych charakterystyk wyznaczyłem wartość prądu progowego w danej temperaturze.
+Następnie korzystając z wyznaczonych wartość na podstawie wzorów (3.7) i (3.8) znalazłem
+parametry $I_{0} = (78.7 \pm 0.1)$ mA oraz $T_0 = (0.02 \pm 0.01)$ K.
+
+Tabela 1 zawiera wyznazone wartości prądu progowego $I_0$ oraz wartości przyrostowej sprawności różniczkowej $\eta$ dla tego lasera. Rysunek 3.1 przedstawia charakterystykę wszystkich badanych laserów. Rysunki 3.2-3.29 przedstawiają charakterystyki lasera wraz z oblicoznymi paramenrami które słuzą do charakterystyki lasera. Rysunek 3.30 przedstawia wykres prądu progowego w funkcji temperatury. \\ 
+
+\begin{table}[h!]
+\begin{center}
+\caption{ Wyznaczone wartośc prądu progowego $I_0$ oraz przyrostwoej sprawności różniczkowej $\eta$ w różnych temperaturach $T$ dla lasera krawędziowego 980 nm. }
+\begin{tabular}{ | C{3.5cm}|  C{3.5cm} | C{3.5cm} | C{3.5cm}|}
+\hline
+$T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
+283      &   0.8 $\pm$ 0.1 & 0.41 $\pm$ 0.01 \\ \hline
+293      &   0.9 $\pm$ 0.1 & 0.39 $\pm$ 0.01 \\ \hline
+303      &   1.0 $\pm$ 0.1 & 0.38 $\pm$ 0.01 \\ \hline
+313      &   1.1 $\pm$ 0.1 & 0.37 $\pm$ 0.01 \\ \hline
+323      &   1.2 $\pm$ 0.1 & 0.35 $\pm$ 0.01 \\ \hline
+333      &   1.4 $\pm$ 0.1 & 0.33 $\pm$ 0.01 \\ \hline
+343      &   1.6 $\pm$ 0.1 & 0.31 $\pm$ 0.01 \\ \hline
+353      &   2.0 $\pm$ 0.1 & 0.29 $\pm$ 0.01 \\ \hline
+363      &   2.2 $\pm$ 0.1 & 0.27 $\pm$ 0.01 \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\newpage
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/plot_all.png}
+  \label{rys1}
+  \caption{Wykres wszystkich } 
+\end{figure}
+
+\newpage
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_10_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 283 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_10_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 283 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_10_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 283 K.} 
+\end{figure}
+
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_20_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 293 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_20_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 293 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_20_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 293 K.} 
+\end{figure}
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_30_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 303 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_30_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 303 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_30_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 303 K.} 
+\end{figure}
+
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_40_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 313 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_40_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 313 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_40_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 313 K.} 
+\end{figure}
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_50_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 323 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_50_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 323 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_50_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 323 K.}
+\end{figure}
+  
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_60_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 333 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_60_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 333 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_60_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 333 K.} 
+\end{figure}
+
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_70_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 343 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_70_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 343 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_70_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 343 K.} 
+\end{figure}
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_80_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 353 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_80_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 353 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_80_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 353 K.} 
+\end{figure}
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_90_IVL.png}
+  \label{rys1}
+  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 363 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_90_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 363 K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_90_power.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 363 K.} 
+\end{figure}
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/fit_i_th.png}
+  \label{rys1}
+  \caption{Wykres zależności prądu progowego od temperatury.} 
+\end{figure}
+
+
+
+\end{document}

@@ -15,8 +15,9 @@ plt.rcParams.update({'font.size': 25})
 
 
 class Fit:
-    def __init__(self, path_to_data):
+    def __init__(self, path_to_data, temp):
         self.path_to_data = path_to_data
+        self.temp = temp + 273
         self.current, self.voltage, self.power = np.loadtxt(self.path_to_data,
                                                             unpack=True, skiprows=1)
         self.a = 0
@@ -71,10 +72,12 @@ class Fit:
         y = self.a *x + self.b
         plt.axhline(0., ls='-', color='k')
         plt.plot(x, y, 'b-', linewidth=2)
-        plt.text(0.0010, -0.0004, "$I_0$ = (%.1f $\pm$ %.1f) $\cdot 10^{-3} \mathtt{A}$" % (float(self.I_0[0]*1000), 0.1))
-        plt.xlabel("prąd $[\mathtt{A}] $, $I$")
-        plt.ylabel("moc $[\mathtt{W}]$, $L$")
-        plt.title("Temperatura = 323 $\mathtt{K}$")
+        plt.text(0.0010, -0.0004, "$I_0$ = (%.1f $\pm$ %.1f) $\cdot 10^{-3}$ A" % (float(self.I_0[0]*1000), 0.1))
+        plt.text(0.009, 0.0015,
+                 "$\eta$ = %.2f" % (float(self.a)))
+        plt.xlabel("prąd [A]")
+        plt.ylabel("moc wyjściowa [W]")
+        plt.title("Temperatura = %s K" %self.temp)
         plt.grid(True)
         plt.show()
 
@@ -86,16 +89,32 @@ class Fit:
         ax1.plot(self.current, self.power, marker='o', color='red', ls='none')
         ax2.plot(self.current, self.voltage, marker='o', color='green', ls='none')
 
-        ax1.set_xlabel('Prąd $[\mathtt{A}]$')
-        ax1.set_ylabel('Moc $[\mathtt{W}]$', color='r')
-        ax2.set_ylabel('Napięcie $[\mathtt{V}]$', color='g')
+        ax1.set_xlabel('Prąd [A]')
+        ax1.set_ylabel('Moc wyjściowa [W]', color='r')
+        ax2.set_ylabel('Napięcie [V]', color='g')
 
         ax1.set_ylim([0, max(self.power) + 0.1 * max(self.power)])
         ax2.set_ylim([0, max(self.voltage)+0.1 * max(self.voltage)])
+
+        ax1.set_title("Temperatura = %s K" % self.temp)
         plt.grid(True)
         plt.show()
 
-fit = Fit("data980/temp_50.txt")
-fit.do_fit(0.0020, 0.0095)
+    def plot_power(self):
+        fig, ax3 = plt.subplots()
+        power_in = self.current * self.voltage
+        ax3.plot(power_in, self.power, 'bo')
+        ax3.set_xlabel("Moc wejściowa [W]")
+        ax3.set_ylabel("Moc wyjściowa [W]")
+        ax3.set_xlim([0, max(power_in) + 0.1 * max(power_in)])
+        ax3.set_ylim([0, max(self.power) + 0.1 * max(self.power)])
+        ax3.set_title("Temperatura = %s K" %self.temp)
+        plt.grid(True)
+        plt.show()
+
+fit = Fit("data980/temp_90.txt", 90)
+fit.plot_I_V_L
+fit.plot_power()
+fit.do_fit(0.002, 0.010)
 print(fit._find_I0())
 print(fit._find_dI0()*1000)

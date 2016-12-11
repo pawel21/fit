@@ -1,0 +1,9 @@
+\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{2}
+\contentsline {chapter}{\numberline {2}Komunikacja z urz\IeC {\k a}dzeniami pomiarowymi na platformie Linux}{4}
+\contentsline {section}{\numberline {2.1}Programowane urz\IeC {\k a}dzenia pomiarowe}{4}
+\contentsline {section}{\numberline {2.2}Komunikacja}{4}
+\contentsline {section}{\numberline {2.3}SCPI --- standard komend do komunikacji z urz\IeC {\k a}dzeniami}{5}
+\contentsline {section}{\numberline {2.4}Przyk\IeC {\l }adowe programy do sterowania sprz\IeC {\k e}tem}{6}
+\contentsline {chapter}{\numberline {3}Eksperyment}{7}
+\contentsline {section}{\numberline {3.1}Teoria}{7}
+\contentsline {section}{\numberline {3.2}Badanie lasera}{9}
