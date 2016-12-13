@@ -98,7 +98,9 @@ W systemach Unix z którego dziedziczy system Linux, wszystko jest plikiem. Linu
 \end{itemize}
 Funckje te mają swoją implementacje w języku C w bibliotecze $<\mathtt{fcntl.h}>$, oraz w języku Python w bibliotecze $\mathtt{os}$.
 \section{SCPI --- standard komend do komunikacji z urządzeniami}
-SCPI  (ang. \textit{Standard  Commands  for  Programmable  Instruments} ) jest tekstowym interfejsem ASCII do programowanych urządzeń pomiarowych mający na celu standaryzacje polecenie używanych w systemach pomiarowym. Dzięki temu możliwa jest obsługa tych urządzeń przy wykorzystaniu komputera. Cechą  poleceń  wspólnych  (ang.  common)  jest  ich  implementacja  przez  każde urządzenie. Czyli to samo polecenie będzie działać na każdym oscyloskopie bez względu na producenta. Można wyróżnić dwie grupy poleceń:
+SCPI  (ang. \textit{Standard  Commands  for  Programmable  Instruments}) jest tekstowym interfejsem ASCII do programowanych urządzeń pomiarowych mający na celu standaryzacje polecenie używanych w systemach pomiarowym. Zdefiniowany został 1990 roku, wedle specyfikacji IEEE 488.2. (Institute of Electrical and Electronics Engineers, międzynarodowa organizacja stowarzyszeń inżynierów elektryków i elektroników.  Dzięki temu możliwa jest obsługa tych urządzeń przy wykorzystaniu komputera. Polecenia SCPI są to ciągi tekstowe ASCII, które są wysyłane do urządzenia. Polecenia są serią jednego lub więcej słów, przy czym wiele z nich używa dodatkowych parametrów. Odpowiedzi do zapytania polecenia są zazwyczaj ciągami ASCII. W przypadku danych masowych mogą być użytawane także formaty binarne. \\
+
+Cechą  poleceń  wspólnych  (ang.  common)  jest  ich  implementacja  przez  każde urządzenie. Czyli naprzykład to samo polecenie będzie działać na każdym oscyloskopie bez względu na producenta. Można wyróżnić dwie grupy poleceń:
 \begin{itemize}
 \item Polecenia dla każdego urządzenia pomiarowego nie zależnie od jego przeznacznia. Takimi komendami są m.in.
 \begin{itemize}
@@ -118,6 +120,7 @@ cych poleceń urządzenie prześle wartość 1.
 \end{itemize}
 \end{itemize}
 
+Fizyczne łącze komunikacyjne nie jest zdefiniowane przez SCPI. Stworzony standard IEEE-488 był dla GPIB, ale może być również używany z interfejsem RS-232, Ethernet, USB, VXIbus.
 \newpage
 \section{Przykładowe programy do sterowania sprzętem}
 Przykładowy program w języku python do zapytania sprzętu o jego nazwe.
@@ -131,7 +134,7 @@ Przykładowy program w języku C do zapytania sprzętu o jego nazwe.
 
 int main()
 {
-    int fd = open("/dev/usbtmc0", O_RDWR | O_NOCITY);
+    int fd = open("/dev/usbtmc0", O_RDWR | O_NOCTTY);
     if(fd == -1) {
         perror("open");
         exit(EXIT_FAILURE);
@@ -145,7 +148,34 @@ int main()
 
 \end{lstlisting}
 
+\newpage
 
+\chapter{Py3LabDeviceIO --- moduł do sterowania sprzetem laboratoryjnym}
+\section{Opisz programu}
+Program składa sie z czterech klas:
+\begin{itemize}
+\item $\mathtt{device.py}$ --- główna klasa, zawiera funkcje: do sprawdzania dostępnych urządzeń, 
+zwraca intancje danego urządzenia, co umażliwa korzystanie z jego funkcji. 
+\item $\mathtt{IODevice.py}$ --- klasa do operacji wejścia-wyjścia na programowalnych urządzeniach pomiarowych.
+\item $\mathtt{LDC4005.py}$ --- klasa zawierająca funkcje od obsługi zasilacza diód laserowych Thorlabs 4005.
+\item $\mathtt{PM100.py}$ --- klasa zawierająca funkcje do obsługi detektora mocy Thorlabs PM100.
+\end{itemize}
+\begin{figure}[h]
+\center
+  \includegraphics[scale=0.45]{tree.png}
+  \label{rys1}
+  \caption{Strukura programu.} 
+\end{figure}
+
+\newpage
+\chapter{Gui}
+\section{Gui}
+\begin{figure}[h]
+\center
+  \includegraphics[scale=0.35]{gui.png}
+  \label{rys1}
+  \caption{1 --- rozpoczecie pomiarów, 2 --- zatrzymanie pomiarów, 3 --- zapisanie danych pomiarowych, 4 --- pokazuje długość fali detektora, 5 --- zmiana długości fali detektora.} 
+\end{figure}
 \chapter{Eksperyment} \label{Eksperyment}
 \section{Teoria}
 Wśród laserów półprzewodnikowych możemy wyróżnić lasery krawędziowe oraz lasery o emisji powierzchniowej z pionową wnęką rezonansową tzw. Lasery VCSEL (ang. \textit{Vertical Cavity Surface Emitting Laser}) będące obiektem moich badań. Aby scharakteryzować lasery, można wykonać ich charakterystyki, które przedstawiają, jak zmienia się moc wyjściowa oraz napięcie lasera w funkcji zadanego prądu. \\
