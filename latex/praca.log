@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.12.4)  21 DEC 2016 16:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.15 (TeX Live 2015/dev/Debian) (preloaded format=pdflatex 2016.12.4)  21 DEC 2016 18:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -698,6 +698,9 @@ LaTeX Warning: Label `rys1' multiply defined.
 
 LaTeX Warning: Label `rys1' multiply defined.
 
+
+LaTeX Warning: Label `rys1' multiply defined.
+
 )
 \openout1 = `praca.aux'.
 
@@ -1291,22 +1294,30 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 511--513
  [] 
  []
 
+<plot635/plot_all.png, id=135, 963.6pt x 770.88pt>
+File: plot635/plot_all.png Graphic file (type png)
+ <use plot635/plot_all.png>
+Package pdftex.def Info: plot635/plot_all.png used on input line 520.
+(pdftex.def)             Requested size: 289.08223pt x 231.26578pt.
+
 
 AED: lastpage setting LastPage
-[22 <./plot980/temp_60_power.png> <./plot980/temp_70_IVL.png>] [23 <./plot980/t
-emp_70_fit.png> <./plot980/temp_70_power.png>] [24 <./plot980/temp_80_IVL.png> 
-<./plot980/temp_80_fit.png>] [25 <./plot980/temp_80_power.png> <./plot980/temp_
-90_IVL.png>] [26 <./plot980/temp_90_fit.png> <./plot980/temp_90_power.png>]
-[27 <./plot980/fit_i_th.png>] (./praca.aux)
+[22
+
+ <./plot980/temp_60_power.png>] [23 <./plot980/temp_70_IVL.png> <./plot980/temp
+_70_fit.png>] [24 <./plot980/temp_70_power.png> <./plot980/temp_80_IVL.png>] [2
+5 <./plot980/temp_80_fit.png> <./plot980/temp_80_power.png>] [26 <./plot980/tem
+p_90_IVL.png> <./plot980/temp_90_fit.png>] [27 <./plot980/temp_90_power.png> <.
+/plot980/fit_i_th.png>] [28 <./plot635/plot_all.png>] (./praca.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7265 strings out of 493105
- 98592 string characters out of 6137072
+ 7270 strings out of 493105
+ 98703 string characters out of 6137072
  207907 words of memory out of 5000000
- 10532 multiletter control sequences out of 15000+600000
+ 10536 multiletter control sequences out of 15000+600000
  19634 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,12n,58p,858b,1283s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1326,10 +1337,10 @@ c/pl/plr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plr12.pfb><
 e/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fo
 nts/type1/public/pl/plti12.pfb></usr/share/texlive/texmf-dist/fonts/type1/publi
 c/pl/pltt12.pfb>
-Output written on praca.pdf (27 pages, 2895126 bytes).
+Output written on praca.pdf (28 pages, 2959914 bytes).
 PDF statistics:
- 214 PDF objects out of 1000 (max. 8388607)
- 107 compressed objects within 2 object streams
+ 218 PDF objects out of 1000 (max. 8388607)
+ 109 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 161 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 166 words of extra memory for PDF output out of 10000 (max. 10000000)
 
