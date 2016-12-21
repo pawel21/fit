@@ -75,7 +75,7 @@ open source takiego jak Python, C/C++ oraz systemu Linux do stworzenia stanowisk
 stając z tych technologi mam zamiar stworzyć interfejs pomiarowy na platformę Ubuntu
 w laboratorium fotoniki. \\
 
-Dzięki mojej pracy możliwe będzie wykonywanie w szybki sposób charakterystyk laserów półprzewnodnikowcyh.
+Dzięki mojej pracy możliwe będzie wykonywanie w szybki sposób charakterystyk laserów półprzewnodnikowcyh. Charakterystyki te dają nam ważne informacje o laserze, dzięki nim możliwe jest określenie prądu progowego dla laserów krawędziowych, określenie ich sprawności. Za pomocą mojego stanowiska pomiarowego możliwe także będzie badanie ile uzyskuje się mocy z lasera przy danej mocy aplikowanej.
 
 
 
@@ -152,6 +152,8 @@ int main()
 
 \chapter{Py3LabDeviceIO --- moduł do sterowania sprzetem laboratoryjnym}
 \section{Opisz programu}
+PyLabDeviceIO jest modułem napisanym w języku python umożliwającym sterowanie zasilaczem do lasera oraz miernikiem mocy. Program opiera się na wykorzystaniu wywołań systemowych oraz na komunikacji przez komendy SCPI. \\
+
 Program składa sie z czterech klas:
 \begin{itemize}
 \item $\mathtt{device.py}$ --- główna klasa, zawiera funkcje: do sprawdzania dostępnych urządzeń, 
@@ -167,6 +169,13 @@ zwraca intancje danego urządzenia, co umażliwa korzystanie z jego funkcji.
   \caption{Strukura programu.} 
 \end{figure}
 
+\section{Używanie programu}
+W celu dokonania pomiarów za pomocą programu Py3LabDeviceIO możliwe są dwie opcje:
+\begin{itemize}
+\item wywołanie jako skryptu z linii poleceń z odpowienimi parametrami.
+\item uruchomienie programu okienkowego.
+\end{itemize}
+Obie wymagają uprawnień użytkownika uprzywijowanego (sudo).
 \newpage
 \chapter{Gui}
 \section{Gui}
@@ -242,6 +251,13 @@ Dzięki analizie charakterystyk możliwe jest także obliczenie przyrostowej spr
 
 \newpage
 
+
+
+
+
+
+
+
 \section{Badanie lasera}
 Podpunkt ten zawiera wyniki pomiarów dla lasera krawędziowego o emitowanej fali długości 980 nm.
 Pomiar polegał w pierwszej części na wykonaniu charakterystyk prądowo-napięciowych
@@ -273,12 +289,14 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
 
 \newpage
 
+
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/plot_all.png}
   \label{rys1}
   \caption{Wykres wszystkich } 
 \end{figure}
+
 
 \newpage
 \begin{figure}
@@ -295,6 +313,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 283 K.} 
 \end{figure}
 
+
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_10_power.png}
@@ -310,6 +329,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \label{rys1}
   \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 293 K.} 
 \end{figure}
+
 
 \begin{figure}
 \center
@@ -340,6 +360,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 303 K.} 
 \end{figure}
 
+
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_30_power.png}
@@ -355,6 +376,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \label{rys1}
   \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 313 K.} 
 \end{figure}
+
 
 \begin{figure}
 \center
@@ -407,6 +429,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 333 K.} 
 \end{figure}
 
+\clearpage
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_60_power.png}
@@ -422,6 +445,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \label{rys1}
   \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 343 K.} 
 \end{figure}
+
 
 \begin{figure}
 \center
@@ -488,7 +512,6 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \label{rys1}
   \caption{Wykres zależności prądu progowego od temperatury.} 
 \end{figure}
-
 
 
 \end{document}

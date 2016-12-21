@@ -6,8 +6,9 @@
 \contentsline {section}{\numberline {2.4}Przyk\IeC {\l }adowe programy do sterowania sprz\IeC {\k e}tem}{6}
 \contentsline {chapter}{\numberline {3}Py3LabDeviceIO --- modu\IeC {\l } do sterowania sprzetem laboratoryjnym}{7}
 \contentsline {section}{\numberline {3.1}Opisz programu}{7}
-\contentsline {chapter}{\numberline {4}Gui}{8}
-\contentsline {section}{\numberline {4.1}Gui}{8}
-\contentsline {chapter}{\numberline {5}Eksperyment}{9}
-\contentsline {section}{\numberline {5.1}Teoria}{9}
-\contentsline {section}{\numberline {5.2}Badanie lasera}{11}
+\contentsline {section}{\numberline {3.2}U\IeC {\.z}ywanie programu}{8}
+\contentsline {chapter}{\numberline {4}Gui}{9}
+\contentsline {section}{\numberline {4.1}Gui}{9}
+\contentsline {chapter}{\numberline {5}Eksperyment}{10}
+\contentsline {section}{\numberline {5.1}Teoria}{10}
+\contentsline {section}{\numberline {5.2}Badanie lasera}{12}
