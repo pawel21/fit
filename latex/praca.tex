@@ -1,4 +1,7 @@
 \documentclass[a4paper, portrait,12pt]{report}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault} 
+\usepackage[T1]{fontenc}
 \usepackage[verbose,a4paper,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
@@ -50,32 +53,28 @@ Instytut Fizyki PŁ}
 \chapter{Wstęp} \label{rozdz.wstep}
 Niniejsza praca dotyczy zakresu inżynierii oprogramowania sprzętu pomiarowego w celu wykorzystania go w badaniu charakterystyk laserów półprzewodnikowych w laboratorium fotoniki Politechniki Łódzkiej. \\
 
-Głównym celem pracy jest przedstawienie wykorzystania systemu Linux oraz opro-
-gramowania open source w badaniach naukowych na przykładzie stworzenia interfejsu
+Głównym celem pracy jest przedstawienie wykorzystania systemu Linux oraz oprogramowania open source w badaniach naukowych na przykładzie stworzenia interfejsu
 pomiarowego w laboratorium fononiki do badania charakterystyk laserów półprzewodnikowych. \\
 
 W ostatnich latach obserwuje się gwałtowny rozwój wykorzystania oprogramowania
-open source w codziennej pracy naukowej. Coraz większą popularność zdobywa język Py-
-thon. Od dawana podstawowym system operacyjnym używanym przez naukowców są róż-
-ne odmiany systemu Unix. Jest to spowodowane dostępnością wielu narzędzi (C, Python,
-Gnuplot) których naturalnym środowiskiem jest środowisko Linux, ułatwiającym pracę naukową. Inna
+open source w codziennej pracy naukowej. Coraz większą popularność zdobywa język Python. Od dawana podstawowym systemem operacyjnym używanym przez naukowców są różne odmiany systemu Unix. Jest to spowodowane dostępnością wielu narzędzi (C, Python,
+Gnuplot) których naturalnym środowiskiem jest środowisko Linux, ułatwiającym pracę naukową. Inną
 zaletą środowiska Unix jest możliwością korzystanie z linii poleceń, która ułatwia wiele
-zadań. Szukając informacji o wykorzystaniu języka python do komunikacji ze sprzętem pomiarowym można zauważyć pewną lukę, którą moja praca ma cel wypełnić. Korzystając
+zadań. Szukając informacji o wykorzystaniu języka Python do komunikacji ze sprzętem pomiarowym można zauważyć pewną lukę, którą moja praca ma cel wypełnić. Korzystając
 z strony oraz dokumentacji firmy Thorlabs, której sprzęt jest używany w laboratorium
-fononiki, należy zauważyć brak programu do komunikacji ze sprzętem na platformach Linux.
+fononiki, należy zauważyć brak programu do komunikacji ze sprzętem na platformie Linux.
 Dostępne są jedynie wysokopoziomowe API do systemu Windows oraz możliwość użycia
 LabVIEW. Minusów środowiska Windows nie sposób wymienić w kilku zdaniach. Program
-LabVIEW jest programem płatnym. Rozwiązaniem wszystkich problemów jest użycie środowiska Liniux, gdzie wszystko jest plikiem, także sprzęt połączony przez usb z komputerem, dzięki czemu możemy się z nim komunikować używając standardu komend SCPI przez
+LabVIEW jest programem płatnym. Rozwiązaniem wszystkich problemów jest użycie środowiska Linux, gdzie wszystko jest plikiem, także sprzęt połączony przez usb z komputerem, dzięki czemu możemy się z nim komunikować używając standardu komend SCPI przez
 wykorzystanie wywołań systemowych. Dzięki temu mamy możliwość dostępu do wszystkich możliwych funkcji sprzętu pomiarowego bez ponoszenie kosztów. Umożliwia nam to
 sterowania sprzętu za pomocą komputera oraz wizualizacje i analizę danych w sposób, jaki
 potrzebujemy. A wszystko to dzięki połączeniu możliwości środowiska Linux oraz języka Python \\
 
 Głównymi celem mojej pracy jest przedstawienie wykorzystanie oprogramowania
-open source takiego jak Python, C/C++ oraz systemu Linux do stworzenia stanowiska pomiarowego w celu bdania laserów półprzewodnikowych. Korzy-
-stając z tych technologi mam zamiar stworzyć interfejs pomiarowy na platformę Ubuntu
+open source takiego jak Python, C/C++ oraz systemu Linux do stworzenia stanowiska pomiarowego w celu bdania laserów półprzewodnikowych. Korzystając z tych technologi mam zamiar stworzyć interfejs pomiarowy na platformę Ubuntu
 w laboratorium fotoniki. \\
 
-Dzięki mojej pracy możliwe będzie wykonywanie w szybki sposób charakterystyk laserów półprzewnodnikowcyh.
+Dzięki mojej pracy możliwe będzie wykonywanie w szybki sposób charakterystyk laserów półprzewnodnikowcyh. Charakterystyki te dają nam ważne informacje o laserze, dzięki nim możliwe jest określenie prądu progowego dla laserów krawędziowych, określenie ich sprawności. Za pomocą mojego stanowiska pomiarowego możliwe także będzie badanie ile uzyskuje się mocy z lasera przy danej mocy aplikowanej.
 
 
 
@@ -89,11 +88,11 @@ Przez  programowane urządzenia pomiarowe rozumiemy sprzęt mogący dokonywać p
 Z wyżej wymienionymi urządzeniami możliwa jest fizyczna komunikacja za pomocą interfejsu USB przy pomocy standardu komend SCPI, który zostanie opiszany w dalszej cześci rozdziału.
 
 \section{Komunikacja}
-W systemach Unix z którego dziedziczy system Linux, wszystko jest plikiem. Linuksowy sterownik znakowy (ang. \textit{char driver}) pozwala na reprezentowanie urządzenia za pomocą specjalnych plików wirtualnych, które znajdują się w przestrzeni użytkownika w katalogu $\mathtt{/dev/<nazwa>}$. Obsługa tych plików możliwa jest za pomocą wywołań systemowych (ang. \textit{system call}), które stanowią API za pomocą którego użytkowniki może komunikować się ze sprzętem. Podstawowe wywołaniami systemowymi, które należy użyć do komunikacji ze sprzętem:
+W systemach Unix z którego dziedziczy system Linux, wszystko jest plikiem. Linuksowy sterownik znakowy (ang. \textit{char driver}) pozwala na reprezentowanie urządzenia za pomocą specjalnych plików wirtualnych, które znajdują się w przestrzeni użytkownika w katalogu $\mathtt{/dev/<nazwa>}$. Obsługa tych plików możliwa jest za pomocą wywołań systemowych (ang. \textit{system call}), które stanowią API za pomocą którego użytkowniki może sterować sprzętem. Podstawowe wywołaniami systemowymi pozwalające na sterowanie sprzętem to:
 \begin{itemize}
-\item $\mathtt{open}$ --- służy do połaczenia się z urządzeniem, zwraca deskrypotor pliku.
-\item $\mathtt{write}$ --- funkcja służaca do pisania komend do pliku.
-\item $\mathtt{read}$ --- funckja służąca do odczytywania buffora z pliku.
+\item $\mathtt{open}$ --- służy do połaczenia z urządzeniem, zwraca deskrypotor pliku.
+\item $\mathtt{write}$ --- funkcja służaca do wysyłania komend do urządzenia .
+\item $\mathtt{read}$ --- funckja służąca do odczytywania buffora urządzenia.
 \item $\mathtt{close}$ --- funkcja zamykająca połączenie.
 \end{itemize}
 Funckje te mają swoją implementacje w języku C w bibliotecze $<\mathtt{fcntl.h}>$, oraz w języku Python w bibliotecze $\mathtt{os}$.
@@ -109,21 +108,20 @@ Cechą  poleceń  wspólnych  (ang.  common)  jest  ich  implementacja  przez  k
 \item $\mathtt{*cls}$ --- powduje wyzerowanie informacji o błędach.
 \item $\mathtt{*opc?}$  --- (ang.  operation  complete)  zapytanie  o  zakończenie  wykonania
 poprzedzających poleceń. \\
-W  odpowiedzi  na  zapytanie  po  zakończeniu  wykonywania  poprzedzają-
-cych poleceń urządzenie prześle wartość 1.
+W  odpowiedzi  na  zapytanie  po  zakończeniu  wykonywania  poprzedzających poleceń urządzenie prześle wartość 1.
 \item $\mathtt{*wai}$ ---  (ang.  wait)  oczekiwanie  na  zakończenie  wykonania  poprzedzających poleceń.
 \end{itemize}
 
 \item Polecenia charakterystyczne dla danego urządzenia pomiarowego zgodnie z jego przeznaczeniem. Przykładowe polecenie które będzie działać na każdym zasilaczu korzystającym z standardu SCPI:
 \begin{itemize}
-\item Służacę do ustawienie wartości prądu na 0.01 A \\ "SOURce:CURRent:LEVel:AMPLitude  0.01" 
+\item Służacę do ustawienie wartości prądu na 0.01\,A \\ $\mathtt{SOURce:CURRent:LEVel:AMPLitude}$  $\mathtt{0.01}$
 \end{itemize}
 \end{itemize}
 
 Fizyczne łącze komunikacyjne nie jest zdefiniowane przez SCPI. Stworzony standard IEEE-488 był dla GPIB, ale może być również używany z interfejsem RS-232, Ethernet, USB, VXIbus.
 \newpage
 \section{Przykładowe programy do sterowania sprzętem}
-Przykładowy program w języku python do zapytania sprzętu o jego nazwe.
+Przykładowy program w języku Python do zapytania sprzętu o jego nazwe.
 \lstinputlisting{deviceio.py}
 Przykładowy program w języku C do zapytania sprzętu o jego nazwe.
 \begin{lstlisting}
@@ -152,10 +150,12 @@ int main()
 
 \chapter{Py3LabDeviceIO --- moduł do sterowania sprzetem laboratoryjnym}
 \section{Opisz programu}
+PyLabDeviceIO jest modułem napisanym w języku Python umożliwającym sterowanie zasilaczem do lasera oraz miernikiem mocy. Program opiera się na wykorzystaniu wywołań systemowych oraz na komunikacji przez komendy SCPI. \\
+
 Program składa sie z czterech klas:
 \begin{itemize}
 \item $\mathtt{device.py}$ --- główna klasa, zawiera funkcje: do sprawdzania dostępnych urządzeń, 
-zwraca intancje danego urządzenia, co umażliwa korzystanie z jego funkcji. 
+zwraca instancje danego urządzenia, co umażliwa korzystanie z jego funkcji. 
 \item $\mathtt{IODevice.py}$ --- klasa do operacji wejścia-wyjścia na programowalnych urządzeniach pomiarowych.
 \item $\mathtt{LDC4005.py}$ --- klasa zawierająca funkcje od obsługi zasilacza diód laserowych Thorlabs 4005.
 \item $\mathtt{PM100.py}$ --- klasa zawierająca funkcje do obsługi detektora mocy Thorlabs PM100.
@@ -167,6 +167,13 @@ zwraca intancje danego urządzenia, co umażliwa korzystanie z jego funkcji.
   \caption{Strukura programu.} 
 \end{figure}
 
+\section{Używanie programu}
+W celu dokonania pomiarów za pomocą programu Py3LabDeviceIO możliwe są dwie operacje:
+\begin{itemize}
+\item wywołanie skryptu z linii poleceń z odpowienimi parametrami.
+\item uruchomienie programu okienkowego.
+\end{itemize}
+Obie wymagają uprawnień użytkownika uprzywijowanego (sudo).
 \newpage
 \chapter{Gui}
 \section{Gui}
@@ -183,15 +190,15 @@ Wśród laserów półprzewodnikowych możemy wyróżnić lasery krawędziowe or
 Ważnym parametrem laserów krawędziowych jest prąd progowy (z ang. \textit{threshold
 current}) który określa wartość prądu przy którym zaczyna zachodzić akcja laserowa czyli
 rośnie gwałtownie natężenie promieniowania i maleje szerokość linii emisyjnej.
-Zależności prądu progowego I th od temperatury T możemy wyrazić za pomocą równania:
+Zależności prądu progowego $I_{th}$ od temperatury $T$ możemy wyrazić za pomocą równania:
 \begin{equation}
 I_{th} = I_0 \exp \left( \frac{T}{T_0} \right)
 \end{equation}
 Wartości parametrów $I_0$ oraz $T_0$ możemy wyznaczyć na podstawie charakterystyk
-emisyjnych lasera w różnych temperaturach $T$
+emisyjnych lasera w różnych temperaturach $T$. \\
 Przez zlogarytmowanie wartości prądu oraz podstawienie otrzymujemy:
 \begin{equation}
-ln(I_{th}) =   ln \left(\frac{T}{T_0} \right) + ln(I_0)
+\ln(I_{th}) =   \ln \left(\frac{T}{T_0} \right) + \ln(I_0)
 \end{equation}
 \begin{equation}
 I_{th} = \frac{T}{T_0} + I_0
@@ -206,7 +213,7 @@ a = \frac{1}{T_0}
 \end{equation}
 
 \begin{equation}
-b = ln(I_0)
+b = \ln(I_0)
 \end{equation}
 
 Na tej podstawie możemy znaleźć poszukiwane parametry $I_0$ oraz $T_0$ :
@@ -220,89 +227,157 @@ T_0 = \frac{1}{a}
 
 Korzystając z różniczki zupełnej można obliczyć wartości błędów wyznaczonych wartości:
 \begin{equation}
-\Delta I_0 = | \frac{\partial I_{0}}{\partial b} | \cdot \Delta b = | b \mathtt{e}^b | \cdot \Delta b
+\Delta I_0 = \left\lvert \frac{\partial I_{0}}{\partial b} \right\rvert \cdot \Delta b = | b \mathtt{e}^b | \cdot \Delta b
 \end{equation}
 
 \begin{equation}
-\Delta T_0 = | \frac{\partial T_{0}}{\partial a} | \cdot \Delta a = |-\frac{1}{a^2} | \cdot \Delta a
+\Delta T_0 = \left\lvert \frac{\partial T_{0}}{\partial a} \right\rvert \cdot \Delta a = \left\lvert -\frac{1}{a^2} \right\rvert \cdot \Delta a
 \end{equation}
 
-Dzięki analizie charakterystyk możliwe jest także obliczenie przyrostowej sprawności rożniczkowej
- $\eta_{SE}$ (ang. \textit{slope efficiency}), która odpowiada nachyleniu charakterystyki mocy wyjściowej $P_{wyj}$ lasera w funkcji prądu zasilającego $I$ powyżej progowej wartości prądu progowego $I_{th}$ dla akcji laserowej:
- \begin{equation}
- \eta_{SE} = \frac{d P_{wyj}}{d I}
- \end{equation}
 
-\begin{figure}[h]
-\center
-  \includegraphics[scale=0.40]{slope.png}
-  \label{rys1}
-  \caption{Przyrostowa sprawność różniczkowa.} 
-\end{figure}
 
 \newpage
 
-\section{Badanie lasera}
-Podpunkt ten zawiera wyniki pomiarów dla lasera krawędziowego o emitowanej fali długości 980 nm.
-Pomiar polegał w pierwszej części na wykonaniu charakterystyk prądowo-napięciowych
-oraz prądowo-oświetleniowych lasera w temperaturze lasera od 283 K do 363 K krokiem co 10 K.
-Na podstawie otrzymanych charakterystyk wyznaczyłem wartość prądu progowego w danej temperaturze.
-Następnie korzystając z wyznaczonych wartość na podstawie wzorów (3.7) i (3.8) znalazłem
-parametry $I_{0} = (78.7 \pm 0.1)$ mA oraz $T_0 = (0.02 \pm 0.01)$ K.
 
-Tabela 1 zawiera wyznazone wartości prądu progowego $I_0$ oraz wartości przyrostowej sprawności różniczkowej $\eta$ dla tego lasera. Rysunek 3.1 przedstawia charakterystykę wszystkich badanych laserów. Rysunki 3.2-3.29 przedstawiają charakterystyki lasera wraz z oblicoznymi paramenrami które słuzą do charakterystyki lasera. Rysunek 3.30 przedstawia wykres prądu progowego w funkcji temperatury. \\ 
+
+
+
+
+
+
+\section{Badanie lasera}
+Podpunkt ten zawiera wyniki pomiarów dla lasera krawędziowego o emitowanej fali długości 980\,nm.
+Pomiar polegał w pierwszej części na wykonaniu charakterystyk prądowo-napięciowych
+oraz prądowo-oświetleniowych lasera w temperaturze lasera od 283\,K do 363\,K krokiem co 10\,K.
+Na podstawie otrzymanych charakterystyk wyznaczyłem wartość prądu progowego w danej temperaturze.
+Następnie korzystając z wyznaczonych wartość na podstawie wzorów (5.7) i (5.8) znalazłem
+parametry $I_{0} = (89.9 \pm 0.1)$\,mA oraz $T_0 = (0.04 \pm 0.01)$\,K.
+
+Tabela 1 zawiera wyznazone wartości prądu progowego $I_0$ dla tego lasera. Rysunek 5.1 przedstawia charakterystykę wszystkich badanych laserów. Rysunki 5.2-5.29 przedstawiają charakterystyki lasera wraz z oblicoznymi paramenrami które słuzą do charakterystyki lasera. Rysunek 5.13 przedstawia wykres prądu progowego w funkcji temperatury. \\ 
 
 \begin{table}[h!]
 \begin{center}
-\caption{ Wyznaczone wartośc prądu progowego $I_0$ oraz przyrostwoej sprawności różniczkowej $\eta$ w różnych temperaturach $T$ dla lasera krawędziowego 980 nm. }
+\caption{ Wyznaczone wartośc prądu progowego $I_0$ w różnych temperaturach $T$ dla lasera krawędziowego 980\,nm. }
 \begin{tabular}{ | C{3.5cm}|  C{3.5cm} | C{3.5cm} | C{3.5cm}|}
 \hline
-$T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
-283      &   0.8 $\pm$ 0.1 & 0.41 $\pm$ 0.01 \\ \hline
-293      &   0.9 $\pm$ 0.1 & 0.39 $\pm$ 0.01 \\ \hline
-303      &   1.0 $\pm$ 0.1 & 0.38 $\pm$ 0.01 \\ \hline
-313      &   1.1 $\pm$ 0.1 & 0.37 $\pm$ 0.01 \\ \hline
-323      &   1.2 $\pm$ 0.1 & 0.35 $\pm$ 0.01 \\ \hline
-333      &   1.4 $\pm$ 0.1 & 0.33 $\pm$ 0.01 \\ \hline
-343      &   1.6 $\pm$ 0.1 & 0.31 $\pm$ 0.01 \\ \hline
-353      &   2.0 $\pm$ 0.1 & 0.29 $\pm$ 0.01 \\ \hline
-363      &   2.2 $\pm$ 0.1 & 0.27 $\pm$ 0.01 \\ \hline
+$T$ [K] &   $I_{th}$ [mA]   \\ \hline
+283      &   1.0 $\pm$ 0.1  \\ \hline
+293      &   1.0 $\pm$ 0.1  \\ \hline
+303      &   1.1 $\pm$ 0.1  \\ \hline
+313      &   1.2 $\pm$ 0.1  \\ \hline
+323      &   1.3 $\pm$ 0.1  \\ \hline
+333      &   1.5 $\pm$ 0.1  \\ \hline
+343      &   1.7 $\pm$ 0.1  \\ \hline
+353      &   2.0 $\pm$ 0.1  \\ \hline
+363      &   2.4 $\pm$ 0.1  \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
 
 \newpage
 
+
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/plot_all.png}
   \label{rys1}
-  \caption{Wykres wszystkich } 
+  \caption{Charakterystyka lasera krawędziowego 980\,nm w różnych temperaturach. } 
 \end{figure}
+
 
 \newpage
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_10_IVL.png}
   \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 283 K.} 
+  \caption{Charakterystyka lasera krawędziowego 980\,nm w temperaturze 283\,K.} 
 \end{figure}
 
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_10_fit.png}
   \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 283 K.} 
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 283\,K.} 
 \end{figure}
+
 
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_10_power.png}
   \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 283 K.} 
+  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980\,nm w temperaturze 283\,K.} 
 \end{figure}
 
 
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_20_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 293\,K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_30_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 303\,K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_40_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 313\,K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_50_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 323\,K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_60_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 333\,K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_70_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 343\,K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_80_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 353\,K.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/temp_90_fit.png}
+  \label{rys1}
+  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 363\,K.} 
+\end{figure}
+
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/fit_i_th.png}
+  \label{rys1}
+  \caption{Wykres zależności prądu progowego od temperatury.} 
+\end{figure}
+
+
+
+
+\iffalse
+I don't want this to happen
 
 \begin{figure}
 \center
@@ -310,6 +385,9 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \label{rys1}
   \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 293 K.} 
 \end{figure}
+
+
+
 
 \begin{figure}
 \center
@@ -340,6 +418,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 303 K.} 
 \end{figure}
 
+
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_30_power.png}
@@ -355,6 +434,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \label{rys1}
   \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 313 K.} 
 \end{figure}
+
 
 \begin{figure}
 \center
@@ -407,6 +487,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 333 K.} 
 \end{figure}
 
+\clearpage
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/temp_60_power.png}
@@ -422,6 +503,7 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \label{rys1}
   \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 343 K.} 
 \end{figure}
+
 
 \begin{figure}
 \center
@@ -482,6 +564,10 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
 \end{figure}
 
 
+
+
+
+
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/fit_i_th.png}
@@ -489,6 +575,18 @@ $T$ [K] &   $I_0$ [mA]   & $\eta$    \\ \hline
   \caption{Wykres zależności prądu progowego od temperatury.} 
 \end{figure}
 
+\newpage
+\section{Laser krawędziowy 635 nm}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot635/plot_all.png}
+  \label{rys1}
+  \caption{Wykres zależności prądu progowego od temperatury.} 
+\end{figure}
+
+
+\fi
 
 
 \end{document}

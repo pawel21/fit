@@ -9,8 +9,11 @@ from scipy.optimize import curve_fit
 from sympy.solvers import solve
 from sympy import Symbol
 
-matplotlib.rc('font', family='Arial')
-matplotlib.rcParams['text.latex.unicode'] = True
+#matplotlib.rc('font', family='Arial')
+#matplotlib.rcParams['text.latex.unicode'] = True
+#matplotlib.rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
+plt.rcParams["font.family"] = "Arial"
+plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 25})
 
 
@@ -33,7 +36,6 @@ class Fit:
 
     def do_fit(self, start_to_fit, end_to_fit):
         x, y = self._get_data_to_fit(start_to_fit, end_to_fit)
-
         popt, pcov = curve_fit(self.f, x, y)
         self.a = popt[0]
         self.b = popt[1]
@@ -67,17 +69,20 @@ class Fit:
                     % (self.path_to_data, self.a, self.da, self.b, self.db, self.I_0[0], self.dI_0))
 
     def _fit_plot(self, start_to_fit, end_to_fit):
-        plt.plot(self.current, self.power, 'ro', markersize=4)
+        fig, ax1 = plt.subplots()
+        ax1.plot(self.current, self.power, 'ro', markersize=4)
         x = np.linspace(0, end_to_fit, 100)
         y = self.a *x + self.b
-        plt.axhline(0., ls='-', color='k')
-        plt.plot(x, y, 'b-', linewidth=2)
-        plt.text(0.0010, -0.0004, "$I_0$ = (%.1f $\pm$ %.1f) $\cdot 10^{-3}$ A" % (float(self.I_0[0]*1000), 0.1))
-        plt.text(0.009, 0.0015,
-                 "$\eta$ = %.2f" % (float(self.a)))
-        plt.xlabel("prąd [A]")
-        plt.ylabel("moc wyjściowa [W]")
-        plt.title("Temperatura = %s K" %self.temp)
+        ax1.axhline(0., ls='-', color='k')
+        ax1.plot(x, y, 'b-', linewidth=2)
+        ax1.set_xticks(list(np.linspace(0., 0.02, 21)))
+        ax1.set_xticklabels(np.linspace(0., 20., 21))
+        ax1.set_yticks(list(np.linspace(0, 0.007, 8)))
+        ax1.set_yticklabels(list(np.linspace(0, 7, 8)))
+        plt.text(0.0018, -0.0004, "$I_{th}$ = (%.1f $\pm$ %.1f)mA" % (float(self.I_0[0]*1000), 0.1))
+        ax1.set_xlabel("prąd [mA]")
+        ax1.set_ylabel("moc wyjściowa [mW]")
+
         plt.grid(True)
         plt.show()
 
@@ -89,10 +94,16 @@ class Fit:
         ax1.plot(self.current, self.power, marker='o', color='red', ls='none')
         ax2.plot(self.current, self.voltage, marker='o', color='green', ls='none')
 
-        ax1.set_xlabel('Prąd [A]')
+        ax1.set_xlabel('Prąd [mA]')
         ax1.set_ylabel('Moc wyjściowa [W]', color='r')
         ax2.set_ylabel('Napięcie [V]', color='g')
 
+        ax1.set_xticks(list(np.linspace(0. ,0.02, 5)))
+        ax1.set_xticklabels(np.linspace(0. ,20, 5, dtype=int))
+        ax1.set_yticks(list(np.linspace(0, 0.007, 8)))
+        ax1.set_yticklabels(list(np.linspace(0, 7, 8)))
+        for ytick in ax1.get_yticklabels():
+            ytick.set_color("red")
         ax1.set_ylim([0, max(self.power) + 0.1 * max(self.power)])
         ax2.set_ylim([0, max(self.voltage)+0.1 * max(self.voltage)])
 
@@ -112,9 +123,9 @@ class Fit:
         plt.grid(True)
         plt.show()
 
-fit = Fit("data980/temp_90.txt", 90)
-fit.plot_I_V_L
-fit.plot_power()
-fit.do_fit(0.002, 0.010)
+fit = Fit("data980/temp_90.txt", 20)
+#fit.plot_I_V_L
+#fit.plot_power()
+fit.do_fit(0.0023, 0.007)
 print(fit._find_I0())
-print(fit._find_dI0()*1000)
+#print(fit._find_dI0()*1000)

@@ -11,7 +11,10 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
+plt.rcParams["font.family"] = "Arial"
+plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 25})
+
 
 
 def f(x, a, b):
@@ -39,7 +42,7 @@ temp_K = list(map(temp_celsjusz_to_kelvin, temp_C))
 
 #I_0 = np.array([0.8, 0.8, 0.9, 1.0, 1.1, 1.1, 1.1, 1.1, 1.2, 1.4, 1.5, 1.5, 1.6, 1.8, 2.0, 2.2, 2.4])*10**-3
 
-I_0 = [0.8, 0.9, 1.0, 1.1, 1.2, 1.4, 1.6, 2.0, 2.2]
+I_0 = [1.0, 1.0, 1.1, 1.2, 1.3, 1.5, 1.7, 2.0, 2.4]
 dict_key_temp_values_I = dict(zip(temp_K, I_0))
 
 popt, pcov = curve_fit(f, temp_K, np.log(I_0))
@@ -54,11 +57,11 @@ y = a*x + b
 
 plt.plot(x, y, 'r--')
 
-plt.xlabel("Temperatura [K], $T$")
+plt.xlabel("Temperatura [K], T")
 plt.ylabel("logarytm z wartości prądu progowego, $\ln(I_{th})$")
-plt.text(340, 0, r"$\ln I_{th}  = \frac{T}{T_{0}} + \ln I $", fontsize=30)
-plt.text(340, -0.1, r"$T_0 =(78.7 \pm 0.1)$ K", fontsize=30)
-plt.text(340, -0.2, r"$I =0.02 \pm 0.01$", fontsize=30)
+plt.text(340, 0, r"$\ln I_{th}=\frac{T}{T_{0}} + \ln(I_{0}) $", fontsize=30)
+plt.text(340, -0.1, r"$T_0=(89.9 \pm 0.1)$K", fontsize=30)
+plt.text(340, -0.2, r"$I_{0}=(0.04 \pm 0.01)$mA", fontsize=30)
 plt.grid(True)
 plt.plot(temp_K, np.log(I_0), 'bo')
 plt.show()
