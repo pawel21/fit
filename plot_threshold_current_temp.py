@@ -1,14 +1,15 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from __future__ import division
+
 import matplotlib
-matplotlib.use('qt5Agg')
-matplotlib.rc('font', family='Arial')
-matplotlib.rcParams['text.latex.unicode'] = True
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
+matplotlib.use('qt5Agg')
+matplotlib.rc('font', family='Arial')
+matplotlib.rcParams['text.latex.unicode'] = True
 plt.rcParams["font.family"] = "Arial"
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 25})
@@ -46,7 +47,7 @@ class PlotThresholdCurrentTemp:
         fig, ax1 = plt.subplots()
         ax1.plot(self.temp, np.log(self.threshold_current), 'bo', markersize=10)
         ax1.set_xlabel("Temperatura [K], $T$")
-        ax1.set_ylabel("logarytm z wartości prąd progowego , $\ln (I_{th})$")
+        ax1.set_ylabel("logarytm z wartości prądu progowego , $\ln (I_{th})$")
 
         popt, pcov = curve_fit(self.f, self.temp, np.log(self.threshold_current))
         a = popt[0]
@@ -67,8 +68,10 @@ class PlotThresholdCurrentTemp:
                      fontsize=30)
             plt.text(kwargs['x_text'], kwargs['y_text']-2*kwargs["dy_text"], r"$I_0 = (%.2f \pm %.2f)$ mA" %(i_0, di_0),
                      fontsize=30)
-        print(a)
-        print(b)
+        print(u"a = %s \u00B1 %s" %(a, da))
+        print(u"b = %s \u00B1 %s" % (b, db))
+        print(u"T_0 = %s \u00B1 %s" % (t0, dt0))
+        print(u"I_0 = %s \u00B1 %s" % (i_0, di_0))
         plt.grid(True)
         plt.show()
 
