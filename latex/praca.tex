@@ -36,6 +36,33 @@ Instytut Fizyki PŁ}
 \newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
 \setcounter{page}{1}
 \usepackage{listings}
+\usepackage{color}
+ 
+\definecolor{codegreen}{rgb}{0,0.6,0}
+\definecolor{codegray}{rgb}{0.5,0.5,0.5}
+\definecolor{codepurple}{rgb}{0.58,0,0.82}
+\definecolor{backcolour}{rgb}{0.95,0.95,0.92}
+ 
+\lstdefinestyle{mystyle}{
+    backgroundcolor=\color{backcolour},   
+    commentstyle=\color{codegreen},
+    keywordstyle=\color{magenta},
+    numberstyle=\tiny\color{codegray},
+    stringstyle=\color{codepurple},
+    basicstyle=\footnotesize,
+    breakatwhitespace=false,         
+    breaklines=true,                 
+    captionpos=b,                    
+    keepspaces=true,                 
+    numbers=left,                    
+    numbersep=5pt,                  
+    showspaces=false,                
+    showstringspaces=false,
+    showtabs=false,                  
+    tabsize=2
+}
+ 
+\lstset{style=mystyle}
 
 
 \usepackage{xcolor}
@@ -122,7 +149,7 @@ Fizyczne łącze komunikacyjne nie jest zdefiniowane przez SCPI. Stworzony stand
 \newpage
 \section{Przykładowe programy do sterowania sprzętem}
 Przykładowy program w języku Python do zapytania sprzętu o jego nazwe.
-\lstinputlisting{deviceio.py}
+\lstinputlisting[language=Python, firstline=0, lastline=20]{deviceio.py}
 Przykładowy program w języku C do zapytania sprzętu o jego nazwe.
 \begin{lstlisting}
 #include<errno.h>

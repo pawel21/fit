@@ -72,6 +72,6 @@ class PlotLaser:
         plt.grid(True)
         plt.show()
 
-pl = PlotLaser("data980/temp_10.txt", 10)
-#pl.plot_ivl()
-pl.plot_power()
+pl = PlotLaser("dataVcsel850/temp_10.txt", 10)
+pl.plot_ivl()
+#pl.plot_power()

@@ -1,6 +1,4 @@
 import os
-
-
 class IODevice:
     def __init__(self, path_to_device):
         self.path_to_device = path_to_device
