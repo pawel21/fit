@@ -39,7 +39,7 @@ class PlotThresholdCurrentTemp:
         fig, ax1 = plt.subplots()
         ax1.plot(self.temp, np.log(self.threshold_current), 'bo', markersize=10)
         ax1.set_xlabel("Temperatura [K], $T$")
-        ax1.set_ylabel("logarytm z wartości prąd progowego , $\ln (I_{th})$")
+        ax1.set_ylabel("logarytm z wartości prądu progowego , $\ln (I_{th})$")
         plt.grid(True)
         plt.show()
 
@@ -101,10 +101,11 @@ I_0_vscel850 = [1.7, 1.6, 1.6, 1.6, 1.7, 1.9, 2.1, 2.3, 2.7]
 I_0_980 = [1.0, 1.0, 1.1, 1.2, 1.3, 1.5, 1.7, 2.0, 2.4]
 
 pl_vscel850 = PlotThresholdCurrentTemp(I_0_vscel850, temp_K)
-#pl_vscel850.fit_temp_log_i_th(x_text=340, y_text=0.2, dy_text=0.15)
-#pl_vscel850.plot_linear_temp_i_th
 
-pl_980 = PlotThresholdCurrentTemp(I_0_980, temp_K)
-pl_980.plot_linear_temp_i_th
+pl_vscel850.plot_temp_log_i_th
+pl_vscel850.plot_linear_temp_i_th
+
+#pl_980 = PlotThresholdCurrentTemp(I_0_980, temp_K)
+#pl_980.plot_linear_temp_i_th
 #pl_980.plot_temp_log_i_th
-pl_980.fit_temp_log_i_th(x_text=340, y_text=0.2, dy_text=0.10)
+#pl_980.fit_temp_log_i_th(x_text=340, y_text=0.2, dy_text=0.10)

@@ -123,9 +123,9 @@ class Fit:
         plt.grid(True)
         plt.show()
 
-fit = Fit("dataVcsel850/temp_90.txt", 10)
+fit = Fit("dataVcsel850/temp_50.txt", 10)
 #fit.plot_I_V_L
 #fit.plot_power()
-fit.do_fit(0.0027, 0.0085)
+fit.do_fit(0.0016, 0.007)
 print(fit._find_I0())
 #print(fit._find_dI0()*1000)

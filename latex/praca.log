@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  30 DEC 2016 17:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  2 JAN 2017 22:40
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -715,6 +715,39 @@ LaTeX Warning: Label `rys1' multiply defined.
 
 LaTeX Warning: Label `rys1' multiply defined.
 
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
 )
 \openout1 = `praca.aux'.
 
@@ -1168,7 +1201,14 @@ Underfull \hbox (badness 10000) in paragraph at lines 215--216
 [10
 
 ] [11]
-Underfull \hbox (badness 10000) in paragraph at lines 283--284
+LaTeX Font Info:    Font shape `T1/phv/m/n' will be
+(Font)              scaled to size 13.67995pt on input line 276.
+LaTeX Font Info:    Font shape `T1/phv/bx/n' in size <14.4> not available
+(Font)              Font shape `T1/phv/b/n' tried instead on input line 276.
+LaTeX Font Info:    Font shape `T1/phv/b/n' will be
+(Font)              scaled to size 13.67995pt on input line 276.
+
+Underfull \hbox (badness 10000) in paragraph at lines 284--285
 
  []
 
@@ -1176,10 +1216,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 283--284
 File: plot980/plot_all.png Graphic file (type png)
 
 <use plot980/plot_all.png>
-Package pdftex.def Info: plot980/plot_all.png used on input line 309.
+Package pdftex.def Info: plot980/plot_all.png used on input line 310.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 309--311
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 310--312
  [] 
  []
 
@@ -1187,10 +1227,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 309--311
 File: plot980/temp_10_IVL.png Graphic file (type png)
 
 <use plot980/temp_10_IVL.png>
-Package pdftex.def Info: plot980/temp_10_IVL.png used on input line 318.
+Package pdftex.def Info: plot980/temp_10_IVL.png used on input line 319.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 318--320
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 319--321
  [] 
  []
 
@@ -1198,10 +1238,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 318--320
 File: plot980/temp_10_fit.png Graphic file (type png)
 
 <use plot980/temp_10_fit.png>
-Package pdftex.def Info: plot980/temp_10_fit.png used on input line 325.
+Package pdftex.def Info: plot980/temp_10_fit.png used on input line 326.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 325--327
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 326--328
  [] 
  []
 
@@ -1209,10 +1249,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 325--327
 File: plot980/temp_10_power.png Graphic file (type png)
 
 <use plot980/temp_10_power.png>
-Package pdftex.def Info: plot980/temp_10_power.png used on input line 333.
+Package pdftex.def Info: plot980/temp_10_power.png used on input line 334.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 333--335
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 334--336
  [] 
  []
 
@@ -1220,10 +1260,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 333--335
 File: plot980/temp_20_fit.png Graphic file (type png)
 
 <use plot980/temp_20_fit.png>
-Package pdftex.def Info: plot980/temp_20_fit.png used on input line 341.
+Package pdftex.def Info: plot980/temp_20_fit.png used on input line 342.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 341--343
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 342--344
  [] 
  []
 
@@ -1231,10 +1271,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 341--343
 File: plot980/temp_30_fit.png Graphic file (type png)
 
 <use plot980/temp_30_fit.png>
-Package pdftex.def Info: plot980/temp_30_fit.png used on input line 348.
+Package pdftex.def Info: plot980/temp_30_fit.png used on input line 349.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 348--350
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 349--351
  [] 
  []
 
@@ -1242,10 +1282,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 348--350
 File: plot980/temp_40_fit.png Graphic file (type png)
 
 <use plot980/temp_40_fit.png>
-Package pdftex.def Info: plot980/temp_40_fit.png used on input line 355.
+Package pdftex.def Info: plot980/temp_40_fit.png used on input line 356.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 355--357
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 356--358
  [] 
  []
 
@@ -1253,10 +1293,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 355--357
 File: plot980/temp_50_fit.png Graphic file (type png)
 
 <use plot980/temp_50_fit.png>
-Package pdftex.def Info: plot980/temp_50_fit.png used on input line 362.
+Package pdftex.def Info: plot980/temp_50_fit.png used on input line 363.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 362--364
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 363--365
  [] 
  []
 
@@ -1264,10 +1304,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 362--364
 File: plot980/temp_60_fit.png Graphic file (type png)
 
 <use plot980/temp_60_fit.png>
-Package pdftex.def Info: plot980/temp_60_fit.png used on input line 369.
+Package pdftex.def Info: plot980/temp_60_fit.png used on input line 370.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 369--371
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 370--372
  [] 
  []
 
@@ -1275,10 +1315,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 369--371
 File: plot980/temp_70_fit.png Graphic file (type png)
 
 <use plot980/temp_70_fit.png>
-Package pdftex.def Info: plot980/temp_70_fit.png used on input line 376.
+Package pdftex.def Info: plot980/temp_70_fit.png used on input line 377.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 376--378
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 377--379
  [] 
  []
 
@@ -1286,10 +1326,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 376--378
 File: plot980/temp_80_fit.png Graphic file (type png)
 
 <use plot980/temp_80_fit.png>
-Package pdftex.def Info: plot980/temp_80_fit.png used on input line 383.
+Package pdftex.def Info: plot980/temp_80_fit.png used on input line 384.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 383--385
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 384--386
  [] 
  []
 
@@ -1297,10 +1337,10 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 383--385
 File: plot980/temp_90_fit.png Graphic file (type png)
 
 <use plot980/temp_90_fit.png>
-Package pdftex.def Info: plot980/temp_90_fit.png used on input line 390.
+Package pdftex.def Info: plot980/temp_90_fit.png used on input line 391.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 390--392
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 391--393
  [] 
  []
 
@@ -1308,31 +1348,159 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 390--392
 File: plot980/fit_i_th.png Graphic file (type png)
 
 <use plot980/fit_i_th.png>
-Package pdftex.def Info: plot980/fit_i_th.png used on input line 398.
+Package pdftex.def Info: plot980/fit_i_th.png used on input line 399.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 398--400
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 399--401
+ [] 
+ []
+
+[13 <./plot980/plot_all.png>] [14 <./plot980/temp_10_IVL.png> <./plot980/temp_1
+0_fit.png>] [15 <./plot980/temp_10_power.png> <./plot980/temp_20_fit.png>]
+[16 <./plot980/temp_30_fit.png> <./plot980/temp_40_fit.png>] [17 <./plot980/tem
+p_50_fit.png> <./plot980/temp_60_fit.png>] [18 <./plot980/temp_70_fit.png> <./p
+lot980/temp_80_fit.png>] [19 <./plot980/temp_90_fit.png> <./plot980/fit_i_th.pn
+g>] <plot_vcsel850/temp_10_fit.png, id=104, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_10_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_10_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_10_fit.png used on input line 627.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 627--629
+ [] 
+ []
+
+<plot_vcsel850/temp_20_fit.png, id=105, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_20_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_20_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_20_fit.png used on input line 634.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 634--636
+ [] 
+ []
+
+<plot_vcsel850/temp_30_fit.png, id=106, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_30_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_30_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_30_fit.png used on input line 641.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 641--643
+ [] 
+ []
+
+<plot_vcsel850/temp_40_fit.png, id=107, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_40_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_40_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_40_fit.png used on input line 648.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 648--650
+ [] 
+ []
+
+<plot_vcsel850/temp_50_fit.png, id=108, 1681.0002pt x 922.8879pt>
+File: plot_vcsel850/temp_50_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_50_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_50_fit.png used on input line 655.
+(pdftex.def)             Requested size: 504.30396pt x 276.8685pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 655--657
+ [] 
+ []
+
+<plot_vcsel850/temp_60_fit.png, id=109, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_60_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_60_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_60_fit.png used on input line 662.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 662--664
+ [] 
+ []
+
+<plot_vcsel850/temp_70_fit.png, id=110, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_70_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_70_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_70_fit.png used on input line 669.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 669--671
+ [] 
+ []
+
+<plot_vcsel850/temp_80_fit.png, id=111, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_80_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_80_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_80_fit.png used on input line 676.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 676--678
+ [] 
+ []
+
+<plot_vcsel850/temp_90_fit.png, id=112, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_90_fit.png Graphic file (type png)
+
+<use plot_vcsel850/temp_90_fit.png>
+Package pdftex.def Info: plot_vcsel850/temp_90_fit.png used on input line 683.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 683--685
+ [] 
+ []
+
+<plot_vcsel850/plot_lin_i_th.png, id=113, 1681.0002pt x 922.8879pt>
+File: plot_vcsel850/plot_lin_i_th.png Graphic file (type png)
+
+<use plot_vcsel850/plot_lin_i_th.png>
+Package pdftex.def Info: plot_vcsel850/plot_lin_i_th.png used on input line 690
+.
+(pdftex.def)             Requested size: 504.30396pt x 276.8685pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 690--692
+ [] 
+ []
+
+<plot_vcsel850/plot_log_i_th.png, id=114, 1681.0002pt x 922.8879pt>
+File: plot_vcsel850/plot_log_i_th.png Graphic file (type png)
+
+<use plot_vcsel850/plot_log_i_th.png>
+Package pdftex.def Info: plot_vcsel850/plot_log_i_th.png used on input line 697
+.
+(pdftex.def)             Requested size: 504.30396pt x 276.8685pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 697--699
  [] 
  []
 
 
 AED: lastpage setting LastPage
-[13 <./plot980/plot_all.png> <./plot980/temp_10_IVL.png>] [14 <./plot980/temp_1
-0_fit.png> <./plot980/temp_10_power.png>] [15 <./plot980/temp_20_fit.png> <./pl
-ot980/temp_30_fit.png>] [16 <./plot980/temp_40_fit.png> <./plot980/temp_50_fit.
-png>] [17 <./plot980/temp_60_fit.png> <./plot980/temp_70_fit.png>] [18 <./plot9
-80/temp_80_fit.png> <./plot980/temp_90_fit.png>] [19 <./plot980/fit_i_th.png>]
-(./praca.aux)
+[20 <./plot_vcsel850/temp_10_fit.png>] [21 <./plot_vcsel850/temp_20_fit.png> <.
+/plot_vcsel850/temp_30_fit.png>] [22 <./plot_vcsel850/temp_40_fit.png> <./plot_
+vcsel850/temp_50_fit.png>] [23 <./plot_vcsel850/temp_60_fit.png> <./plot_vcsel8
+50/temp_70_fit.png>] [24 <./plot_vcsel850/temp_80_fit.png> <./plot_vcsel850/tem
+p_90_fit.png>] [25 <./plot_vcsel850/plot_lin_i_th.png> <./plot_vcsel850/plot_lo
+g_i_th.png>] (./praca.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7519 strings out of 493029
- 98607 string characters out of 6136233
- 292365 words of memory out of 5000000
- 10878 multiletter control sequences out of 15000+600000
- 37995 words of font info for 65 fonts, out of 8000000 for 9000
+ 7571 strings out of 493029
+ 100254 string characters out of 6136233
+ 292367 words of memory out of 5000000
+ 10926 multiletter control sequences out of 15000+600000
+ 42461 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,13n,58p,857b,1328s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texliv
@@ -1345,10 +1513,10 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on praca.pdf (19 pages, 1249707 bytes).
+Output written on praca.pdf (25 pages, 2007049 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 76 compressed objects within 1 object stream
+ 179 PDF objects out of 1000 (max. 8388607)
+ 89 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 76 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

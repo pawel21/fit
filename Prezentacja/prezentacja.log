@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  30 DEC 2016 18:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  2 JAN 2017 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1524,10 +1524,10 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 241--241
 File: temp_10_fit.png Graphic file (type png)
 
 <use temp_10_fit.png>
-Package pdftex.def Info: temp_10_fit.png used on input line 250.
+Package pdftex.def Info: temp_10_fit.png used on input line 251.
 (pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 250--250
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 251--251
  [] 
  []
 
@@ -1537,10 +1537,10 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 250--250
 File: temp_50_fit.png Graphic file (type png)
 
 <use temp_50_fit.png>
-Package pdftex.def Info: temp_50_fit.png used on input line 258.
+Package pdftex.def Info: temp_50_fit.png used on input line 260.
 (pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 258--258
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 260--260
  [] 
  []
 
@@ -1550,10 +1550,10 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 258--258
 File: temp_90_fit.png Graphic file (type png)
 
 <use temp_90_fit.png>
-Package pdftex.def Info: temp_90_fit.png used on input line 266.
+Package pdftex.def Info: temp_90_fit.png used on input line 269.
 (pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 266--266
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 269--269
  [] 
  []
 
@@ -1563,10 +1563,10 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 266--266
 File: fit_i_th.png Graphic file (type png)
 
 <use fit_i_th.png>
-Package pdftex.def Info: fit_i_th.png used on input line 274.
+Package pdftex.def Info: fit_i_th.png used on input line 277.
 (pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 274--274
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 277--277
  [] 
  []
 
@@ -1574,20 +1574,90 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 274--274
 
  <./fit_i_th.png>] [25
 
-] <plot_i_th.png, id=700, 1681.0002pt x 897.5934pt>
+] <plot_i_th.png, id=701, 1681.0002pt x 897.5934pt>
 File: plot_i_th.png Graphic file (type png)
 
 <use plot_i_th.png>
-Package pdftex.def Info: plot_i_th.png used on input line 294.
+Package pdftex.def Info: plot_i_th.png used on input line 297.
 (pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
 
-Overfull \hbox (30.73085pt too wide) in paragraph at lines 294--294
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 297--297
  [] 
  []
 
 [26
 
  <./plot_i_th.png>]
+<vcsel850/temp_10_fit.png, id=728, 1681.0002pt x 897.5934pt>
+File: vcsel850/temp_10_fit.png Graphic file (type png)
+
+<use vcsel850/temp_10_fit.png>
+Package pdftex.def Info: vcsel850/temp_10_fit.png used on input line 306.
+(pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
+
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 306--306
+ [] 
+ []
+
+[27
+
+ <./vcsel850/temp_10_fit.png>]
+<vcsel850/temp_60_fit.png, id=755, 1681.0002pt x 897.5934pt>
+File: vcsel850/temp_60_fit.png Graphic file (type png)
+
+<use vcsel850/temp_60_fit.png>
+Package pdftex.def Info: vcsel850/temp_60_fit.png used on input line 315.
+(pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
+
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 315--315
+ [] 
+ []
+
+[28
+
+ <./vcsel850/temp_60_fit.png>]
+<vcsel850/temp_90_fit.png, id=782, 1681.0002pt x 897.5934pt>
+File: vcsel850/temp_90_fit.png Graphic file (type png)
+
+<use vcsel850/temp_90_fit.png>
+Package pdftex.def Info: vcsel850/temp_90_fit.png used on input line 324.
+(pdftex.def)             Requested size: 338.02072pt x 180.48792pt.
+
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 324--324
+ [] 
+ []
+
+[29
+
+ <./vcsel850/temp_90_fit.png>]
+<vcsel850/plot_lin_i_th.png, id=808, 1681.0002pt x 922.8879pt>
+File: vcsel850/plot_lin_i_th.png Graphic file (type png)
+
+<use vcsel850/plot_lin_i_th.png>
+Package pdftex.def Info: vcsel850/plot_lin_i_th.png used on input line 333.
+(pdftex.def)             Requested size: 338.02072pt x 185.57414pt.
+
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 333--333
+ [] 
+ []
+
+[30
+
+ <./vcsel850/plot_lin_i_th.png>]
+<vcsel850/plot_log_i_th.png, id=835, 1681.0002pt x 922.8879pt>
+File: vcsel850/plot_log_i_th.png Graphic file (type png)
+
+<use vcsel850/plot_log_i_th.png>
+Package pdftex.def Info: vcsel850/plot_log_i_th.png used on input line 342.
+(pdftex.def)             Requested size: 338.02072pt x 185.57414pt.
+
+Overfull \hbox (30.73085pt too wide) in paragraph at lines 342--342
+ [] 
+ []
+
+[31
+
+ <./vcsel850/plot_log_i_th.png>]
 \tf@nav=\write6
 \openout6 = `prezentacja.nav'.
 
@@ -1597,24 +1667,24 @@ Overfull \hbox (30.73085pt too wide) in paragraph at lines 294--294
 \tf@snm=\write8
 \openout8 = `prezentacja.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 296.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 296.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 344.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 344.
  (./prezentacja.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 296.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 296.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 344.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 344.
 Package rerunfilecheck Info: File `prezentacja.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
 
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 296.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 344.
  ) 
 Here is how much of TeX's memory you used:
- 20636 strings out of 493029
- 375539 string characters out of 6136233
- 572578 words of memory out of 5000000
- 23594 multiletter control sequences out of 15000+600000
+ 20683 strings out of 493029
+ 376445 string characters out of 6136233
+ 572722 words of memory out of 5000000
+ 23627 multiletter control sequences out of 15000+600000
  22512 words of font info for 69 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  55i,15n,69p,417b,1516s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1635,10 +1705,10 @@ ic/pl/plss9.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi10.pf
 b></usr/share/texlive/texmf-dist/fonts/type1/public/pl/plssi8.pfb></usr/share/t
 exlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-di
 st/fonts/type1/public/pl/pltt10.pfb>
-Output written on prezentacja.pdf (26 pages, 966791 bytes).
+Output written on prezentacja.pdf (31 pages, 1303379 bytes).
 PDF statistics:
- 792 PDF objects out of 1000 (max. 8388607)
- 700 compressed objects within 7 object streams
- 53 named destinations out of 1000 (max. 500000)
- 194 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 932 PDF objects out of 1000 (max. 8388607)
+ 823 compressed objects within 9 object streams
+ 63 named destinations out of 1000 (max. 500000)
+ 219 words of extra memory for PDF output out of 10000 (max. 10000000)
 
