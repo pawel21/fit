@@ -52,7 +52,7 @@ class PlotThresholdCurrentTemp:
         popt, pcov = curve_fit(self.f, self.temp, np.log(self.threshold_current))
         a = popt[0]
         b = popt[1]
-        error = np.diag(pcov)
+        error = np.abs(np.diag(pcov)**0.5)
         da = error[0]
         db = error[1]
         t0, dt0 = self.get_t0(a, da)

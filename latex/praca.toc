@@ -12,5 +12,5 @@
 \contentsline {chapter}{\numberline {5}Eksperyment}{10}
 \contentsline {section}{\numberline {5.1}Teoria}{10}
 \contentsline {section}{\numberline {5.2}Badanie lasera}{12}
-\contentsline {subsection}{\numberline {5.2.1}Laser 980\tmspace +\thinmuskip {.1667em} nm}{12}
+\contentsline {subsection}{\numberline {5.2.1}Laser 980\tmspace +\thinmuskip {.1667em}nm}{12}
 \contentsline {subsection}{\numberline {5.2.2}Laser VCSEL 850\tmspace +\thinmuskip {.1667em}nm}{20}

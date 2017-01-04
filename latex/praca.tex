@@ -1,5 +1,5 @@
 \documentclass[a4paper, portrait,12pt]{report}
-\usepackage[scaled]{helvet}
+%\usepackage[scaled]{helvet}
 \renewcommand\familydefault{\sfdefault} 
 \usepackage[T1]{fontenc}
 \usepackage[verbose,a4paper,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm]{geometry}
@@ -193,7 +193,6 @@ zwraca instancje danego urządzenia, co umażliwa korzystanie z jego funkcji.
   \label{rys1}
   \caption{Strukura programu.} 
 \end{figure}
-
 \section{Używanie programu}
 W celu dokonania pomiarów za pomocą programu Py3LabDeviceIO możliwe są dwie operacje:
 \begin{itemize}
@@ -212,7 +211,7 @@ Obie wymagają uprawnień użytkownika uprzywijowanego (sudo).
 \end{figure}
 \chapter{Eksperyment} \label{Eksperyment}
 \section{Teoria}
-Wśród laserów półprzewodnikowych możemy wyróżnić lasery krawędziowe oraz lasery o emisji powierzchniowej z pionową wnęką rezonansową tzw. Lasery VCSEL (ang. \textit{Vertical Cavity Surface Emitting Laser}) będące obiektem moich badań. Aby scharakteryzować lasery, można wykonać ich charakterystyki, które przedstawiają, jak zmienia się moc wyjściowa oraz napięcie lasera w funkcji zadanego prądu. \\
+Wśród laserów półprzewodnikowych możemy wyróżnić lasery krawędziowe oraz lasery o emisji powierzchniowej z pionową wnęką rezonansową tzw. Lasery VCSEL (ang. \textit{Vertical Cavity Surface Emitting Laser}) będące obiektem moich badań. Aby scharakteryzować lasery, można wykonać ich charakterystyki, które przedstawiają, jak zmienia się moc wyjściowa oraz napięcie lasera w funkcji zadanego prądu.
 
 Ważnym parametrem laserów krawędziowych jest prąd progowy (z ang. \textit{threshold
 current}) który określa wartość prądu przy którym zaczyna zachodzić akcja laserowa czyli
@@ -238,31 +237,24 @@ Gdzie:
 \begin{equation}
 a = \frac{1}{T_0}
 \end{equation}
-
 \begin{equation}
 b = \ln(I_0)
 \end{equation}
-
-Na tej podstawie możemy znaleźć poszukiwane parametry $I_0$ oraz $T_0$ :
+Na tej podstawie możemy znaleźć poszukiwane parametry $I_0$ oraz $T_0$:
 \begin{equation}
 I_0 = \mathtt{e}^b
 \end{equation}
-
 \begin{equation}
 T_0 = \frac{1}{a}
 \end{equation}
-
 Korzystając z różniczki zupełnej można obliczyć wartości błędów wyznaczonych wartości:
 \begin{equation}
 \Delta I_0 = \left\lvert \frac{\partial I_{0}}{\partial b} \right\rvert \cdot \Delta b = | b \mathtt{e}^b | \cdot \Delta b
 \end{equation}
-
 \begin{equation}
 \Delta T_0 = \left\lvert \frac{\partial T_{0}}{\partial a} \right\rvert \cdot \Delta a = \left\lvert -\frac{1}{a^2} \right\rvert \cdot \Delta a
 \end{equation}
-
-
-
+%
 \newpage
 
 
@@ -273,12 +265,12 @@ Korzystając z różniczki zupełnej można obliczyć wartości błędów wyznac
 
 
 \section{Badanie lasera}
-\subsection{Laser 980\, nm}
+\subsection{Laser 980\,nm}
 Podpunkt ten zawiera wyniki pomiarów dla lasera krawędziowego o emitowanej fali długości 980\,nm.
 Pomiar polegał w pierwszej części na wykonaniu charakterystyk prądowo-napięciowych
 oraz prądowo-oświetleniowych lasera w temperaturze lasera od 283\,K do 363\,K krokiem co 10\,K.
 Na podstawie otrzymanych charakterystyk wyznaczyłem wartość prądu progowego w danej temperaturze.
-Następnie korzystając z wyznaczonych wartość na podstawie wzorów (5.7) i (5.8) znalazłem
+Następnie korzystając z wyznaczonych wartość na podstawie wzorów~(5.7) i (5.8) znalazłem
 parametry $I_{0} = (89.9 \pm 0.1)$\,mA oraz $T_0 = (0.04 \pm 0.01)$\,K.
 
 Tabela 1 zawiera wyznazone wartości prądu progowego $I_0$ dla tego lasera. Rysunek 5.1 przedstawia charakterystykę wszystkich badanych laserów. Rysunki 5.2-5.29 przedstawiają charakterystyki lasera wraz z oblicoznymi paramenrami które słuzą do charakterystyki lasera. Rysunek 5.13 przedstawia wykres prądu progowego w funkcji temperatury. \\ 
@@ -309,7 +301,7 @@ $T$ [K] &   $I_{th}$ [mA]   \\ \hline
 \center
   \includegraphics[scale=0.30]{plot980/plot_all.png}
   \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980\,nm w różnych temperaturach. } 
+  \caption{Charakterystyki wyjściowe lasera krawędziowego 980\,nm w różnych temperaturach. } 
 \end{figure}
 
 
