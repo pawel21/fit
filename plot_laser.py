@@ -23,11 +23,10 @@ class PlotLaser:
         self.current, self.voltage, self.power = np.loadtxt(self.path_to_data, unpack=True, skiprows=1)
 
     def plot_ivl(self):
-        self.ax1.plot(self.current, self.power, marker='o', color='red', ls='none')
-        self.ax2.plot(self.current, self.voltage, marker='o', color='green', ls='none')
+        self.ax1.plot(self.current*1000, self.power*1000, marker='o', color='red', ls='none')
+        self.ax2.plot(self.current*1000, self.voltage, marker='o', color='green', ls='none')
 
         self._set_label()
-        self._set_ax1_ticks()
         self._set_ticks_color()
         self._set_limit()
 
@@ -39,12 +38,6 @@ class PlotLaser:
         self.ax1.set_ylabel('Moc wyjściowa [mW]', color='r')
         self.ax2.set_ylabel('Napięcie [V]', color='g')
 
-    def _set_ax1_ticks(self):
-        self.ax1.set_xticks(list(np.linspace(0., max(self.current), 10)))
-        self.ax1.set_xticklabels(np.linspace(0., (max(self.current*1000)), 10, dtype=int))
-        self.ax1.set_yticks(list(np.linspace(0, 0.010, 11)))
-        self.ax1.set_yticklabels(list(np.linspace(0, 10, 11)))
-
     def _set_ticks_color(self):
         for ax1_y_tick in self.ax1.get_yticklabels():
             ax1_y_tick.set_color("red")
@@ -52,9 +45,9 @@ class PlotLaser:
             ax2_y_tick.set_color("green")
 
     def _set_limit(self):
-        self.ax1.set_xlim([0, max(self.current)+ 0.01 * max(self.current)])
-        self.ax2.set_xlim([0, max(self.current + 0.01 * max(self.current))])
-        self.ax1.set_ylim([0, max(self.power) + 0.1 * max(self.power)])
+        self.ax1.set_xlim([0, max(self.current*1000)+ 0.01 * max(self.current*1000)])
+        self.ax2.set_xlim([0, max(self.current*1000 + 0.01 * max(self.current*1000))])
+        self.ax1.set_ylim([0, max(self.power*1000) + 0.1 * max(self.power*1000)])
         self.ax2.set_ylim([0, max(self.voltage) + 0.1 * max(self.voltage)])
 
     def _add_info(self):
@@ -63,19 +56,15 @@ class PlotLaser:
     def plot_power(self):
         fig, ax3 = plt.subplots()
         power_in = self.current * self.voltage
-        ax3.plot(power_in, self.power, 'bo')
+        ax3.plot(power_in*1000, self.power*1000, 'bo')
         ax3.set_xlabel("Moc wejściowa [mW]")
         ax3.set_ylabel("Moc wyjściowa [mW]")
 
-        ax3.set_xlim([0, max(power_in) + 0.1 * max(power_in)])
-        ax3.set_ylim([0, max(self.power) + 0.1 * max(self.power)])
-        ax3.set_xticks(list(np.linspace(0., 0.045, 10)))
-        ax3.set_xticklabels(np.linspace(0., 45, 10))
-        ax3.set_yticks(list(np.linspace(0, 0.007, 8)))
-        ax3.set_yticklabels(list(np.linspace(0, 7, 8)))
+        ax3.set_xlim([0, max(power_in*1000) + 0.1 * max(power_in*1000)])
+        ax3.set_ylim([0, max(self.power*1000) + 0.1 * max(self.power*1000)])
         plt.grid(True)
         plt.show()
 
-pl = PlotLaser("data635/data_635nm_50.txt", 10)
-pl.plot_ivl()
-#pl.plot_power()
+pl = PlotLaser("data635/data_635nm_20.txt", 10)
+#pl.plot_ivl()
+pl.plot_power()

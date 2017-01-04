@@ -36,7 +36,7 @@
  
 \lstset{style=mystyle}
 %Information to be included in the title page:
-\title{Programowanie sprzętu w laboratorium fotoniki}
+\title{Wykorzystanie oprogramowania open source do sterowania pomiarami charakterystyk elektryczno-optycznych laserów półprzewodnikowych.}
 \author{Paweł Gliwny}
 \institute{Instytut Fizyki \\ Politechnika Łódzka}
 \date{2017}
@@ -48,13 +48,13 @@
 
 \frame{\titlepage}
 
-\begin{frame}
-\begin{Large}
-\begin{center}
-,,Mówca powinien wyczerpać temat, ale w żadnym razie nie powinien wyczerpać publiczności" --- Winston Churchill
-\end{center}
-\end{Large}
-\end{frame}
+%\begin{frame}
+%\begin{Large}
+%\begin{center}
+%,,Mówca powinien wyczerpać temat, ale w żadnym razie nie powinien wyczerpać publiczności" --- Winston Churchill
+%\end{center}
+%\end{Large}
+%\end{frame}
 
 \begin{frame}
 \frametitle{Plan}
@@ -62,6 +62,7 @@
 \item Cel pracy.
 \item Układ pomiarowy.
 \item Eksperyment.
+\item Podsumowanie.
 \end{enumerate}
 \end{frame}
 
@@ -91,6 +92,25 @@ Układ pomiarowy.
 \end{frame}
 
 \begin{frame}
+\frametitle{Open source}
+{\bf{Open source}} --- odłam ruchu wolnego oprogramowania (ang. \textit{free software}). \\
+{\bf{Free software}} ---  termin określający oprogramowanie, które może być uruchamiane, kopiowane, rozpowszechniane, analizowane oraz zmieniane i poprawiane przez  użytkowników. 
+\end{frame}
+
+\begin{frame}
+\frametitle{Open source --- przykłady}
+\begin{itemize}
+\item Linux 
+\item Python
+\end{itemize}
+
+\begin{figure}
+%\hspace{4cm}  \vspace{1cm}
+   \includegraphics[width=0.30\textwidth,natwidth=69,natheight=87]{tux-python.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
 \frametitle{Układ pomiarowy}
 \begin{itemize}
 \item Zasilacza diód laserowych firmy Thorlabs model LDC4005 
@@ -114,11 +134,6 @@ Układ pomiarowy.
 \end{figure}
 \end{frame}
 
-
-\begin{frame}
-\frametitle{Programowane urządzenia pomiarowe}
-Electronic test equipment --- są używane w celu przechywywania sygnałów oraz podawanie ich do sprzętu
-\end{frame}
 
 \begin{frame}
 \frametitle{Komunikacja z urządzenimi}
@@ -170,7 +185,16 @@ Interfejs pomiędzy programem użytkownika a jądrem Linux.
 \end{frame}
 
 \begin{frame}
-\frametitle{Gui}
+\frametitle{Skrypt}
+\begin{itemize}
+\item $\mathtt{sudo}$ $\mathtt{su}$
+\item $\mathtt{python3}$ measure.py -nr 150 -sc 0 -ec 25 -fn data.txt
+
+\end{itemize}
+\end{frame}
+
+\begin{frame}
+\frametitle{Program okienkowy do pomiarów}
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
    \includegraphics[width=0.85\textwidth,natwidth=69,natheight=87]{gui.png}
@@ -210,6 +234,9 @@ I_{\mathtt{th}} = -\frac{b}{a}
 \begin{equation*}
 \Delta I_{th} = \left\lvert \frac{\partial I_{th}}{\partial a} \right\rvert \cdot \Delta a + \left\lvert \frac{\partial I_{th}}{\partial b} \right\rvert \cdot \Delta b
 \end{equation*}
+\begin{equation*}
+\Delta I_{th} = \left\lvert -\frac{b}{a^2} \right\rvert \cdot \Delta a + \left\lvert -\frac{1}{a} \right\rvert \cdot \Delta b 
+\end{equation*}
 
 \end{frame}
 
@@ -219,22 +246,42 @@ I_{\mathtt{th}} = -\frac{b}{a}
 \begin{equation*}
 I_{th} = I_0 \exp \left( \frac{T}{T_0} \right)
 \end{equation*}
-
 \begin{equation*}
-\ln (I_{th}) =  \ln \left( \frac{T}{T_0} \right) + \ln(I_{0})
+\ln (I_{th}) =  \ln \frac{T}{T_0}  + \ln(I_{0})
+\end{equation*}
+\begin{equation*}
+y = a \cdot T + b
 \end{equation*}
 
 \begin{equation*}
-y = a \cdot x + b
+y = \ln(I_{th})
 \end{equation*}
-
 \begin{equation*}
 a = \frac{1}{T_0} \Rightarrow T_0 = \frac{1}{a}
 \end{equation*}
-
 \begin{equation*}
 b = \ln(I_0) \Rightarrow I_0 = e^b
 \end{equation*}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prąd progowy   w zależności od temperatury--- wyznaczenie błędów pomiarowych}
+\center
+\begin{equation*}
+T_0 = \frac{1}{a}
+\end{equation*}
+\begin{equation*}
+I_0 = e^b
+\end{equation*}
+
+
+\begin{equation*}
+\Delta T_0 = \left\lvert \frac{\partial T_{0}}{\partial a} \right\rvert \cdot \Delta a = \left\lvert -\frac{1}{a^2} \right\rvert \cdot \Delta a
+\end{equation*}
+\begin{equation*}
+\Delta I_0 = \left\lvert \frac{\partial I_{0}}{\partial b} \right\rvert \cdot \Delta b = | b \mathtt{e}^b | \cdot \Delta b
+\end{equation*}
+
 \end{frame}
 
 \begin{frame}
@@ -252,17 +299,7 @@ P_{in} = I \cdot U
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{plot_all.png}
-\end{figure}
-
-\end{frame}
-
-
-\begin{frame}
-\center
-\begin{figure}
-%\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{temp_10_power.png}
+   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{635/plot_ivl_25.png}
 \end{figure}
 
 \end{frame}
@@ -271,110 +308,112 @@ P_{in} = I \cdot U
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{temp_10_IVL.png}
+   \includegraphics[width=1.0\textwidth,natwidth=69,natheight=87]{635/plot_all.png}
 \end{figure}
-
 \end{frame}
 
 
+
 \begin{frame}
-\frametitle{Laser 980\,nm w temperaturze 283\,K}
+\frametitle{Laser 635\,nm w temperaturze 293\,K}
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{temp_10_fit.png}
+   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{635/plot_i_th_20.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Laser 980\,nm w temperaturze 323\,K}
+\frametitle{Laser 980\,nm w temperaturze 308\,K}
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{temp_50_fit.png}
+   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{635/plot_i_th_35.png}
 \end{figure}
 \end{frame}
 
+
 \begin{frame}
-\frametitle{Laser 980\,nm w temperaturze 363\,K}
+\frametitle{Wykres liniowy prądu progowego od temperatury}
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{temp_90_fit.png}
+   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{635/plot_lin_i_th.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}
+\frametitle{Wykres logarytmu z prądu progowego od temperatury}
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{fit_i_th.png}
+   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{635/fit_i_0.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Laser krawędziowy 980\,nm}
+\frametitle{Laser krawędziowy 635\,nm --- wyznaczone parametry}
 \begin{itemize}
-\item $T_0 = (89.9 \pm 0.1)$\,K
-\item $I_0 = (0.04 \pm 0.01)$\,mA
+\item $T_0 = (43.2 \pm 0.8)$\,K
+\item $I_0 = (0.03 \pm 0.01)$\,mA
 \end{itemize}
 \begin{equation*}
-I_{th} = 0.04 \exp \left( \frac{T}{89.9} \right)
+I_{th} = 0.03 \cdot \exp \left( \frac{T}{43.2} \right)
 \end{equation*}
 \end{frame}
 
 \begin{frame}
-\frametitle{Laser krawędziowy 980\,nm}
+\frametitle{Laser krawędziowy 635\,nm --- wykres}
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{plot_i_th.png}
+   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{635/plot_i_th_temp.png}
 \end{figure}
 \end{frame}
 
 \begin{frame}
-\frametitle{Laser VCSEL 850\,nm w temperaturze 283\,K}
+\frametitle{Laser krawędziowy 635\,nm --- wykres mocy wejściowej do wyjściowej}
 \center
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{vcsel850/temp_10_fit.png}
+   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{635/plot_power_20.png}
 \end{figure}
+
 \end{frame}
 
 \begin{frame}
-\frametitle{Laser VCSEL 850\,nm w temperaturze 333\,K}
-\center
-\begin{figure}
-%\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{vcsel850/temp_60_fit.png}
-\end{figure}
+\begin{Huge}
+\begin{center}
+Podsumowanie
+\end{center}
+\end{Huge}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Co dalej?}
+\begin{itemize}
+\item Wykoanie analiz innych laserów.
+\item Rozbudowanie eksperymentu.
+\end{itemize}
 \end{frame}
 
 \begin{frame}
-\frametitle{Laser VCSEL 850\,nm w temperaturze 363\,K}
-\center
-\begin{figure}
-%\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{vcsel850/temp_90_fit.png}
-\end{figure}
+\begin{Huge}
+\begin{center}
+Dziękueje za uwagę
+\end{center}
+\end{Huge}
 \end{frame}
 
 \begin{frame}
-\frametitle{Laser VCSEL 850}
-\center
-\begin{figure}
-%\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{vcsel850/plot_lin_i_th.png}
-\end{figure}
+\begin{Huge}
+\begin{center}
+Pytania?
+\end{center}
+\end{Huge}
 \end{frame}
 
-\begin{frame}
-\frametitle{Laser VCSEL 850}
-\center
-\begin{figure}
-%\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=1.10\textwidth,natwidth=69,natheight=87]{vcsel850/plot_log_i_th.png}
-\end{figure}
-\end{frame}
+
 
 \end{document}

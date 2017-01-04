@@ -95,17 +95,24 @@ class PlotThresholdCurrentTemp:
 def temp_celsjusz_to_kelvin(temp_c):
     return temp_c + 273
 
-temp_C = np.arange(10, 95, 10)
-temp_K = list(map(temp_celsjusz_to_kelvin, temp_C))
-I_0_vscel850 = [1.7, 1.6, 1.6, 1.6, 1.7, 1.9, 2.1, 2.3, 2.7]
-I_0_980 = [1.0, 1.0, 1.1, 1.2, 1.3, 1.5, 1.7, 2.0, 2.4]
-
-pl_vscel850 = PlotThresholdCurrentTemp(I_0_vscel850, temp_K)
-
-pl_vscel850.plot_temp_log_i_th
-pl_vscel850.plot_linear_temp_i_th
+# temp_C = np.arange(10, 95, 10)
+# temp_K = list(map(temp_celsjusz_to_kelvin, temp_C))
+# I_0_vscel850 = [1.7, 1.6, 1.6, 1.6, 1.7, 1.9, 2.1, 2.3, 2.7]
+# I_0_980 = [1.0, 1.0, 1.1, 1.2, 1.3, 1.5, 1.7, 2.0, 2.4]
+#
+# pl_vscel850 = PlotThresholdCurrentTemp(I_0_vscel850, temp_K)
+#
+# pl_vscel850.plot_temp_log_i_th
+# pl_vscel850.plot_linear_temp_i_th
 
 #pl_980 = PlotThresholdCurrentTemp(I_0_980, temp_K)
 #pl_980.plot_linear_temp_i_th
 #pl_980.plot_temp_log_i_th
 #pl_980.fit_temp_log_i_th(x_text=340, y_text=0.2, dy_text=0.10)
+
+temp_635 = np.linspace(20, 40, 5) + 273
+I_0_635 = [22.4, 25.0, 28.1, 31.3, 35.7]
+
+pl_635 = PlotThresholdCurrentTemp(I_0_635, temp_635)
+#pl_635.plot_linear_temp_i_th
+pl_635.fit_temp_log_i_th(x_text=310, y_text=3.2, dy_text=0.10)

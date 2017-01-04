@@ -14,7 +14,7 @@ plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.serif'] = 'Computer Modern Roman'
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
-plt.rcParams.update({'font.size': 25})
+plt.rcParams.update({'font.size': 28})
 plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
 
@@ -47,7 +47,7 @@ class Fit:
         self._fit_plot(start_to_fit, end_to_fit)
         print(u"a = %s \u00B1 %s" %(self.a, self.da))
         print(u"b = %s \u00B1 %s" % (self.b, self.db))
-        print(u"I_0 = (%.10f \u00B1 %.10f) mA" %(self.I_0*1000, self.dI_0*1000))
+        print(u"I_0 = (%.10f \u00B1 %.10f) mA" %(self.I_0, self.dI_0))
         return self.a, self.da, self.b, self.db, self.I_0, self.dI_0
 
     def get_fit_parameters(self):
@@ -57,9 +57,9 @@ class Fit:
         x_to_fit = []
         y_to_fit = []
         for i in range(0, len(self.current)):
-            if self.current[i] > start_to_fit and self.current[i] < end_to_fit:
-                x_to_fit.append(self.current[i])
-                y_to_fit.append(self.power[i])
+            if self.current[i]*1000 > start_to_fit and self.current[i]*1000 < end_to_fit:
+                x_to_fit.append(self.current[i]*1000)
+                y_to_fit.append(self.power[i]*1000)
         np.savetxt('data_to_fit.txt', np.c_[x_to_fit, y_to_fit], fmt='%1.12e', header=' J [A] \t V \t L [w] ')
         return x_to_fit, y_to_fit
 
@@ -78,23 +78,19 @@ class Fit:
 
     def _fit_plot(self, start_to_fit, end_to_fit):
         fig, ax1 = plt.subplots()
-        ax1.plot(self.current, self.power, 'ro', markersize=4)
+        ax1.plot(self.current*1000, self.power*1000, 'ro', markersize=4)
+        ax1.set_xlim([0, max(self.current*1000)])
+        ax1.set_ylim([0, max(self.power*1000)])
         x = np.linspace(start_to_fit, end_to_fit, 100)
         y = self.a *x + self.b
         ax1.axhline(0., ls='-', color='k')
         ax1.plot(x, y, 'b-', linewidth=2)
-        ax1.set_xticks(list(np.linspace(0., max(self.current), 10)))
-        ax1.set_xticklabels(np.linspace(0., (max(self.current * 1000)), 10, dtype=int))
-        #ax1.set_xticks(list(np.linspace(0., 0.02, 21)))
-        #ax1.set_xticklabels(np.linspace(0., 20., 21))
-        ax1.set_yticks(list(np.linspace(0, 0.007, 8)))
-        ax1.set_yticklabels(list(np.linspace(0, 7, 8)))
-        plt.text(0.0018, -0.0004, "$I_{th}$ = (%.2f $\pm$ %.2f)mA" % (float(self.I_0*1000), self.dI_0*1000 + 0.01))
+        plt.text(start_to_fit + 0.1*start_to_fit, 0.1, "$I_{th}$ = (%.1f $\pm$ %.1f)mA" % (float(self.I_0), self.dI_0 + 0.1))
         ax1.set_xlabel(u"prąd [mA]")
         ax1.set_ylabel(u"moc wyjściowa [mW]")
         plt.grid(True)
         plt.show()
 
 
-fit = Fit("data635/data_635nm_20.txt", 10)
-fit.do_fit(0.022, 0.025)
+fit = Fit("data635/data_635nm_35.txt", 10)
+fit.do_fit(31.5, 35)
