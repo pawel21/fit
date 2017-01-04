@@ -77,7 +77,8 @@ Cel pracy
 \frametitle{Cel pracy}
 \begin{itemize}
 \item Stworzenie programu do wykonywania charakterystyk laserów półprzewodnikowych.
-\item Wykonanie przykładowej charakterystyki
+\item Stworzenie skryptów do analizy charakterystyk.
+\item Zbadanie 4 laserów półprzewodnikowcyh (2 krawędziowe i 2 VCSEL)
 \end{itemize}
 \end{frame}
 
@@ -95,12 +96,12 @@ Układ pomiarowy.
 \item Zasilacza diód laserowych firmy Thorlabs model LDC4005 
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=0.35\textwidth,natwidth=69,natheight=87]{ldc4005.jpg}
+   \includegraphics[width=0.30\textwidth,natwidth=69,natheight=87]{ldc4005.jpg}
 \end{figure}
 \item Miernik mocy firmy Thorlas firmy Thorlabs model PM100
 \begin{figure}
 %\hspace{4cm}  \vspace{1cm}
-   \includegraphics[width=0.35\textwidth,natwidth=69,natheight=87]{pm100.jpg}
+   \includegraphics[width=0.30\textwidth,natwidth=69,natheight=87]{pm100.jpg}
 \end{figure}
 \end{itemize}
 \end{frame}
@@ -191,6 +192,25 @@ Prąd progowy (z ang. \textit{threshold current}) określa wartość prądu przy
 %\hspace{4cm}  \vspace{1cm}
    \includegraphics[width=0.65\textwidth,natwidth=69,natheight=87]{slope.png}
 \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prąd progowy --- wykres}
+\begin{figure}
+\includegraphics[scale=0.20]{plot_theory.png}
+\end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Prąd progowy}
+\center
+\begin{equation*}
+I_{\mathtt{th}} = -\frac{b}{a}
+\end{equation*}
+\begin{equation*}
+\Delta I_{th} = \left\lvert \frac{\partial I_{th}}{\partial a} \right\rvert \cdot \Delta a + \left\lvert \frac{\partial I_{th}}{\partial b} \right\rvert \cdot \Delta b
+\end{equation*}
+
 \end{frame}
 
 \begin{frame}

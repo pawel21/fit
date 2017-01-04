@@ -5,10 +5,12 @@ matplotlib.use('qt5Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-plt.rcParams["font.family"] = "Arial"
+plt.rcParams['font.family'] = 'serif'
+plt.rcParams['font.serif'] = 'Computer Modern Roman'
+plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
-plt.rcParams.update({'font.size': 25})
+plt.rcParams.update({'font.size': 28})
+plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
 
 class PlotLaser:
@@ -38,10 +40,10 @@ class PlotLaser:
         self.ax2.set_ylabel('Napięcie [V]', color='g')
 
     def _set_ax1_ticks(self):
-        self.ax1.set_xticks(list(np.linspace(0., 0.02, 5)))
-        self.ax1.set_xticklabels(np.linspace(0., 20, 5, dtype=int))
-        self.ax1.set_yticks(list(np.linspace(0, 0.007, 8)))
-        self.ax1.set_yticklabels(list(np.linspace(0, 7, 8)))
+        self.ax1.set_xticks(list(np.linspace(0., max(self.current), 10)))
+        self.ax1.set_xticklabels(np.linspace(0., (max(self.current*1000)), 10, dtype=int))
+        self.ax1.set_yticks(list(np.linspace(0, 0.010, 11)))
+        self.ax1.set_yticklabels(list(np.linspace(0, 10, 11)))
 
     def _set_ticks_color(self):
         for ax1_y_tick in self.ax1.get_yticklabels():
@@ -50,6 +52,8 @@ class PlotLaser:
             ax2_y_tick.set_color("green")
 
     def _set_limit(self):
+        self.ax1.set_xlim([0, max(self.current)+ 0.01 * max(self.current)])
+        self.ax2.set_xlim([0, max(self.current + 0.01 * max(self.current))])
         self.ax1.set_ylim([0, max(self.power) + 0.1 * max(self.power)])
         self.ax2.set_ylim([0, max(self.voltage) + 0.1 * max(self.voltage)])
 
@@ -72,6 +76,6 @@ class PlotLaser:
         plt.grid(True)
         plt.show()
 
-pl = PlotLaser("dataVcsel850/temp_10.txt", 10)
+pl = PlotLaser("data635/data_635nm_50.txt", 10)
 pl.plot_ivl()
 #pl.plot_power()

@@ -10,10 +10,6 @@ from sympy.solvers import solve
 from sympy import Symbol
 
 
-#matplotlib.rc('font', family='Arial')
-#matplotlib.rcParams['text.latex.unicode'] = True
-#matplotlib.rc('font',**{'family':'sans-serif','sans-serif':['Helvetica']})
-#plt.rcParams["font.family"] = "Arial"
 plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.serif'] = 'Computer Modern Roman'
 plt.rcParams['text.usetex'] = True
@@ -83,12 +79,14 @@ class Fit:
     def _fit_plot(self, start_to_fit, end_to_fit):
         fig, ax1 = plt.subplots()
         ax1.plot(self.current, self.power, 'ro', markersize=4)
-        x = np.linspace(0, end_to_fit, 100)
+        x = np.linspace(start_to_fit, end_to_fit, 100)
         y = self.a *x + self.b
         ax1.axhline(0., ls='-', color='k')
         ax1.plot(x, y, 'b-', linewidth=2)
-        ax1.set_xticks(list(np.linspace(0., 0.02, 21)))
-        ax1.set_xticklabels(np.linspace(0., 20., 21))
+        ax1.set_xticks(list(np.linspace(0., max(self.current), 10)))
+        ax1.set_xticklabels(np.linspace(0., (max(self.current * 1000)), 10, dtype=int))
+        #ax1.set_xticks(list(np.linspace(0., 0.02, 21)))
+        #ax1.set_xticklabels(np.linspace(0., 20., 21))
         ax1.set_yticks(list(np.linspace(0, 0.007, 8)))
         ax1.set_yticklabels(list(np.linspace(0, 7, 8)))
         plt.text(0.0018, -0.0004, "$I_{th}$ = (%.2f $\pm$ %.2f)mA" % (float(self.I_0*1000), self.dI_0*1000 + 0.01))
@@ -98,5 +96,5 @@ class Fit:
         plt.show()
 
 
-fit = Fit("dataVcsel850/temp_10.txt", 10)
-fit.do_fit(0.0016, 0.007)
+fit = Fit("data635/data_635nm_20.txt", 10)
+fit.do_fit(0.022, 0.025)

@@ -9,6 +9,8 @@ from scipy.optimize import curve_fit
 from sympy.solvers import solve
 from sympy import Symbol
 
+plt.rcParams['font.family'] = 'serif'
+plt.rcParams['font.serif'] = 'Computer Modern Roman'
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 25})
@@ -34,7 +36,7 @@ ax1.set_ylabel("moc wyjściowa [mW], $P$")
 
 ax1.text(0.003, 0.0008, '$P = a \cdot I + b$', verticalalignment='bottom', horizontalalignment='right',
         color='red', fontsize=25)
-ax1.text(0.0027, -0.00055, r"$I_0 = - \frac{b}{a}$", verticalalignment='bottom', horizontalalignment='right',
+ax1.text(0.0027, -0.00055, r"$I_{th} = - \frac{b}{a}$", verticalalignment='bottom', horizontalalignment='right',
         color='red', fontsize=25)
 ax1.text(0.0078, 0.0026, r"$T_1", verticalalignment='bottom', horizontalalignment='right',
          color='black', fontsize=25)
