@@ -1,24 +1,28 @@
 # -*- coding: utf-8 -*-
 from __future__ import unicode_literals
 from __future__ import division
-
 import matplotlib
+matplotlib.use('qt5Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
-matplotlib.use('qt5Agg')
-matplotlib.rc('font', family='Arial')
-matplotlib.rcParams['text.latex.unicode'] = True
-plt.rcParams["font.family"] = "Arial"
+plt.rcParams['font.family'] = 'serif'
+plt.rcParams['font.serif'] = 'Computer Modern Roman'
+plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
-plt.rcParams.update({'font.size': 25})
+plt.rcParams.update({'font.size': 28})
+plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
 
 class PlotThresholdCurrentTemp:
-    def __init__(self, threshold_current, temp):
+    def __init__(self, threshold_current, temp, **kwargs):
         self.threshold_current = threshold_current
         self.temp = temp
+        if kwargs is not None:
+            for key in kwargs:
+                if key == 'y_err':
+                    self.y_err = kwargs['y_err']
 
     def __repr__(self):
         return 'temperature [K]: %s\nthreshold current [mA]: %s ' %(self.temp, self.threshold_current)
@@ -31,6 +35,17 @@ class PlotThresholdCurrentTemp:
         ax1.set_ylabel("Prąd progowy [mA], $I_{th}$")
         ax1.set_ylim([min(self.threshold_current)-0.1*min(self.threshold_current),
                       max(self.threshold_current)+0.1 * max(self.threshold_current)])
+        plt.grid(True)
+        plt.show()
+
+    @property
+    def plot_linear_temp_i_th_with_err(self):
+        fig, ax1 = plt.subplots()
+        ax1.errorbar(self.temp, self.threshold_current, yerr=self.y_err, fmt='o', color="red")
+        ax1.set_xlabel("Temperatura [K], $T$")
+        ax1.set_ylabel("Prąd progowy [mA], $I_{th}$")
+        ax1.set_ylim([min(self.threshold_current) - 0.1 * min(self.threshold_current),
+                      max(self.threshold_current) + 0.1 * max(self.threshold_current)])
         plt.grid(True)
         plt.show()
 
@@ -113,6 +128,14 @@ def temp_celsjusz_to_kelvin(temp_c):
 temp_635 = np.linspace(20, 40, 5) + 273
 I_0_635 = [22.4, 25.0, 28.1, 31.3, 35.7]
 
-pl_635 = PlotThresholdCurrentTemp(I_0_635, temp_635)
-#pl_635.plot_linear_temp_i_th
-pl_635.fit_temp_log_i_th(x_text=310, y_text=3.2, dy_text=0.10)
+#pl_635 = PlotThresholdCurrentTemp(I_0_635, temp_635, y_err=[0.3, 0.2, 0.3, 0.6, 0.9])
+#pl_635.plot_linear_temp_i_th_with_err
+#pl_635.fit_temp_log_i_th(x_text=310, y_text=3.2, dy_text=0.10)
+
+temp_850 = np.linspace(10, 90, 17) + 273
+I_0_850 = [1.70, 1.67, 1.60, 1.55, 1.59, 1.63, 1.65, 1.68, 1.73, 1.83, 1.89, 2.00, 2.14, 2.24, 2.38, 2.57, 2.74]
+error_I_0_850 = [0.03, 0.03, 0.03, 0.04, 0.03, 0.03, 0.03, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.05, 0.05, 0.05, 0.07]
+pl_850 = PlotThresholdCurrentTemp(I_0_850, temp_850, y_err=error_I_0_850)
+pl_850.plot_linear_temp_i_th_with_err
+
+# pl_850.plot_temp_log_i_th

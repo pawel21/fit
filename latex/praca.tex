@@ -224,16 +224,16 @@ Wartości parametrów $I_0$ oraz $T_0$ możemy wyznaczyć na podstawie charakter
 emisyjnych lasera w różnych temperaturach $T$. \\
 Przez zlogarytmowanie wartości prądu oraz podstawienie otrzymujemy:
 \begin{equation}
-\ln(I_{th}) =   \ln \left(\frac{T}{T_0} \right) + \ln(I_0)
-\end{equation}
-\begin{equation}
-I_{th} = \frac{T}{T_0} + I_0
+\ln(I_{th}) =    \frac{T}{T_0}  + \ln(I_0)
 \end{equation}
 Mając wartości prądu progowego w danej temperaturze  można do nich dopasować funkcje liniową w postaci:
 \begin{equation}
-y = a \cdot x + b
+y = a \cdot T + b
 \end{equation}
 Gdzie:
+\begin{equation}
+y = \ln(I_{th})
+\end{equation}
 \begin{equation}
 a = \frac{1}{T_0}
 \end{equation}
@@ -304,391 +304,59 @@ $T$ [K] &   $I_{th}$ [mA]   \\ \hline
   \caption{Charakterystyki wyjściowe lasera krawędziowego 980\,nm w różnych temperaturach. } 
 \end{figure}
 
-
-\newpage
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_10_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980\,nm w temperaturze 283\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_10_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 283\,K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_10_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980\,nm w temperaturze 283\,K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_20_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 293\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_30_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 303\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_40_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 313\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_50_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 323\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_60_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 333\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_70_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 343\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_80_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 353\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_90_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980\,nm z obliczonym prądem progowym $I_{th}$  w temperaturze 363\,K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/fit_i_th.png}
-  \label{rys1}
-  \caption{Wykres zależności prądu progowego od temperatury.} 
-\end{figure}
-
-
-
-
-\iffalse
-I don't want this to happen
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_20_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 293 K.} 
-\end{figure}
-
-
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_20_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 293 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_20_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 293 K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_30_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 303 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_30_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 303 K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_30_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 303 K.} 
-\end{figure}
-
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_40_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 313 K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_40_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 313 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_40_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 313 K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_50_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 323 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_50_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 323 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_50_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 323 K.}
-\end{figure}
-  
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_60_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 333 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_60_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 333 K.} 
-\end{figure}
-
-\clearpage
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_60_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 333 K.} 
-\end{figure}
-
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_70_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 343 K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_70_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 343 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_70_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 343 K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_80_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 353 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_80_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 353 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_80_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 353 K.} 
-\end{figure}
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_90_IVL.png}
-  \label{rys1}
-  \caption{Charakterystyka lasera krawędziowego 980 nm w temperaturze 363 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_90_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera kraędziowego 980 nm z obliczonym prądem progowym $I_0$ oraz przyrostową sprawnością różniczkową $\eta$ w temperaturze 363 K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/temp_90_power.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy wyjściowej do wejściowej lasera krawędziowego 980 nm w temperaturze 363 K.} 
-\end{figure}
-
-
-
-
-
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot980/fit_i_th.png}
-  \label{rys1}
-  \caption{Wykres zależności prądu progowego od temperatury.} 
-\end{figure}
-
-\newpage
-\section{Laser krawędziowy 635 nm}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot635/plot_all.png}
-  \label{rys1}
-  \caption{Wykres zależności prądu progowego od temperatury.} 
-\end{figure}
-
-
-\fi
-
-
-\newpage
-a
-\newpage
 \subsection{Laser VCSEL 850\,nm}
-Badanie lasera VCSEL
-\begin{figure}[H]
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_10_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 283\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_20_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 293\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_30_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 303\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_40_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 313\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_50_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 323\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_60_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 333\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_70_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 343\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_80_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 353\,K.} 
-\end{figure}
-
-\begin{figure}
-\center
-  \includegraphics[scale=0.30]{plot_vcsel850/temp_90_fit.png}
-  \label{rys1}
-  \caption{Charakterystyka mocy lasera VCSEL 850\,nm z obliczonym prądem progowym $I_{th}$ w temperaturze 363\,K.} 
-\end{figure}
-
+Laser 850
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot_vcsel850/plot_lin_i_th.png}
   \label{rys1}
-  \caption{Wykres liniowy zależności prądu progowego od temperatury.} 
+  \caption{Wykres prądu progowego w zależności od temperatury dla lasera VCSEL 850 \,nm.} 
+\end{figure}
+\newpage
+\subsection{Laser krawędziowy 635\,nm} 
+\begin{table}
+\begin{center}
+\caption{ Wyznaczone wartośc prądu progowego $I_0$ w różnych temperaturach $T$ dla lasera krawędziowego 635\,nm. }
+\begin{tabular}{ | C{3.5cm}|  C{3.5cm} | C{3.5cm} | C{3.5cm}|}
+\hline
+$T$ [K] &   $I_{th}$ [mA]   \\ \hline
+293      &   22.4 $\pm$ 0.3  \\ \hline
+298      &   25.0 $\pm$ 0.2  \\ \hline
+303      &   28.1 $\pm$ 0.3  \\ \hline
+308      &   31.3 $\pm$ 0.6  \\ \hline
+313      &   35.7 $\pm$ 0.9  \\ \hline
+\end{tabular}
+\end{center}
+\end{table}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot635/plot_ivl_20.png}
+  \label{rys1}
+  \caption{Charakterystyka wyjściowa lasera krawędziowego 635 \,nm.} 
 \end{figure}
 
 \begin{figure}
 \center
-  \includegraphics[scale=0.30]{plot_vcsel850/plot_log_i_th.png}
+  \includegraphics[scale=0.30]{plot635/plot_3_i_th.png}
   \label{rys1}
-  \caption{Wykres zależności logarytmu z prądu progowego od temperatury.} 
+  \caption{Charakterystyka wyjściowej lasera krawędziowego 635 \,nm wraz z wyznaczonym prądem progowym dla różnych temperatur.} 
 \end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot635/plot_lin_i_th.png}
+  \label{rys1}
+  \caption{Wykres logarytmu z prądu progowego w zależności od temperatury chłodnicy wraz z wyznaczonymi parametrami $I_0$ i $T_0$ dla lasera krawędziowego 635 \,nm.} 
+\end{figure}
+
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot635/fit_i_0.png}
+  \label{rys1}
+  \caption{Wykres logarytmu z prądu progowego w zależności od temperatury wraz z wyznaczonymi parametrami $I_0$ i $T_0$ dla lasera krawędziowego 635 \,nm.} 
+\end{figure}
+
+
 
 \end{document}

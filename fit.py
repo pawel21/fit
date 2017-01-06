@@ -44,10 +44,10 @@ class Fit:
         self.db = error[1]
         self.I_0 = self._find_I0()
         self.dI_0 = self._find_dI0()
-        self._fit_plot(start_to_fit, end_to_fit)
-        print(u"a = %s \u00B1 %s" %(self.a, self.da))
+        print(u"a = %s \u00B1 %s" % (self.a, self.da))
         print(u"b = %s \u00B1 %s" % (self.b, self.db))
-        print(u"I_0 = (%.10f \u00B1 %.10f) mA" %(self.I_0, self.dI_0))
+        print(u"I_0 = (%.10f \u00B1 %.10f) mA" % (self.I_0, self.dI_0))
+        self._fit_plot(start_to_fit, end_to_fit)
         return self.a, self.da, self.b, self.db, self.I_0, self.dI_0
 
     def get_fit_parameters(self):
@@ -85,12 +85,12 @@ class Fit:
         y = self.a *x + self.b
         ax1.axhline(0., ls='-', color='k')
         ax1.plot(x, y, 'b-', linewidth=2)
-        plt.text(start_to_fit + 0.1*start_to_fit, 0.1, "$I_{th}$ = (%.1f $\pm$ %.1f)mA" % (float(self.I_0), self.dI_0 + 0.1))
+        plt.text(start_to_fit + 0.6*start_to_fit, 0.1, "$I_{th}$ = (%.2f $\pm$ %.2f)mA" % (float(self.I_0), self.dI_0 + 0.01))
         ax1.set_xlabel(u"prąd [mA]")
         ax1.set_ylabel(u"moc wyjściowa [mW]")
         plt.grid(True)
         plt.show()
 
 
-fit = Fit("data635/data_635nm_35.txt", 10)
-fit.do_fit(31.5, 35)
+fit = Fit("data635/data_635nm_40.txt", 10)
+fit.do_fit(35.7, 39)

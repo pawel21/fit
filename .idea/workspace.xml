@@ -2,24 +2,29 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854a8d13-023d-48e8-a20c-57f3d4df5f8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data635/plot_i_th.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_20.png" afterPath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_20.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_25.png" afterPath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_25.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_30.png" afterPath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_30.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_35.png" afterPath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_35.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_40.png" afterPath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_40.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_45.png" afterPath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_45.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_50.png" afterPath="$PROJECT_DIR$/Prezentacja/635/plot_ivl_50.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/prezentacja.pdf" afterPath="$PROJECT_DIR$/Prezentacja/prezentacja.pdf" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/prezentacja.synctex.gz" afterPath="$PROJECT_DIR$/Prezentacja/prezentacja.synctex.gz" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data635/plot_3_i_th.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/latex/plot635/plot_all.png" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data635/plot_all.png" afterPath="$PROJECT_DIR$/data635/plot_all.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/plot_lin_i_th.png" afterPath="$PROJECT_DIR$/dataVcsel850/plot_lin_i_th.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/plot_log_i_th.png" afterPath="$PROJECT_DIR$/dataVcsel850/plot_log_i_th.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_10_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_10_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_20_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_20_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_40_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_40_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_50_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_50_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_60_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_60_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_70_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_70_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_80_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_80_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/temp_90_fit.png" afterPath="$PROJECT_DIR$/dataVcsel850/temp_90_fit.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/plot_vcsel850/plot_lin_i_th.png" afterPath="$PROJECT_DIR$/latex/plot_vcsel850/plot_lin_i_th.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.pdf" afterPath="$PROJECT_DIR$/latex/praca.pdf" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.synctex.gz" afterPath="$PROJECT_DIR$/latex/praca.synctex.gz" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.tex" afterPath="$PROJECT_DIR$/latex/praca.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/prezentacja.aux" afterPath="$PROJECT_DIR$/Prezentacja/prezentacja.aux" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/prezentacja.log" afterPath="$PROJECT_DIR$/Prezentacja/prezentacja.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/prezentacja.nav" afterPath="$PROJECT_DIR$/Prezentacja/prezentacja.nav" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Prezentacja/prezentacja.tex" afterPath="$PROJECT_DIR$/Prezentacja/prezentacja.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_to_fit.txt" afterPath="$PROJECT_DIR$/data_to_fit.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/fit.py" afterPath="$PROJECT_DIR$/fit.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot_laser.py" afterPath="$PROJECT_DIR$/plot_laser.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.aux" afterPath="$PROJECT_DIR$/latex/praca.aux" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.log" afterPath="$PROJECT_DIR$/latex/praca.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.toc" afterPath="$PROJECT_DIR$/latex/praca.toc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot_threshold_current_temp.py" afterPath="$PROJECT_DIR$/plot_threshold_current_temp.py" />
     </list>
     <ignored path="PracaInz.iws" />
@@ -44,9 +49,11 @@
       <file leaf-file-name="fit.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/fit.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="2" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="64" />
-              <folding />
+            <state relative-caret-position="441">
+              <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -54,7 +61,7 @@
       <file leaf-file-name="theory_plot.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/theory_plot.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="648">
+            <state relative-caret-position="684">
               <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
@@ -66,7 +73,7 @@
       <file leaf-file-name="plot_i_th_t.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
+            <state relative-caret-position="-243">
               <caret line="40" column="7" selection-start-line="39" selection-start-column="0" selection-end-line="48" selection-end-column="14" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
@@ -75,10 +82,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="plot_i_th.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="plot_i_th.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/data635/plot_i_th.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
+            <state relative-caret-position="387">
               <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
@@ -90,38 +97,30 @@
       <file leaf-file-name="plot_laser.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_laser.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1134">
+            <state relative-caret-position="999">
               <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="data_635nm_50.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data635/data_635nm_50.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="data_635nm_20.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/data635/data_635nm_20.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot_threshold_current_temp.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="plot_threshold_current_temp.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/plot_threshold_current_temp.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1566">
-              <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+            <state relative-caret-position="2430">
+              <caret line="138" column="37" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
+              <folding>
+                <element signature="e#24#63#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot_3_i_th.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/data635/plot_3_i_th.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -152,10 +151,11 @@
         <option value="$PROJECT_DIR$/data980/find_I0_T0.py" />
         <option value="$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py" />
         <option value="$PROJECT_DIR$/theory_plot.py" />
-        <option value="$PROJECT_DIR$/plot_threshold_current_temp.py" />
         <option value="$PROJECT_DIR$/plot_laser.py" />
-        <option value="$PROJECT_DIR$/fit.py" />
         <option value="$PROJECT_DIR$/data635/plot_i_th.py" />
+        <option value="$PROJECT_DIR$/data635/plot_3_i_th.py" />
+        <option value="$PROJECT_DIR$/fit.py" />
+        <option value="$PROJECT_DIR$/plot_threshold_current_temp.py" />
       </list>
     </option>
   </component>
@@ -191,7 +191,6 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -224,12 +223,27 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="dataVcsel850" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracaInz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracaInz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="data635" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -499,12 +513,13 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="140" width="1841" height="940" extended-state="1" />
+    <frame x="79" y="140" width="1841" height="940" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25357535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270142" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32916668" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -516,7 +531,6 @@
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815966" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32815966" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
@@ -552,6 +566,30 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/data980/info.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="324">
+          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data980/wykres_I0.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fit.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/data980/power_plot.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -577,36 +615,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data980/power_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data980/info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data980/wykres_I0.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/fit.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -642,7 +653,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="4" column="5" selection-start-line="1" selection-start-column="0" selection-end-line="5" selection-end-column="31" />
-          <folding />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -840,28 +853,20 @@
         <state />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theory_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data635/data_635nm_20.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data635/data_635nm_45.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-11032">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/theory_plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="684">
+          <caret line="38" column="35" selection-start-line="38" selection-start-column="35" selection-end-line="38" selection-end-column="35" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -873,28 +878,46 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_threshold_current_temp.py">
+    <entry file="file://$PROJECT_DIR$/data635/data_635nm_20.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1566">
-          <caret line="93" column="0" selection-start-line="93" selection-start-column="0" selection-end-line="93" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_laser.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="999">
+          <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data635/plot_i_th.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="387">
+          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_laser.py">
+    <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1134">
-          <caret line="63" column="76" selection-start-line="63" selection-start-column="76" selection-end-line="63" selection-end-column="76" />
-          <folding />
+        <state relative-caret-position="-243">
+          <caret line="40" column="7" selection-start-line="39" selection-start-column="0" selection-end-line="48" selection-end-column="14" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py">
+    <entry file="file://$PROJECT_DIR$/data635/plot_3_i_th.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="40" column="7" selection-start-line="39" selection-start-column="0" selection-end-line="48" selection-end-column="14" />
+        <state relative-caret-position="423">
+          <caret line="127" column="17" selection-start-line="127" selection-start-column="17" selection-end-line="127" selection-end-column="17" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
@@ -903,16 +926,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/fit.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="9" selection-start-line="0" selection-start-column="0" selection-end-line="17" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="441">
+          <caret line="95" column="15" selection-start-line="95" selection-start-column="15" selection-end-line="95" selection-end-column="15" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data635/plot_i_th.py">
+    <entry file="file://$PROJECT_DIR$/plot_threshold_current_temp.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="22" column="19" selection-start-line="22" selection-start-column="19" selection-end-line="22" selection-end-column="19" />
+        <state relative-caret-position="2430">
+          <caret line="138" column="37" selection-start-line="138" selection-start-column="37" selection-end-line="138" selection-end-column="37" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
