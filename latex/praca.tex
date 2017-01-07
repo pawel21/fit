@@ -100,8 +100,8 @@ potrzebujemy. A wszystko to dzięki połączeniu możliwości środowiska Linux 
 Głównymi celem mojej pracy jest przedstawienie wykorzystanie oprogramowania
 open source takiego jak Python, C/C++ oraz systemu Linux do stworzenia stanowiska pomiarowego w celu bdania laserów półprzewodnikowych. Korzystając z tych technologi mam zamiar stworzyć interfejs pomiarowy na platformę Ubuntu
 w laboratorium fotoniki. \\
-
-Dzięki mojej pracy możliwe będzie wykonywanie w szybki sposób charakterystyk laserów półprzewnodnikowcyh. Charakterystyki te dają nam ważne informacje o laserze, dzięki nim możliwe jest określenie prądu progowego dla laserów krawędziowych, określenie ich sprawności. Za pomocą mojego stanowiska pomiarowego możliwe także będzie badanie ile uzyskuje się mocy z lasera przy danej mocy aplikowanej.
+Dzięki mojej pracy możliwe będzie wykonywanie w szybki sposób charakterystyk laserów półprzewnodnikowcyh. Charakterystyki te dają nam ważne informacje o laserze, dzięki nim możliwe jest określenie prądu progowego dla laserów krawędziowych, określenie ich sprawności. Za pomocą mojego stanowiska pomiarowego możliwe także będzie badanie ile uzyskuje się mocy z lasera przy danej mocy aplikowanej. \\
+Praca jest podzielona na dwie części: jedna składa się z opisu przygotowania eksperymentu, komunikacji oraz sterowaniem urządzeniami laboratoryjnymi za pomocą programu napisanego w języku Python. Druga część pracy opisuje badanie laserów półprzewodnikowych na podstawie danych uzyskanych za pomocą programu przedstawionego w pierwszej części programu. Do wykreślenia charakterystyk wyjściowych oraz wyznaczenie sprawności badanych laserów używam skryptów napisanych w języku Python.
 
 
 
@@ -306,6 +306,50 @@ $T$ [K] &   $I_{th}$ [mA]   \\ \hline
 
 \subsection{Laser VCSEL 850\,nm}
 Laser 850
+\begin{table}[h!]
+\begin{center}
+\caption{ Wyznaczone wartośc prądu progowego $I_0$ w różnych temperaturach $T$ dla lasera VCSEL 850\,nm. }
+\begin{tabular}{ | C{3.5cm}|  C{3.5cm} | C{3.5cm} | C{3.5cm}|}
+\hline
+$T$ [K] &   $I_{th}$ [mA]   \\ \hline
+283      &   1.70 $\pm$ 0.03  \\ \hline
+288      &   1.67 $\pm$ 0.03  \\ \hline
+293		 &   1.60 $\pm$ 0.03  \\ \hline
+298		 &   1.55 $\pm$ 0.04  \\ \hline 
+303		 &   1.59 $\pm$ 0.03  \\ \hline
+308		 &   1.63 $\pm$ 0.03  \\ \hline
+313		 &   1.65 $\pm$ 0.03  \\ \hline
+318		 &   1.68 $\pm$ 0.04  \\ \hline      
+323		 &   1.73 $\pm$ 0.04  \\ \hline
+328		 &   1.83 $\pm$ 0.04  \\ \hline
+333		 &   1.89 $\pm$ 0.04  \\ \hline
+338		 &   2.01 $\pm$ 0.04  \\ \hline
+343		 &   2.14 $\pm$ 0.04  \\ \hline
+348		 &   2.24 $\pm$ 0.05  \\ \hline
+353		 &   2.38 $\pm$ 0.05  \\ \hline
+358		 &   2.57 $\pm$ 0.05  \\ \hline
+363		 &   2.74 $\pm$ 0.07  \\ \hline         
+\end{tabular}
+\end{center}
+\end{table}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot_vcsel850/temp_20_ivl.png}
+  \label{rys1}
+  \caption{Charakterystyki wyjściowe lasera VCSEL 850\,nm w temperaturze 293 K. } 
+\end{figure}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot_vcsel850/plot_all.png}
+  \label{rys1}
+  \caption{Charakterystyki wyjściowe lasera VCSEL 850\,nm w różnych temperaturach.} 
+\end{figure}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot_vcsel850/plot_3_i_th.png}
+  \label{rys1}
+  \caption{Charakterystyki wyjściowe lasera VCSEL 850\,nm z wyznaczonym prądem progowym $I_{th}$ w różnych temperaturach.} 
+\end{figure}
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot_vcsel850/plot_lin_i_th.png}

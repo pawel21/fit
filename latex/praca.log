@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  6 JAN 2017 21:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  7 JAN 2017 22:20
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -691,6 +691,15 @@ LaTeX Warning: Label `rys1' multiply defined.
 
 LaTeX Warning: Label `rys1' multiply defined.
 
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
+
+LaTeX Warning: Label `rys1' multiply defined.
+
 )
 \openout1 = `praca.aux'.
 
@@ -843,11 +852,6 @@ Underfull \hbox (badness 10000) in paragraph at lines 83--85
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 86--99
-
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 100--103
 
  []
 
@@ -1116,57 +1120,45 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 302--304
  [] 
  []
 
-<plot_vcsel850/plot_lin_i_th.png, id=62, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/temp_20_ivl.png, id=62, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/temp_20_ivl.png Graphic file (type png)
+
+<use plot_vcsel850/temp_20_ivl.png>
+Package pdftex.def Info: plot_vcsel850/temp_20_ivl.png used on input line 337.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 337--339
+ [] 
+ []
+
+<plot_vcsel850/plot_all.png, id=63, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/plot_all.png Graphic file (type png)
+
+<use plot_vcsel850/plot_all.png>
+Package pdftex.def Info: plot_vcsel850/plot_all.png used on input line 343.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 343--345
+ [] 
+ []
+
+<plot_vcsel850/plot_3_i_th.png, id=64, 1681.0002pt x 897.5934pt>
+File: plot_vcsel850/plot_3_i_th.png Graphic file (type png)
+
+<use plot_vcsel850/plot_3_i_th.png>
+Package pdftex.def Info: plot_vcsel850/plot_3_i_th.png used on input line 349.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 349--351
+ [] 
+ []
+
+<plot_vcsel850/plot_lin_i_th.png, id=65, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_lin_i_th.png Graphic file (type png)
 
 <use plot_vcsel850/plot_lin_i_th.png>
-Package pdftex.def Info: plot_vcsel850/plot_lin_i_th.png used on input line 311
+Package pdftex.def Info: plot_vcsel850/plot_lin_i_th.png used on input line 355
 .
-(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
-
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 311--313
- [] 
- []
-
-[13 <./plot980/plot_all.png>]
-<plot635/plot_ivl_20.png, id=68, 1681.0002pt x 897.5934pt>
-File: plot635/plot_ivl_20.png Graphic file (type png)
-
-<use plot635/plot_ivl_20.png>
-Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 334.
-(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
-
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 334--336
- [] 
- []
-
-<plot635/plot_3_i_th.png, id=69, 1681.0002pt x 897.5934pt>
-File: plot635/plot_3_i_th.png Graphic file (type png)
-
-<use plot635/plot_3_i_th.png>
-Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 341.
-(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
-
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 341--343
- [] 
- []
-
-<plot635/plot_lin_i_th.png, id=70, 1681.0002pt x 897.5934pt>
-File: plot635/plot_lin_i_th.png Graphic file (type png)
-
-<use plot635/plot_lin_i_th.png>
-Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 348.
-(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
-
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 348--350
- [] 
- []
-
-<plot635/fit_i_0.png, id=71, 1681.0002pt x 897.5934pt>
-File: plot635/fit_i_0.png Graphic file (type png)
-
-<use plot635/fit_i_0.png>
-Package pdftex.def Info: plot635/fit_i_0.png used on input line 355.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
 Overfull \hbox (49.05984pt too wide) in paragraph at lines 355--357
@@ -1174,10 +1166,58 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 355--357
  []
 
 
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[13 <./plot980/plot_all.png>] [14 <./plot_vcsel850/temp_20_ivl.png> <./plot_vcs
+el850/plot_all.png>] [15 <./plot_vcsel850/plot_3_i_th.png> <./plot_vcsel850/plo
+t_lin_i_th.png>] <plot635/plot_ivl_20.png, id=81, 1681.0002pt x 897.5934pt>
+File: plot635/plot_ivl_20.png Graphic file (type png)
+
+<use plot635/plot_ivl_20.png>
+Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 378.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 378--380
+ [] 
+ []
+
+<plot635/plot_3_i_th.png, id=82, 1681.0002pt x 897.5934pt>
+File: plot635/plot_3_i_th.png Graphic file (type png)
+
+<use plot635/plot_3_i_th.png>
+Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 385.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 385--387
+ [] 
+ []
+
+<plot635/plot_lin_i_th.png, id=83, 1681.0002pt x 897.5934pt>
+File: plot635/plot_lin_i_th.png Graphic file (type png)
+
+<use plot635/plot_lin_i_th.png>
+Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 392.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 392--394
+ [] 
+ []
+
+<plot635/fit_i_0.png, id=84, 1681.0002pt x 897.5934pt>
+File: plot635/fit_i_0.png Graphic file (type png)
+
+<use plot635/fit_i_0.png>
+Package pdftex.def Info: plot635/fit_i_0.png used on input line 399.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 399--401
+ [] 
+ []
+
+
 AED: lastpage setting LastPage
-[14 <./plot_vcsel850/plot_lin_i_th.png>] [15 <./plot635/plot_ivl_20.png> <./plo
-t635/plot_3_i_th.png>] [16 <./plot635/plot_lin_i_th.png> <./plot635/fit_i_0.png
->] (./praca.aux)
+[16] [17 <./plot635/plot_ivl_20.png> <./plot635/plot_3_i_th.png>] [18 <./plot63
+5/plot_lin_i_th.png> <./plot635/fit_i_0.png>] (./praca.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1186,13 +1226,13 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7432 strings out of 493029
- 97164 string characters out of 6136233
+ 7445 strings out of 493029
+ 97580 string characters out of 6136233
  292212 words of memory out of 5000000
- 10801 multiletter control sequences out of 15000+600000
+ 10813 multiletter control sequences out of 15000+600000
  21044 words of font info for 59 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 38i,13n,58p,858b,1314s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 38i,14n,58p,858b,1314s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
 e/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texlive/texm
 f-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/share/texlive/texmf-dist
@@ -1207,10 +1247,10 @@ ype1/public/cm-super/sfss1000.pfb></usr/share/texmf/fonts/type1/public/cm-super
 share/texmf/fonts/type1/public/cm-super/sfsx1200.pfb></usr/share/texmf/fonts/ty
 pe1/public/cm-super/sfsx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/
 sfsx1728.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfsx2488.pfb>
-Output written on praca.pdf (16 pages, 824228 bytes).
+Output written on praca.pdf (18 pages, 1163187 bytes).
 PDF statistics:
- 138 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
+ 150 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 56 words of extra memory for PDF output out of 10000 (max. 10000000)
 

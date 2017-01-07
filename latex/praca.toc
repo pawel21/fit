@@ -14,4 +14,4 @@
 \contentsline {section}{\numberline {5.2}Badanie lasera}{12}
 \contentsline {subsection}{\numberline {5.2.1}Laser 980\tmspace +\thinmuskip {.1667em}nm}{12}
 \contentsline {subsection}{\numberline {5.2.2}Laser VCSEL 850\tmspace +\thinmuskip {.1667em}nm}{13}
-\contentsline {subsection}{\numberline {5.2.3}Laser kraw\IeC {\k e}dziowy 635\tmspace +\thinmuskip {.1667em}nm}{14}
+\contentsline {subsection}{\numberline {5.2.3}Laser kraw\IeC {\k e}dziowy 635\tmspace +\thinmuskip {.1667em}nm}{16}
