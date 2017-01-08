@@ -211,12 +211,32 @@ Obie wymagają uprawnień użytkownika uprzywijowanego (sudo).
 \end{figure}
 \chapter{Eksperyment} \label{Eksperyment}
 \section{Teoria}
+\subsection{Prąd progowy}
 Wśród laserów półprzewodnikowych możemy wyróżnić lasery krawędziowe oraz lasery o emisji powierzchniowej z pionową wnęką rezonansową tzw. Lasery VCSEL (ang. \textit{Vertical Cavity Surface Emitting Laser}) będące obiektem moich badań. Aby scharakteryzować lasery, można wykonać ich charakterystyki, które przedstawiają, jak zmienia się moc wyjściowa oraz napięcie lasera w funkcji zadanego prądu.
 
-Ważnym parametrem laserów krawędziowych jest prąd progowy (z ang. \textit{threshold
-current}) który określa wartość prądu przy którym zaczyna zachodzić akcja laserowa czyli
-rośnie gwałtownie natężenie promieniowania i maleje szerokość linii emisyjnej.
-Zależności prądu progowego $I_{th}$ od temperatury $T$ możemy wyrazić za pomocą równania:
+Ważnym parametrem laserów półprzewodnikowych jest prąd progowy (z ang. \textit{threshold
+current}) który określa wartość prądu, przy którym zaczyna zachodzić akcja laserowa, czyli
+rośnie gwałtownie natężenie promieniowania i maleje szerokość linii emisyjnej. W celu wyznaczenia prądu progowego należy sporządzić wykres zależności mocy wyjściowej lasera od prądu zasilającego. Następnie dla prądu gdzie zaczyna się akcja laserowa dla odcinka liniowego należy metodą najmniejszych kwadratów przy użyciu wielomianu pierwszego stopnia znaleźć parametry krzywej. Dla wyznaczonej krzywej należy znaleźć miejsce zerowe, które będzie wyznaczonym prądem progowym.
+\begin{equation}
+P = a \cdot I + b
+\end{equation}
+\begin{equation}
+I_{th} = -\frac{b}{a}
+\end{equation}
+\begin{equation}
+\Delta I_{th} = \left\lvert \frac{\partial I_{th}}{\partial a} \right\rvert \cdot \Delta a + \left\lvert \frac{\partial I_{th}}{\partial b} \right\rvert \cdot \Delta b
+\end{equation}
+\begin{equation}
+\Delta I_{th} = \left\lvert -\frac{b}{a^2} \right\rvert \cdot \Delta a + \left\lvert -\frac{1}{a} \right\rvert \cdot \Delta b 
+\end{equation}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot_theory_i_th.png}
+  \label{rys1}
+  \caption{Charakterystyki wyjściowe lasera krawędziowego 980\,nm w różnych temperaturach. } 
+\end{figure}
+\newpage
+Dla laserów krawędziowych zależności prądu progowego $I_{th}$ od temperatury $T$ możemy wyrazić za pomocą równania:
 \begin{equation}
 I_{th} = I_0 \exp \left( \frac{T}{T_0} \right)
 \end{equation}
@@ -254,6 +274,12 @@ Korzystając z różniczki zupełnej można obliczyć wartości błędów wyznac
 \begin{equation}
 \Delta T_0 = \left\lvert \frac{\partial T_{0}}{\partial a} \right\rvert \cdot \Delta a = \left\lvert -\frac{1}{a^2} \right\rvert \cdot \Delta a
 \end{equation}
+\subsection{Sprawność}
+Innym ważnym parametrem, którym możemy scharakteryzować lasery półprzewodnikowe jest ich sprawność. Można wyróżnić następujące sprawności:
+\begin{itemize}
+\item Sprawność różniczkowa (ang. \textit{slope efficiency}) --- jest zdefiniowana jako nachylenie krzywej uzyskanej przez wykreślenie zależności mocy wyjściowej z lasera versus energii dostarczonej do lasera (natężenie prądu lub moc dostarczona).
+\item Sprawność całkowita (ang. \textit{Wall-plug-efficiency}) --- jest zdefiniowana jako stosunek mocy wyjściowej do całkowitej mocy wejściowej lasera.
+\end{itemize}
 %
 \newpage
 
@@ -356,7 +382,24 @@ $T$ [K] &   $I_{th}$ [mA]   \\ \hline
   \label{rys1}
   \caption{Wykres prądu progowego w zależności od temperatury dla lasera VCSEL 850 \,nm.} 
 \end{figure}
-\newpage
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot_vcsel850/plot_eff.png}
+  \label{rys1}
+  \caption{Wykres sprawności lasera VCSEL 850\,nm.} 
+\end{figure}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot_vcsel850/plot_slope_eff_via_current.png}
+  \label{rys1}
+  \caption{Wykres sprawności różniczkowej lasera VCSEL 850\,nm w funkcja prądu wejściowego.} 
+\end{figure}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot_vcsel850/plot_slope_eff_via_power.png}
+  \label{rys1}
+  \caption{Wykres sprawności różniczkowej lasera VCSEL 850\,nm w funkcja mocy wejściowej.} 
+\end{figure}
 \subsection{Laser krawędziowy 635\,nm} 
 \begin{table}
 \begin{center}
