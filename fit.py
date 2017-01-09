@@ -92,5 +92,5 @@ class Fit:
         plt.show()
 
 
-fit = Fit("data635/data_635nm_40.txt", 10)
-fit.do_fit(35.7, 39)
+fit = Fit("data980/temp_90.txt", 10)
+fit.do_fit(2.2, 6)

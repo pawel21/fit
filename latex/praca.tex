@@ -174,7 +174,14 @@ int main()
 \end{lstlisting}
 
 \newpage
-
+\chapter{Wykorzystania oprogramowania open source w nauce.}
+\section{Oprogramowanie open source}
+Otwarte oprogramowanie (ang. \textit{open source}) jest odłamem ruch darmowego oprogramowania (ang. \textit{free software}), którego głównym celem jest możliwość swobodnego dostępu do oprogramowania dla wszystkich. Jawny musi być kod źródłowy. Przykładami takiego oprogramowania które używam w swojej pracy jest:
+\begin{itemize}
+\item System Linux
+\item Język programowania Python
+\end{itemize}
+\section{Python --- idealne narzędzie dla fizyka}
 \chapter{Py3LabDeviceIO --- moduł do sterowania sprzetem laboratoryjnym}
 \section{Opisz programu}
 PyLabDeviceIO jest modułem napisanym w języku Python umożliwającym sterowanie zasilaczem do lasera oraz miernikiem mocy. Program opiera się na wykorzystaniu wywołań systemowych oraz na komunikacji przez komendy SCPI. \\
@@ -201,8 +208,8 @@ W celu dokonania pomiarów za pomocą programu Py3LabDeviceIO możliwe są dwie 
 \end{itemize}
 Obie wymagają uprawnień użytkownika uprzywijowanego (sudo).
 \newpage
-\chapter{Gui}
-\section{Gui}
+\chapter{Program okienkowy do przeprowadzania pomiarów}
+\section{Opisz programu}
 \begin{figure}[h]
 \center
   \includegraphics[scale=0.35]{gui.png}
@@ -280,7 +287,7 @@ Innym ważnym parametrem, którym możemy scharakteryzować lasery półprzewodn
 \item Sprawność różniczkowa (ang. \textit{slope efficiency}) --- jest zdefiniowana jako nachylenie krzywej uzyskanej przez wykreślenie zależności mocy wyjściowej z lasera versus energii dostarczonej do lasera (natężenie prądu lub moc dostarczona).
 \item Sprawność całkowita (ang. \textit{Wall-plug-efficiency}) --- jest zdefiniowana jako stosunek mocy wyjściowej do całkowitej mocy wejściowej lasera.
 \end{itemize}
-%
+\subsection{Wpływ temperatury chłodnicy lasera na jego paramentry}
 \newpage
 
 
@@ -292,7 +299,7 @@ Innym ważnym parametrem, którym możemy scharakteryzować lasery półprzewodn
 
 \section{Badanie lasera}
 \subsection{Laser 980\,nm}
-Podpunkt ten zawiera wyniki pomiarów dla lasera krawędziowego o emitowanej fali długości 980\,nm.
+Podpunkt ten zawiera wyniki pomiarów dla lasera VCSEL o emitowanej fali długości 980\,nm.
 Pomiar polegał w pierwszej części na wykonaniu charakterystyk prądowo-napięciowych
 oraz prądowo-oświetleniowych lasera w temperaturze lasera od 283\,K do 363\,K krokiem co 10\,K.
 Na podstawie otrzymanych charakterystyk wyznaczyłem wartość prądu progowego w danej temperaturze.
@@ -307,32 +314,55 @@ Tabela 1 zawiera wyznazone wartości prądu progowego $I_0$ dla tego lasera. Rys
 \begin{tabular}{ | C{3.5cm}|  C{3.5cm} | C{3.5cm} | C{3.5cm}|}
 \hline
 $T$ [K] &   $I_{th}$ [mA]   \\ \hline
-283      &   1.0 $\pm$ 0.1  \\ \hline
-293      &   1.0 $\pm$ 0.1  \\ \hline
-303      &   1.1 $\pm$ 0.1  \\ \hline
-313      &   1.2 $\pm$ 0.1  \\ \hline
-323      &   1.3 $\pm$ 0.1  \\ \hline
-333      &   1.5 $\pm$ 0.1  \\ \hline
-343      &   1.7 $\pm$ 0.1  \\ \hline
-353      &   2.0 $\pm$ 0.1  \\ \hline
-363      &   2.4 $\pm$ 0.1  \\ \hline
+283 	 & 	 0.92 $\pm$ 0.03 	 \\ \hline
+288 	 & 	 0.94 $\pm$ 0.03 	 \\ \hline
+293 	 & 	 0.98 $\pm$ 0.03 	 \\ \hline
+298 	 & 	 1.05 $\pm$ 0.04 	 \\ \hline
+303 	 & 	 1.10 $\pm$ 0.03 	 \\ \hline
+308 	 & 	 1.18 $\pm$ 0.03 	 \\ \hline
+313 	 & 	 1.23 $\pm$ 0.03 	 \\ \hline
+318 	 & 	 1.25 $\pm$ 0.03 	 \\ \hline
+323 	 & 	 1.36 $\pm$ 0.04 	 \\ \hline
+328 	 & 	 1.47 $\pm$ 0.03 	 \\ \hline
+333 	 & 	 1.59 $\pm$ 0.04 	 \\ \hline
+338 	 & 	 1.63 $\pm$ 0.04 	 \\ \hline
+343 	 & 	 1.76 $\pm$ 0.04 	 \\ \hline
+348 	 & 	 1.86 $\pm$ 0.06 	 \\ \hline
+353 	 & 	 2.07 $\pm$ 0.05 	 \\ \hline
+358 	 & 	 2.25 $\pm$ 0.06 	 \\ \hline
+363 	 & 	 2.43 $\pm$ 0.06 	 \\ \hline
 \end{tabular}
 \end{center}
 \end{table}
-
 \newpage
-
-
 \begin{figure}
 \center
   \includegraphics[scale=0.30]{plot980/plot_all.png}
   \label{rys1}
-  \caption{Charakterystyki wyjściowe lasera krawędziowego 980\,nm w różnych temperaturach. } 
+  \caption{Charakterystyki wyjściowe lasera VCSEL 980\,nm w różnych temperaturach. } 
 \end{figure}
-
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/plot_temp_i_th_lin.png}
+  \label{rys1}
+  \caption{Wykres zależności prądu progowego od temperatury dla lasera VCSEL 980\, nm.} 
+\end{figure}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/plot_temp_i_th_fit.png}
+  \label{rys1}
+  \caption{Wykres zależności prądu progowego od temperatury dla lasera VCSEL 980\, nm.} 
+\end{figure}
+\begin{figure}
+\center
+  \includegraphics[scale=0.30]{plot980/plot_theory_exp.png}
+  \label{rys1}
+  \caption{Wykres zależności prądu progowego od temperatury dla lasera VCSEL 980\, nm. Wartości wyznaczone eksperymentalnie wraz z dopasowaną krzywą.} 
+\end{figure}
+\newpage
 \subsection{Laser VCSEL 850\,nm}
 Laser 850
-\begin{table}[h!]
+\begin{table}
 \begin{center}
 \caption{ Wyznaczone wartośc prądu progowego $I_0$ w różnych temperaturach $T$ dla lasera VCSEL 850\,nm. }
 \begin{tabular}{ | C{3.5cm}|  C{3.5cm} | C{3.5cm} | C{3.5cm}|}

@@ -106,6 +106,9 @@ class PlotThresholdCurrentTemp:
         di_th = abs(b * np.e ** b) * db
         return i_th, di_th
 
+    def get_latex_table(self):
+        for i in range(0, len(self.threshold_current)):
+            print("{0:d} \t & \t {1:.2f} $\pm$ {2:.2f} \t \\\\ \hline".format(int(self.temp[i]), self.threshold_current[i], self.y_err[i]))
 
 def temp_celsjusz_to_kelvin(temp_c):
     return temp_c + 273
@@ -125,17 +128,17 @@ def temp_celsjusz_to_kelvin(temp_c):
 #pl_980.plot_temp_log_i_th
 #pl_980.fit_temp_log_i_th(x_text=340, y_text=0.2, dy_text=0.10)
 
-temp_635 = np.linspace(20, 40, 5) + 273
-I_0_635 = [22.4, 25.0, 28.1, 31.3, 35.7]
+# temp_635 = np.linspace(20, 40, 5) + 273
+# I_0_635 = [22.4, 25.0, 28.1, 31.3, 35.7]
 
 #pl_635 = PlotThresholdCurrentTemp(I_0_635, temp_635, y_err=[0.3, 0.2, 0.3, 0.6, 0.9])
 #pl_635.plot_linear_temp_i_th_with_err
 #pl_635.fit_temp_log_i_th(x_text=310, y_text=3.2, dy_text=0.10)
 
-temp_850 = np.linspace(10, 90, 17) + 273
-I_0_850 = [1.70, 1.67, 1.60, 1.55, 1.59, 1.63, 1.65, 1.68, 1.73, 1.83, 1.89, 2.00, 2.14, 2.24, 2.38, 2.57, 2.74]
-error_I_0_850 = [0.03, 0.03, 0.03, 0.04, 0.03, 0.03, 0.03, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.05, 0.05, 0.05, 0.07]
-pl_850 = PlotThresholdCurrentTemp(I_0_850, temp_850, y_err=error_I_0_850)
-pl_850.plot_linear_temp_i_th_with_err
+# temp_850 = np.linspace(10, 90, 17) + 273
+# I_0_850 = [1.70, 1.67, 1.60, 1.55, 1.59, 1.63, 1.65, 1.68, 1.73, 1.83, 1.89, 2.00, 2.14, 2.24, 2.38, 2.57, 2.74]
+# error_I_0_850 = [0.03, 0.03, 0.03, 0.04, 0.03, 0.03, 0.03, 0.04, 0.04, 0.04, 0.04, 0.04, 0.04, 0.05, 0.05, 0.05, 0.07]
+# pl_850 = PlotThresholdCurrentTemp(I_0_850, temp_850, y_err=error_I_0_850)
+# pl_850.plot_linear_temp_i_th_with_err
 
 # pl_850.plot_temp_log_i_th
