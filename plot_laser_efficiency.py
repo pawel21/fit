@@ -7,8 +7,6 @@ import matplotlib.pyplot as plt
 import numpy as np
 from scipy.optimize import curve_fit
 
-
-
 plt.rcParams['font.family'] = 'serif'
 plt.rcParams['font.serif'] = 'Computer Modern Roman'
 plt.rcParams['text.usetex'] = True
@@ -84,7 +82,7 @@ class PlotLaserEfficiency:
         plt.show()
 
     def fit_via_current_poly_2(self, start_fit):
-        x_to_fit, y_to_fit = self._get_data_to_fit_via_current(start_fit)
+        x_to_fit, y_to_fit = self.get_data_to_fit_via_current(start_fit)
         popt, pcov = curve_fit(self.f, x_to_fit, y_to_fit)
         a = popt[0]
         b = popt[1]
@@ -100,7 +98,7 @@ class PlotLaserEfficiency:
         return a, b, c
 
     def fit_via_power_poly_2(self, start_fit):
-        x_to_fit, y_to_fit = self._get_data_to_fit_via_power(start_fit)
+        x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
         popt, pcov = curve_fit(self.f, x_to_fit, y_to_fit)
         a = popt[0]
         b = popt[1]
@@ -115,20 +113,43 @@ class PlotLaserEfficiency:
         print(u"c = %s \u00B1 %s" % (c, dc))
         return a, b, c
 
+    def fit_via_power_poly_3(self, start_fit):
+        x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
+        popt, pcov = curve_fit(self.g, x_to_fit, y_to_fit)
+        a = popt[0]
+        b = popt[1]
+        c = popt[2]
+        d = popt[3]
+        error = np.abs(np.diag(pcov) ** 0.5)
+        da = error[0]
+        db = error[1]
+        dc = error[2]
+        dd = error[3]
+        print(self.path_to_data)
+        print(u"a = %s \u00B1 %s" % (a, da))
+        print(u"b = %s \u00B1 %s" % (b, db))
+        print(u"c = %s \u00B1 %s" % (c, dc))
+        print(u"d = %s \u00B1 %s" % (d, dd))
+        return a, b, c, d
+
     @staticmethod
     def f(x, a, b, c):
         return a*x**2 + b*x + c
 
-    def _get_data_to_fit_via_current(self, start_to_fit):
+    @staticmethod
+    def g(x, a, b, c, d):
+        return a*x**3 + b*x**2 + c*x + d
+
+    def get_data_to_fit_via_current(self, start_to_fit):
         x_to_fit = []
         y_to_fit = []
         for i in range(0, len(self.current)):
-            if self.current[i]  > start_to_fit:
+            if self.current[i] > start_to_fit:
                 x_to_fit.append(self.current[i])
                 y_to_fit.append(self.output_power[i])
-        return x_to_fit, y_to_fit
+        return np.array(x_to_fit), np.array(y_to_fit)
 
-    def _get_data_to_fit_via_power(self, start_to_fit):
+    def get_data_to_fit_via_power(self, start_to_fit):
         x_to_fit = []
         y_to_fit = []
         input_power = self.get_input_power()
@@ -136,7 +157,7 @@ class PlotLaserEfficiency:
             if input_power[i] > start_to_fit:
                  x_to_fit.append(input_power[i])
                  y_to_fit.append(self.output_power[i])
-        return x_to_fit, y_to_fit
+        return np.array(x_to_fit), np.array(y_to_fit)
 
 
 # ple20 = PlotLaserEfficiency("dataVcsel850/temp_60.txt")

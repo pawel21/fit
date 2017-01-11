@@ -260,3 +260,111 @@ correlation matrix of the fit parameters:
                 a      b      
 a               1.000 
 b              -0.912  1.000 
+
+
+*******************************************************************************
+Mon Jan  9 17:07:44 2017
+
+
+FIT:    data read from 'data.txt' u 1:(log($2))
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: f(x)
+	f(x) = a*x +b
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   a             b            
+   0 4.5223128088e+05   0.00e+00  2.14e+02    1.000000e+00   1.000000e+00
+   8 1.4614596523e-04  -6.99e-09  2.14e-05    2.313843e-02  -3.674451e+00
+
+After 8 iterations the fit converged.
+final sum of squares of residuals : 0.000146146
+rel. change during last iteration : -6.99205e-14
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.00697964
+variance of residuals (reduced chisquare) = WSSR/ndf   : 4.87153e-05
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+a               = 0.0231384        +/- 0.0004414    (1.908%)
+b               = -3.67445         +/- 0.1338       (3.641%)
+
+correlation matrix of the fit parameters:
+                a      b      
+a               1.000 
+b              -1.000  1.000 
+
+
+*******************************************************************************
+Mon Jan  9 17:09:55 2017
+
+
+FIT:    data read from 'data.txt' u 1:2
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = I0*exp(x/x0)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   I0            x0           
+   0 7.3852531887e+271  0.00e+00  7.30e+137   1.000000e+00   1.000000e+00
+   1 8.9340979039e+270 -7.27e+05  7.30e+136   9.999874e-01   1.003385e+00
+
+The maximum lambda = 1.000000e+20 was exceeded. Fit stopped.
+final sum of squares of residuals : 8.9341e+270
+rel. change during last iteration : -7.26637
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 1.7257e+135
+variance of residuals (reduced chisquare) = WSSR/ndf   : 2.97803e+270
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+I0              = 0.999987         +/- 6173         (6.173e+05%)
+x0              = 1.00339          +/- 23.13        (2305%)
+
+correlation matrix of the fit parameters:
+                I0     x0     
+I0              1.000 
+x0              1.000  1.000 
+
+
+*******************************************************************************
+Mon Jan  9 17:10:47 2017
+
+
+FIT:    data read from 'data.txt' u 1:2
+        format = x:z
+        #datapoints = 5
+        residuals are weighted equally (unit weight)
+
+function used for fitting: g(x)
+	g(x) = I0*exp(x/x0)
+fitted parameters initialized with current variable values
+
+iter      chisq       delta/lim  lambda   I0            x0           
+   0 1.4999485473e-01   0.00e+00  1.45e+02    2.536333e-02   4.321814e+01
+   6 1.4401298871e-01  -1.62e-04  1.45e-04    2.406331e-02   4.289734e+01
+
+After 6 iterations the fit converged.
+final sum of squares of residuals : 0.144013
+rel. change during last iteration : -1.62188e-09
+
+degrees of freedom    (FIT_NDF)                        : 3
+rms of residuals      (FIT_STDFIT) = sqrt(WSSR/ndf)    : 0.219099
+variance of residuals (reduced chisquare) = WSSR/ndf   : 0.0480043
+
+Final set of parameters            Asymptotic Standard Error
+=======================            ==========================
+I0              = 0.0240633        +/- 0.003663     (15.22%)
+x0              = 42.8973          +/- 0.9215       (2.148%)
+
+correlation matrix of the fit parameters:
+                I0     x0     
+I0              1.000 
+x0              1.000  1.000 

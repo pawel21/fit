@@ -92,5 +92,5 @@ class Fit:
         plt.show()
 
 
-fit = Fit("data980/temp_90.txt", 10)
-fit.do_fit(2.2, 6)
+fit = Fit("L850P010/L850P010_temp_40.txt", 10)
+fit.do_fit(13.2, 25)

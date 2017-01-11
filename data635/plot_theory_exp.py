@@ -9,13 +9,13 @@ from scipy.optimize import curve_fit
 from sympy.solvers import solve
 from sympy import Symbol
 
-
-plt.rcParams['font.family'] = 'serif'
-plt.rcParams['font.serif'] = 'Computer Modern Roman'
-plt.rcParams['text.usetex'] = True
-plt.rcParams['text.latex.unicode'] = True
-plt.rcParams.update({'font.size': 28})
-plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
+#
+# plt.rcParams['font.family'] = 'serif'
+# plt.rcParams['font.serif'] = 'Computer Modern Roman'
+# plt.rcParams['text.usetex'] = True
+# plt.rcParams['text.latex.unicode'] = True
+# plt.rcParams.update({'font.size': 28})
+# plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
 
 class PlotTheoryExp:
@@ -46,3 +46,4 @@ I_0_635, T_0_635 = 0.025, 43.2
 
 plot635 = PlotTheoryExp(temp_635, I_th_635, y_err, I_0_635, T_0_635)
 plot635.plot()
+

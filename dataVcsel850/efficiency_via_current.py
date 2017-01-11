@@ -19,22 +19,22 @@ ple20 = PlotLaserEfficiency("temp_20.txt")
 ple20.plot_slope_efficiency_via_current(1.7)
 
 ple60 = PlotLaserEfficiency("temp_60.txt")
-ple60.plot_slope_efficiency_via_current(1.9)
+ple60.plot_slope_efficiency_via_current(2.2)
 
 ple90 = PlotLaserEfficiency("temp_90.txt")
-ple90.plot_slope_efficiency_via_current(2.7)
+ple90.plot_slope_efficiency_via_current(3.0)
 
 a_20, b_20, c_20 = ple20.fit_via_current_poly_2(1.7)
-current_20, _, _ = ple20.get_data()
+current_20, _ = ple20.get_data_to_fit_via_current(1.7)
 dP_20 = 2*a_20*current_20 + b_20
 
-a_60, b_60, c_60 = ple60.fit_via_current_poly_2(1.9)
-current_60, _, _ = ple60.get_data()
+a_60, b_60, c_60 = ple60.fit_via_current_poly_2(2.2)
+current_60, _ = ple60.get_data_to_fit_via_current(2.2)
 dP_60 = 2*a_60*current_60 + b_60
 
-a_90, b_90, c_90 = ple90.fit_via_current_poly_2(1.9)
-current_90, _, _ = ple90.get_data()
-dP_90 = 2*a_60*current_90 + b_90
+a_90, b_90, c_90 = ple90.fit_via_current_poly_2(3.0)
+current_90, _ = ple90.get_data_to_fit_via_current(3.0)
+dP_90 = 2*a_90*current_90 + b_90
 
 
 fig, ax1 = plt.subplots()
