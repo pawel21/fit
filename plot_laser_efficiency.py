@@ -138,11 +138,11 @@ class PlotLaserEfficiency:
         x = []
         j = 0
         k = 0
-        for i in range(0, int(len(x_to_fit)/5)):
+        for i in range(0, int(len(x_to_fit) / 5)):
             j += 5
             popt, pcov = curve_fit(self.y, x_to_fit[k:j], y_to_fit[k:j])
             a.append(popt[0])
-            x.append(np.mean(x_to_fit[k:j]))
+            x.append((x_to_fit[k:j]))
             k += 5
         fig, ax1 = plt.subplots()
         ax1.plot(x, a, 'bo')
