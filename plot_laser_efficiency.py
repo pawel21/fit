@@ -132,6 +132,26 @@ class PlotLaserEfficiency:
         print(u"d = %s \u00B1 %s" % (d, dd))
         return a, b, c, d
 
+    def fit_step_by_step(self, start_fit):
+        x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
+        a = []
+        x = []
+        j = 0
+        k = 0
+        for i in range(0, int(len(x_to_fit)/5)):
+            j += 5
+            popt, pcov = curve_fit(self.y, x_to_fit[k:j], y_to_fit[k:j])
+            a.append(popt[0])
+            x.append(np.mean(x_to_fit[k:j]))
+            k += 5
+        fig, ax1 = plt.subplots()
+        ax1.plot(x, a, 'bo')
+        plt.show()
+
+    @staticmethod
+    def y(x, a, b):
+        return a*x + b
+
     @staticmethod
     def f(x, a, b, c):
         return a*x**2 + b*x + c

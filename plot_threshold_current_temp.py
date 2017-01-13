@@ -90,6 +90,25 @@ class PlotThresholdCurrentTemp:
         plt.grid(True)
         plt.show()
 
+    def plot_fit_exp_with_error(self):
+        fig, ax1 = plt.subplots()
+        ax1.errorbar(self.temp, self.threshold_current, yerr=self.y_err, fmt='o', color="red")
+        ax1.set_xlabel("Temperatura [K], $T$")
+        ax1.set_ylabel("Prąd progowy [mA], $I_{th}$")
+        popt, pcov = curve_fit(self.f, self.temp, np.log(self.threshold_current))
+        a = popt[0]
+        b = popt[1]
+        error = np.abs(np.diag(pcov) ** 0.5)
+        da = error[0]
+        db = error[1]
+        t0, dt0 = self.get_t0(a, da)
+        i_0, di_0 = self.get_i_0(b, db)
+        T = np.linspace(min(self.temp) - 0.1*min(self.temp), max(self.temp) + 0.1*min(self.temp), 100)
+        y = i_0*np.exp(T/t0)
+        ax1.plot(T, y, 'b-')
+        plt.grid(True)
+        plt.show()
+
     @staticmethod
     def f(x, a, b):
         return a*x + b
@@ -103,7 +122,7 @@ class PlotThresholdCurrentTemp:
     @staticmethod
     def get_i_0(b, db):
         i_th = np.e ** b
-        di_th = abs(b * np.e ** b) * db
+        di_th = abs(np.e ** b) * db
         return i_th, di_th
 
     def get_latex_table(self):
