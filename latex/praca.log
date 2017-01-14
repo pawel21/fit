@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  13 JAN 2017 23:21
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  15 JAN 2017 00:03
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1336,6 +1336,19 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 472--474
  []
 
 
+<plotAll/wykres_krawedziowy_prad_progowy.png, id=79, 1681.0002pt x 897.5934pt>
+File: plotAll/wykres_krawedziowy_prad_progowy.png Graphic file (type png)
+
+<use plotAll/wykres_krawedziowy_prad_progowy.png>
+Package pdftex.def Info: plotAll/wykres_krawedziowy_prad_progowy.png used on in
+put line 479.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 479--481
+ [] 
+ []
+
+
 AED: lastpage setting LastPage
 [15 <./plot980/plot_all.png>] [16 <./plot980/plot_temp_i_th_lin.png> <./plot980
 /plot_temp_i_th_fit.png>] [17 <./plot980/plot_theory_exp.png>] [18 <./plot_vcse
@@ -1343,17 +1356,17 @@ l850/temp_20_ivl.png> <./plot_vcsel850/plot_all.png>] [19 <./plot_vcsel850/plot
 _3_i_th.png> <./plot_vcsel850/plot_lin_i_th.png>] [20 <./plot_vcsel850/plot_eff
 .png> <./plot_vcsel850/plot_slope_eff_via_current.png>] [21 <./plot_vcsel850/pl
 ot_slope_eff_via_power.png>] [22 <./plot635/plot_ivl_20.png> <./plot635/plot_3_
-i_th.png>] [23 <./plot635/plot_lin_i_th.png> <./plot635/fit_i_0.png>]
-(./praca.aux)
+i_th.png>] [23 <./plot635/plot_lin_i_th.png> <./plot635/fit_i_0.png>] [24 <./pl
+otAll/wykres_krawedziowy_prad_progowy.png>] (./praca.aux)
 
 LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7530 strings out of 493029
- 99219 string characters out of 6136233
+ 7536 strings out of 493029
+ 99453 string characters out of 6136233
  292254 words of memory out of 5000000
- 10886 multiletter control sequences out of 15000+600000
+ 10890 multiletter control sequences out of 15000+600000
  42461 words of font info for 68 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,14n,58p,857b,1328s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1367,10 +1380,10 @@ sfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 /cm/cmtt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.p
 fb></usr/share/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/sha
 re/texlive/texmf-dist/fonts/type1/urw/helvetic/uhvro8a.pfb>
-Output written on praca.pdf (23 pages, 1584271 bytes).
+Output written on praca.pdf (24 pages, 1635954 bytes).
 PDF statistics:
- 156 PDF objects out of 1000 (max. 8388607)
- 84 compressed objects within 1 object stream
+ 161 PDF objects out of 1000 (max. 8388607)
+ 86 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 96 words of extra memory for PDF output out of 10000 (max. 10000000)
 

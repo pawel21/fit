@@ -14,18 +14,16 @@ plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 28})
 plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
-temp_635, current_635, error_current_635 = np.loadtxt("current_threshold_635.txt", unpack=1, skiprows=1)
+temp_980, current_980, error_current_980 = np.loadtxt("current_threshold_980.txt", unpack=1, skiprows=1)
 
-temp_850_p10, current_850_p10, error_current_850_p10 = np.loadtxt("current_threshold_850_p010.txt", unpack=1, skiprows=1)
-
-
+temp_850_vcsel, current_850_vcsel, error_current_850_vcsel = np.loadtxt("current_threshold_vcsel850.txt", unpack=1, skiprows=1)
 
 fig, ax1 = plt.subplots()
-ax1.errorbar(temp_635, current_635, yerr=error_current_635, fmt='o', color="blue", label="635")
-ax1.errorbar(temp_850_p10, current_850_p10, yerr=error_current_850_p10, fmt='o', color="red", label="850")
 
+ax1.errorbar(temp_980, current_980, yerr=error_current_980, fmt='o', color="green", label="VCSEL 980")
+ax1.errorbar(temp_850_vcsel, current_850_vcsel, yerr=error_current_850_vcsel, fmt='o', color="red", label="VCSEL 850")
 ax1.set_xlabel('Temperatura [K]')
 ax1.set_ylabel('Prąd progowy [mA]')
 plt.grid(True)
-plt.legend()
+plt.legend(loc=2)
 plt.show()
