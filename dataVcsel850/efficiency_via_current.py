@@ -89,8 +89,8 @@ ax1.plot(current_60, dP_60, label="333 K")
 ax1.plot(current_70, dP_70, label="343 K")
 ax1.plot(current_80, dP_80, label="353 K")
 ax1.plot(current_90, dP_90, label="363 K")
-ax1.set_xlabel("Prąd [mA]")
-ax1.set_ylabel("Sprawność rożniczkowa")
+ax1.set_xlabel("Prąd $[\mathtt{mA}]$")
+ax1.set_ylabel(r"Sprawność rożniczkowa $[\frac{\mathtt{W}}{\mathtt{A}}]$")
 
 
 plt.legend()

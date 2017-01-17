@@ -8,7 +8,7 @@ import numpy as np
 from scipy.optimize import curve_fit
 
 plt.rcParams['font.family'] = 'serif'
-plt.rcParams['font.serif'] = 'Computer Modern Roman'
+plt.rcParams['font.serif'] = 'Palatino'
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 28})

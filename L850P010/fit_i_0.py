@@ -10,5 +10,5 @@ pl.plot_linear_temp_i_th_with_err
 pl.fit_temp_log_i_th(x_text=340, y_text=2.6, dy_text=0.05)
 pl.plot_fit_exp_with_error()
 
-np.savetxt("/home/pawel1/Pulpit/Studia/PracaInz/plot_all_laser/current_threshold_850_p010.txt",
-           np.c_[temp, i_th, error_i_th], fmt='%1.4f', header="temp [K]\t threshold current [mA]\t error current [ma]\t")
+#np.savetxt("/home/pawel1/Pulpit/Studia/PracaInz/plot_all_laser/current_threshold_850_p010.txt",
+#           np.c_[temp, i_th, error_i_th], fmt='%1.4f', header="temp [K]\t threshold current [mA]\t error current [ma]\t")

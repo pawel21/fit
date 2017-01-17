@@ -9,7 +9,7 @@ import numpy as np
 from plot_threshold_current_temp import PlotThresholdCurrentTemp
 
 plt.rcParams['font.family'] = 'serif'
-plt.rcParams['font.serif'] = 'Computer Modern Roman'
+plt.rcParams['font.serif'] = 'Palatino'
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 28})
@@ -34,6 +34,6 @@ y = f(x, 0.02799, 82.4241)
 ax1.plot(x, y, 'b-')
 ax1.errorbar(temp, I_0, yerr=error_I_0, fmt="o", color="red")
 ax1.set_xlabel("Temperatura [K], $T$")
-ax1.set_ylabel("Wartości prądu progowego , I_{th}$")
+ax1.set_ylabel("Prąd progowy , I_{th}$")
 plt.grid(True)
 plt.show()

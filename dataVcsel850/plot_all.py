@@ -3,10 +3,12 @@ matplotlib.use('qt5Agg')
 import matplotlib.pyplot as plt
 import numpy as np
 
-
-plt.rcParams["font.family"] = "Arial"
+plt.rcParams['font.family'] = 'serif'
+plt.rcParams['font.serif'] = 'Palatino'
+plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
-plt.rcParams.update({'font.size': 25})
+plt.rcParams.update({'font.size': 28})
+plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
 current_10, voltage_10, power_10 = np.loadtxt("temp_10.txt", unpack=True, skiprows=1)
 current_20, voltage_20, power_20 = np.loadtxt("temp_20.txt", unpack=True, skiprows=1)
