@@ -8,7 +8,7 @@ import numpy as np
 from scipy.optimize import curve_fit
 
 plt.rcParams['font.family'] = 'serif'
-plt.rcParams['font.serif'] = 'Computer Modern Roman'
+plt.rcParams['font.serif'] = 'Palatino'
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 28})
@@ -135,17 +135,20 @@ class PlotLaserEfficiency:
     def fit_step_by_step(self, start_fit):
         x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
         a = []
-        x = []
-        j = 0
-        k = 0
-        for i in range(0, int(len(x_to_fit) / 5)):
-            j += 5
-            popt, pcov = curve_fit(self.y, x_to_fit[k:j], y_to_fit[k:j])
-            a.append(popt[0])
-            x.append((x_to_fit[k:j]))
-            k += 5
+        x_a = []
+        k = 5
+        for i in range(0, len(x_to_fit)):
+            try:
+                popt, pcov = curve_fit(self.y, x_to_fit[i:i+k], y_to_fit[i:i+k])
+                a.append(popt[0])
+                x_a.append(np.mean(x_to_fit[i:i+k]))
+            except Exception as err:
+                break
         fig, ax1 = plt.subplots()
-        ax1.plot(x, a, 'bo')
+        ax1.plot(x_a, a, 'bo')
+        ax1.set_xlabel('Moc wejściowa [mW]')
+        ax1.set_ylabel('Sprawność różniczkowa [W/A]')
+        plt.grid(True)
         plt.show()
 
     @staticmethod

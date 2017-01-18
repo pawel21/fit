@@ -2,26 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="854a8d13-023d-48e8-a20c-57f3d4df5f8e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dataVcsel850/plot_wall_eff.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data980/plot_all_temp.png" afterPath="$PROJECT_DIR$/data980/plot_all_temp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data980/plot_theory_exp.png" afterPath="$PROJECT_DIR$/data980/plot_theory_exp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/plot_all.png" afterPath="$PROJECT_DIR$/dataVcsel850/plot_all.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/plot980/plot_all.png" afterPath="$PROJECT_DIR$/latex/plot980/plot_all.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/plot980/plot_temp_i_th_fit.png" afterPath="$PROJECT_DIR$/latex/plot980/plot_temp_i_th_fit.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/plot980/plot_theory_exp.png" afterPath="$PROJECT_DIR$/latex/plot980/plot_theory_exp.png" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/plot_vcsel850/plot_all.png" afterPath="$PROJECT_DIR$/latex/plot_vcsel850/plot_all.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/data980/efficiency_via_current980.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/plot_all_laser/theory_diff_plot.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.pdf" afterPath="$PROJECT_DIR$/latex/praca.pdf" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.synctex.gz" afterPath="$PROJECT_DIR$/latex/praca.synctex.gz" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.tex" afterPath="$PROJECT_DIR$/latex/praca.tex" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/L850P010/fit_i_0.py" afterPath="$PROJECT_DIR$/L850P010/fit_i_0.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data980/plot_all_temp.py" afterPath="$PROJECT_DIR$/data980/plot_all_temp.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data980/plot_temp_i_th.py" afterPath="$PROJECT_DIR$/data980/plot_temp_i_th.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/efficiency_via_current.py" afterPath="$PROJECT_DIR$/dataVcsel850/efficiency_via_current.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/plot_all.py" afterPath="$PROJECT_DIR$/dataVcsel850/plot_all.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dataVcsel850/efficiency_via_power2.py" afterPath="$PROJECT_DIR$/dataVcsel850/efficiency_via_power2.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.aux" afterPath="$PROJECT_DIR$/latex/praca.aux" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/latex/praca.log" afterPath="$PROJECT_DIR$/latex/praca.log" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot_laser_efficiency.py" afterPath="$PROJECT_DIR$/plot_laser_efficiency.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/plot_threshold_current_temp.py" afterPath="$PROJECT_DIR$/plot_threshold_current_temp.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/theory_plot.py" afterPath="$PROJECT_DIR$/theory_plot.py" />
     </list>
     <ignored path="PracaInz.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -45,20 +38,8 @@
       <file leaf-file-name="plot_laser_efficiency.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/plot_laser_efficiency.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="141" column="18" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
-              <folding>
-                <element signature="e#24#63#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="plot_wall_eff.py" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_wall_eff.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
-              <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+            <state relative-caret-position="437">
+              <caret line="143" column="52" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
               <folding>
                 <element signature="e#24#63#0" expanded="true" />
               </folding>
@@ -69,9 +50,31 @@
       <file leaf-file-name="efficiency_via_power2.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dataVcsel850/efficiency_via_power2.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="430">
+            <state relative-caret-position="509">
               <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="plot_i_th_t.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="40" column="7" selection-start-line="39" selection-start-column="0" selection-end-line="48" selection-end-column="14" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="fit_i_0.py" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/L850P010/fit_i_0.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
+              <folding>
+                <element signature="e#0#18#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -98,7 +101,6 @@
         <option value="$PROJECT_DIR$/data980/power_plot.py" />
         <option value="$PROJECT_DIR$/data980/find_I0_T0.py" />
         <option value="$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py" />
-        <option value="$PROJECT_DIR$/theory_plot.py" />
         <option value="$PROJECT_DIR$/data635/plot_i_th.py" />
         <option value="$PROJECT_DIR$/data635/plot_3_i_th.py" />
         <option value="$PROJECT_DIR$/plot_laser.py" />
@@ -108,7 +110,6 @@
         <option value="$PROJECT_DIR$/data635/plot_theory_exp.py" />
         <option value="$PROJECT_DIR$/dataVcsel850/efficiency_via_power.py" />
         <option value="$PROJECT_DIR$/fit.py" />
-        <option value="$PROJECT_DIR$/dataVcsel850/efficiency_via_power2.py" />
         <option value="$PROJECT_DIR$/data635/save_data.txt.py" />
         <option value="$PROJECT_DIR$/data980/save_data.py" />
         <option value="$PROJECT_DIR$/dataVcsel850/save_data.py" />
@@ -117,19 +118,23 @@
         <option value="$PROJECT_DIR$/data980/plot_temp_i_th.py" />
         <option value="$PROJECT_DIR$/dataVcsel850/plot_all.py" />
         <option value="$PROJECT_DIR$/data980/plot_all_temp.py" />
-        <option value="$PROJECT_DIR$/dataVcsel850/plot_wall_eff.py" />
-        <option value="$PROJECT_DIR$/dataVcsel850/efficiency_via_current.py" />
         <option value="$PROJECT_DIR$/L850P010/fit_i_0.py" />
+        <option value="$PROJECT_DIR$/dataVcsel850/plot_wall_eff.py" />
         <option value="$PROJECT_DIR$/plot_threshold_current_temp.py" />
+        <option value="$PROJECT_DIR$/dataVcsel850/efficiency_via_power2.py" />
+        <option value="$PROJECT_DIR$/dataVcsel850/efficiency_via_current.py" />
+        <option value="$PROJECT_DIR$/data980/efficiency_via_current980.py" />
+        <option value="$PROJECT_DIR$/theory_plot.py" />
+        <option value="$PROJECT_DIR$/plot_all_laser/theory_diff_plot.py" />
         <option value="$PROJECT_DIR$/plot_laser_efficiency.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="79" />
-    <option name="y" value="140" />
-    <option name="width" value="1841" />
-    <option name="height" value="940" />
+    <option name="x" value="59" />
+    <option name="y" value="24" />
+    <option name="width" value="1861" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -156,7 +161,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -189,12 +193,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="plot_all_laser" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracaInz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracaInz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="dataVcsel850" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracaInz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="PracaInz" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="data980" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -228,23 +261,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Python.efficiency_via_power2">
-    <configuration default="false" name="plot_all_temp" type="PythonConfigurationType" factoryName="Python" temporary="true">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs>
-        <env name="PYTHONUNBUFFERED" value="1" />
-      </envs>
-      <option name="SDK_HOME" value="/usr/bin/python3.5" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/data980" />
-      <option name="IS_MODULE_SDK" value="false" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <module name="PracaInz" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/data980/plot_all_temp.py" />
-      <option name="PARAMETERS" value="" />
-      <option name="SHOW_COMMAND_LINE" value="false" />
-      <method />
-    </configuration>
     <configuration default="false" name="plot_wall_eff" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -279,19 +295,36 @@
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
     </configuration>
-    <configuration default="false" name="fit_i_0" type="PythonConfigurationType" factoryName="Python" temporary="true">
+    <configuration default="false" name="theory_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
       <envs>
         <env name="PYTHONUNBUFFERED" value="1" />
       </envs>
       <option name="SDK_HOME" value="/usr/bin/python3.5" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/L850P010" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <option name="IS_MODULE_SDK" value="false" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <module name="PracaInz" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/L850P010/fit_i_0.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/theory_plot.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <method />
+    </configuration>
+    <configuration default="false" name="theory_diff_plot" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="/usr/bin/python3.5" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/plot_all_laser" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <module name="PracaInz" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/plot_all_laser/theory_diff_plot.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <method />
@@ -448,19 +481,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Python.plot_all_temp" />
-      <item index="1" class="java.lang.String" itemvalue="Python.plot_wall_eff" />
-      <item index="2" class="java.lang.String" itemvalue="Python.efficiency_via_current" />
-      <item index="3" class="java.lang.String" itemvalue="Python.fit_i_0" />
+      <item index="0" class="java.lang.String" itemvalue="Python.plot_wall_eff" />
+      <item index="1" class="java.lang.String" itemvalue="Python.efficiency_via_current" />
+      <item index="2" class="java.lang.String" itemvalue="Python.theory_plot" />
+      <item index="3" class="java.lang.String" itemvalue="Python.theory_diff_plot" />
       <item index="4" class="java.lang.String" itemvalue="Python.efficiency_via_power2" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Python.efficiency_via_power2" />
-        <item index="1" class="java.lang.String" itemvalue="Python.plot_wall_eff" />
-        <item index="2" class="java.lang.String" itemvalue="Python.fit_i_0" />
+        <item index="1" class="java.lang.String" itemvalue="Python.theory_diff_plot" />
+        <item index="2" class="java.lang.String" itemvalue="Python.theory_plot" />
         <item index="3" class="java.lang.String" itemvalue="Python.efficiency_via_current" />
-        <item index="4" class="java.lang.String" itemvalue="Python.plot_all_temp" />
+        <item index="4" class="java.lang.String" itemvalue="Python.plot_wall_eff" />
       </list>
     </recent_temporary>
   </component>
@@ -481,19 +514,19 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="79" y="140" width="1841" height="940" extended-state="0" />
+    <frame x="59" y="24" width="1861" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25357535" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2508161" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Python Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32819906" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3270142" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32604167" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29265404" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3992891" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35104167" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -550,10 +583,6 @@
           <line>20</line>
           <option name="timeStamp" value="7" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="python-line">
-          <url>file://$PROJECT_DIR$/L850P010/fit_i_0.py</url>
-          <option name="timeStamp" value="10" />
-        </line-breakpoint>
       </breakpoints>
       <default-breakpoints>
         <breakpoint type="python-exception">
@@ -567,30 +596,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dataVcsel850/temp_65_plot.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data980/plot_all_temp2.png">
-      <provider selected="true" editor-type-id="images">
-        <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data980/power_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="10" column="47" selection-start-line="10" selection-start-column="47" selection-end-line="10" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/data980/info.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/../../PyLabDevice/VenvDev/lib/python3.5/site-packages/matplotlib/backends/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
@@ -717,13 +722,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/theory_plot.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="612">
-          <caret line="36" column="5" selection-start-line="36" selection-start-column="0" selection-end-line="39" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/fit.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1674">
@@ -794,20 +792,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dataVcsel850/fit_Vcsel850.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-272">
-          <caret line="40" column="7" selection-start-line="39" selection-start-column="0" selection-end-line="48" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/data980/save_data.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -819,9 +803,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="468">
           <caret line="29" column="12" selection-start-line="29" selection-start-column="12" selection-end-line="29" selection-end-column="12" />
-          <folding>
-            <element signature="e#24#63#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -829,7 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -837,7 +817,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -852,16 +831,64 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="126">
           <caret line="10" column="9" selection-start-line="9" selection-start-column="0" selection-end-line="14" selection-end-column="64" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data980/plot_temp_i_th.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="11" column="8" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVcsel850/efficiency_via_power.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1062">
+          <caret line="1" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data980/plot_all_temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="6" column="10" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L850P010/plot2.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/L850P010/plot.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-121">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVcsel850/fit_Vcsel850.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="9" column="14" selection-start-line="9" selection-start-column="14" selection-end-line="9" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_threshold_current_temp.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1674">
+          <caret line="95" column="39" selection-start-line="95" selection-start-column="39" selection-end-line="95" selection-end-column="39" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/L850P010/fit_i_0.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="59" selection-start-line="13" selection-start-column="59" selection-end-line="13" selection-end-column="59" />
+        <state relative-caret-position="216">
+          <caret line="13" column="20" selection-start-line="13" selection-start-column="20" selection-end-line="13" selection-end-column="20" />
           <folding>
             <element signature="e#0#18#0" expanded="true" />
           </folding>
@@ -870,58 +897,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataVcsel850/efficiency_via_current.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="916">
-          <caret line="102" column="10" selection-start-line="102" selection-start-column="10" selection-end-line="102" selection-end-column="10" />
-          <folding>
-            <element signature="e#24#63#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/plot_threshold_current_temp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="83" column="99" selection-start-line="83" selection-start-column="99" selection-end-line="83" selection-end-column="99" />
+        <state relative-caret-position="365">
+          <caret line="94" column="0" selection-start-line="94" selection-start-column="0" selection-end-line="94" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data980/plot_temp_i_th.py">
+    <entry file="file://$PROJECT_DIR$/data980/efficiency_via_current980.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="11" column="8" selection-start-line="10" selection-start-column="0" selection-end-line="15" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dataVcsel850/efficiency_via_power.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1062">
-          <caret line="1" column="4" selection-start-line="0" selection-start-column="0" selection-end-line="14" selection-end-column="64" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_all.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
+        <state relative-caret-position="18">
           <caret line="6" column="10" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="64" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/data980/plot_all_temp.py">
+    <entry file="file://$PROJECT_DIR$/plot_all_laser/theory_diff_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="6" column="10" selection-start-line="5" selection-start-column="0" selection-end-line="10" selection-end-column="64" />
-          <folding />
+        <state relative-caret-position="491">
+          <caret line="37" column="14" selection-start-line="37" selection-start-column="14" selection-end-line="37" selection-end-column="14" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plot_laser_efficiency.py">
+    <entry file="file://$PROJECT_DIR$/theory_plot.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="141" column="18" selection-start-line="141" selection-start-column="18" selection-end-line="141" selection-end-column="18" />
+        <state relative-caret-position="504">
+          <caret line="28" column="9" selection-start-line="27" selection-start-column="0" selection-end-line="28" selection-end-column="23" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
@@ -930,8 +941,26 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_wall_eff.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
+        <state relative-caret-position="581">
           <caret line="35" column="10" selection-start-line="35" selection-start-column="10" selection-end-line="35" selection-end-column="10" />
+          <folding>
+            <element signature="e#24#63#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dataVcsel850/plot_i_th_t.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="40" column="7" selection-start-line="39" selection-start-column="0" selection-end-line="48" selection-end-column="14" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/plot_laser_efficiency.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="143" column="52" selection-start-line="143" selection-start-column="52" selection-end-line="143" selection-end-column="52" />
           <folding>
             <element signature="e#24#63#0" expanded="true" />
           </folding>
@@ -940,7 +969,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dataVcsel850/efficiency_via_power2.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="430">
+        <state relative-caret-position="509">
           <caret line="35" column="27" selection-start-line="35" selection-start-column="27" selection-end-line="35" selection-end-column="27" />
           <folding />
         </state>

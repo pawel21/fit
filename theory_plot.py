@@ -5,15 +5,13 @@ import matplotlib
 matplotlib.use('qt5Agg')
 import matplotlib.pyplot as plt
 import numpy as np
-from scipy.optimize import curve_fit
-from sympy.solvers import solve
-from sympy import Symbol
+
 
 plt.rcParams['font.family'] = 'serif'
-plt.rcParams['font.serif'] = 'Computer Modern Roman'
+plt.rcParams['font.serif'] = 'Palatino'
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
-plt.rcParams.update({'font.size': 25})
+plt.rcParams.update({'font.size': 28})
 plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
 current_10, voltage_10, power_10 = np.loadtxt("dataVcsel850/temp_10.txt", unpack=True, skiprows=1)
@@ -35,7 +33,7 @@ ax1.set_xlabel(u"prąd [mA], $I$")
 ax1.set_ylabel("moc wyjściowa [mW], $P$")
 
 ax1.text(0.003, 0.0008, '$P = a \cdot I + b$', verticalalignment='bottom', horizontalalignment='right',
-        color='red', fontsize=25)
+         color='red', fontsize=25)
 ax1.text(0.0027, -0.00055, r"$I_{th} = - \frac{b}{a}$", verticalalignment='bottom', horizontalalignment='right',
         color='red', fontsize=25)
 ax1.text(0.0078, 0.0026, r"$T_1", verticalalignment='bottom', horizontalalignment='right',

@@ -42,8 +42,8 @@ class PlotThresholdCurrentTemp:
     def plot_linear_temp_i_th_with_err(self):
         fig, ax1 = plt.subplots()
         ax1.errorbar(self.temp, self.threshold_current, yerr=self.y_err, fmt='o', color="red")
-        ax1.set_xlabel("Temperatura [K], $T$")
-        ax1.set_ylabel("Prąd progowy [mA], $I_{th}$")
+        ax1.set_xlabel("Temperatura [K]")
+        ax1.set_ylabel("Prąd progowy [mA]")
         ax1.set_ylim([min(self.threshold_current) - 0.1 * min(self.threshold_current),
                       max(self.threshold_current) + 0.1 * max(self.threshold_current)])
         plt.grid(True)
@@ -61,8 +61,8 @@ class PlotThresholdCurrentTemp:
     def fit_temp_log_i_th(self, **kwargs):
         fig, ax1 = plt.subplots()
         ax1.plot(self.temp, np.log(self.threshold_current), 'bo', markersize=10)
-        ax1.set_xlabel("Temperatura [K], $T$")
-        ax1.set_ylabel("logarytm z wartości prądu progowego , $\ln (I_{th})$")
+        ax1.set_xlabel("Temperatura [K]")
+        ax1.set_ylabel("$\ln (I_{\mathtt{th}})$")
 
         popt, pcov = curve_fit(self.f, self.temp, np.log(self.threshold_current))
         a = popt[0]
@@ -79,7 +79,7 @@ class PlotThresholdCurrentTemp:
         if kwargs.__contains__('x_text') and kwargs.__contains__("y_text") and kwargs.__contains__("dy_text"):
             plt.text(kwargs['x_text'], kwargs['y_text'], r"$\ln I_{th}=\frac{T}{T_{0}} + \ln I_{0}$", fontsize=30)
             plt.text(kwargs['x_text'], kwargs['y_text'] - kwargs["dy_text"],
-                     r"$T_0 = (%.1f \pm %.1f)$ K" % (t0, dt0),
+                     r"$T_0 = (%.d \pm %.d)$ K" % (t0, dt0),
                      fontsize=30)
             plt.text(kwargs['x_text'], kwargs['y_text']-2*kwargs["dy_text"], r"$I_0 = (%.2f \pm %.2f)$ mA" %(i_0, di_0),
                      fontsize=30)
@@ -93,8 +93,8 @@ class PlotThresholdCurrentTemp:
     def plot_fit_exp_with_error(self):
         fig, ax1 = plt.subplots()
         ax1.errorbar(self.temp, self.threshold_current, yerr=self.y_err, fmt='o', color="red")
-        ax1.set_xlabel("Temperatura [K], $T$")
-        ax1.set_ylabel("Prąd progowy [mA], $I_{th}$")
+        ax1.set_xlabel("Temperatura [K]")
+        ax1.set_ylabel("Prąd progowy [mA]")
         popt, pcov = curve_fit(self.f, self.temp, np.log(self.threshold_current))
         a = popt[0]
         b = popt[1]
