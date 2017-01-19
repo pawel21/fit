@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  18 JAN 2017 23:59
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  19 JAN 2017 23:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1240,10 +1240,10 @@ Overfull \hbox (14.46774pt too wide) in paragraph at lines 214--216
  <./gui.png>]
 Rozdzia\PlPrIeC {\l } 6.
 Package epstopdf Info: Source file: <plot_theory2.eps>
-(epstopdf)                    date: 2017-01-18 22:55:17
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 200866 bytes
 (epstopdf)             Output file: <plot_theory2-eps-converted-to.pdf>
-(epstopdf)                    date: 2017-01-18 22:55:23
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 7909 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_theory2-eps-converted
 -to.pdf plot_theory2.eps>
@@ -1372,11 +1372,11 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 416--418
  []
 
 Package epstopdf Info: Source file: <plot_vcsel850/plot_eff.eps>
-(epstopdf)                    date: 2017-01-18 18:33:21
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 615408 bytes
 (epstopdf)             Output file: <plot_vcsel850/plot_eff-eps-converted-to.pd
 f>
-(epstopdf)                    date: 2017-01-18 18:33:56
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 73432 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff-eps
 -converted-to.pdf plot_vcsel850/plot_eff.eps>
@@ -1397,11 +1397,11 @@ Overfull \hbox (49.14417pt too wide) in paragraph at lines 422--424
 
 Package epstopdf Info: Source file: <plot_vcsel850/plot_eff_all_via_current.eps
 >
-(epstopdf)                    date: 2017-01-18 18:41:07
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 204168 bytes
 (epstopdf)             Output file: <plot_vcsel850/plot_eff_all_via_current-eps
 -converted-to.pdf>
-(epstopdf)                    date: 2017-01-18 18:45:29
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 10370 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff_all
 _via_current-eps-converted-to.pdf plot_vcsel850/plot_eff_all_via_current.eps>
@@ -1435,22 +1435,16 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 434--436
  []
 
 Package epstopdf Info: Source file: <plot_vcsel850/plot_eff_step_by_step.eps>
-(epstopdf)                    date: 2017-01-18 23:59:52
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 374138 bytes
 (epstopdf)             Output file: <plot_vcsel850/plot_eff_step_by_step-eps-co
 nverted-to.pdf>
-(epstopdf)                    date: 2017-01-18 23:58:16
-(epstopdf)                    size: 38545 bytes
+(epstopdf)                    date: 2017-01-19 23:31:28
+(epstopdf)                    size: 38099 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff_ste
 p_by_step-eps-converted-to.pdf plot_vcsel850/plot_eff_step_by_step.eps>
 (epstopdf)             \includegraphics on input line 440.
-runsystem(repstopdf --outfile=plot_vcsel850/plot_eff_step_by_step-eps-converted
--to.pdf plot_vcsel850/plot_eff_step_by_step.eps)...executed safely (allowed).
-
-Package epstopdf Info: Result file: <plot_vcsel850/plot_eff_step_by_step-eps-co
-nverted-to.pdf>
-(epstopdf)                    date: 2017-01-18 23:59:57
-(epstopdf)                    size: 38099 bytes.
+Package epstopdf Info: Output file is already uptodate.
 
 <plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf, id=84, 1681.28125pt 
 x 898.35625pt>
@@ -1523,11 +1517,11 @@ Overfull \hbox (49.05984pt too wide) in paragraph at lines 490--492
  []
 
 Package epstopdf Info: Source file: <plot850P010/plot_i_th_error.eps>
-(epstopdf)                    date: 2017-01-18 18:18:43
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 214555 bytes
 (epstopdf)             Output file: <plot850P010/plot_i_th_error-eps-converted-
 to.pdf>
-(epstopdf)                    date: 2017-01-18 18:19:30
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 11559 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_i_th_erro
 r-eps-converted-to.pdf plot850P010/plot_i_th_error.eps>
@@ -1547,11 +1541,11 @@ Overfull \hbox (49.14417pt too wide) in paragraph at lines 497--499
  []
 
 Package epstopdf Info: Source file: <plot850P010/plot_fit.eps>
-(epstopdf)                    date: 2017-01-18 18:22:09
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 230293 bytes
 (epstopdf)             Output file: <plot850P010/plot_fit-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2017-01-18 18:22:54
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 15937 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_fit-eps-c
 onverted-to.pdf plot850P010/plot_fit.eps>
@@ -1571,11 +1565,11 @@ Overfull \hbox (49.14417pt too wide) in paragraph at lines 502--504
  []
 
 Package epstopdf Info: Source file: <plot850P010/plot_exp.eps>
-(epstopdf)                    date: 2017-01-18 18:22:36
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 215232 bytes
 (epstopdf)             Output file: <plot850P010/plot_exp-eps-converted-to.pdf>
 
-(epstopdf)                    date: 2017-01-18 18:22:54
+(epstopdf)                    date: 2017-01-19 23:31:28
 (epstopdf)                    size: 12331 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_exp-eps-c
 onverted-to.pdf plot850P010/plot_exp.eps>
