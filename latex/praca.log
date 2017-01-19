@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  19 JAN 2017 23:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2016.10.19)  20 JAN 2017 00:17
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -779,6 +779,9 @@ LaTeX Warning: Label `rys1' multiply defined.
 
 LaTeX Warning: Label `rys1' multiply defined.
 
+
+LaTeX Warning: Label `rys1' multiply defined.
+
 )
 \openout1 = `praca.aux'.
 
@@ -1459,60 +1462,85 @@ Overfull \hbox (49.14417pt too wide) in paragraph at lines 440--442
  [] 
  []
 
-<plot635/plot_ivl_20.png, id=85, 1681.0002pt x 897.5934pt>
-File: plot635/plot_ivl_20.png Graphic file (type png)
+Package epstopdf Info: Source file: <plot635/plot_i_v_4.eps>
+(epstopdf)                    date: 2017-01-20 00:13:45
+(epstopdf)                    size: 2920111 bytes
+(epstopdf)             Output file: <plot635/plot_i_v_4-eps-converted-to.pdf>
+(epstopdf)             Command: <repstopdf --outfile=plot635/plot_i_v_4-eps-con
+verted-to.pdf plot635/plot_i_v_4.eps>
+(epstopdf)             \includegraphics on input line 462.
+runsystem(repstopdf --outfile=plot635/plot_i_v_4-eps-converted-to.pdf plot635/p
+lot_i_v_4.eps)...executed safely (allowed).
 
-<use plot635/plot_ivl_20.png>
-Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 462.
-(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+Package epstopdf Info: Result file: <plot635/plot_i_v_4-eps-converted-to.pdf>
+(epstopdf)                    date: 2017-01-20 00:17:23
+(epstopdf)                    size: 354651 bytes.
+<plot635/plot_i_v_4-eps-converted-to.pdf, id=85, 1681.28125pt x 898.35625pt>
+File: plot635/plot_i_v_4-eps-converted-to.pdf Graphic file (type pdf)
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 462--464
+<use plot635/plot_i_v_4-eps-converted-to.pdf>
+Package pdftex.def Info: plot635/plot_i_v_4-eps-converted-to.pdf used on input 
+line 462.
+(pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
+
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 462--464
  [] 
  []
 
-<plot635/plot_3_i_th.png, id=86, 1681.0002pt x 897.5934pt>
-File: plot635/plot_3_i_th.png Graphic file (type png)
+<plot635/plot_ivl_20.png, id=86, 1681.0002pt x 897.5934pt>
+File: plot635/plot_ivl_20.png Graphic file (type png)
 
-<use plot635/plot_3_i_th.png>
-Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 469.
+<use plot635/plot_ivl_20.png>
+Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 469.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
 Overfull \hbox (49.05984pt too wide) in paragraph at lines 469--471
  [] 
  []
 
-<plot635/plot_lin_i_th.png, id=87, 1681.0002pt x 897.5934pt>
-File: plot635/plot_lin_i_th.png Graphic file (type png)
+<plot635/plot_3_i_th.png, id=87, 1681.0002pt x 897.5934pt>
+File: plot635/plot_3_i_th.png Graphic file (type png)
 
-<use plot635/plot_lin_i_th.png>
-Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 476.
+<use plot635/plot_3_i_th.png>
+Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 476.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
 Overfull \hbox (49.05984pt too wide) in paragraph at lines 476--478
  [] 
  []
 
-<plot635/fit_i_0.png, id=88, 1681.0002pt x 897.5934pt>
-File: plot635/fit_i_0.png Graphic file (type png)
+<plot635/plot_lin_i_th.png, id=88, 1681.0002pt x 897.5934pt>
+File: plot635/plot_lin_i_th.png Graphic file (type png)
 
-<use plot635/fit_i_0.png>
-Package pdftex.def Info: plot635/fit_i_0.png used on input line 483.
+<use plot635/plot_lin_i_th.png>
+Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 483.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
 Overfull \hbox (49.05984pt too wide) in paragraph at lines 483--485
  [] 
  []
 
+<plot635/fit_i_0.png, id=89, 1681.0002pt x 897.5934pt>
+File: plot635/fit_i_0.png Graphic file (type png)
 
-<plotAll/wykres_krawedziowy_prad_progowy.png, id=89, 1681.0002pt x 897.5934pt>
+<use plot635/fit_i_0.png>
+Package pdftex.def Info: plot635/fit_i_0.png used on input line 490.
+(pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
+
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 490--492
+ [] 
+ []
+
+
+<plotAll/wykres_krawedziowy_prad_progowy.png, id=90, 1681.0002pt x 897.5934pt>
 File: plotAll/wykres_krawedziowy_prad_progowy.png Graphic file (type png)
 
 <use plotAll/wykres_krawedziowy_prad_progowy.png>
 Package pdftex.def Info: plotAll/wykres_krawedziowy_prad_progowy.png used on in
-put line 490.
+put line 497.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 490--492
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 497--499
  [] 
  []
 
@@ -1525,18 +1553,18 @@ to.pdf>
 (epstopdf)                    size: 11559 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_i_th_erro
 r-eps-converted-to.pdf plot850P010/plot_i_th_error.eps>
-(epstopdf)             \includegraphics on input line 497.
+(epstopdf)             \includegraphics on input line 504.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_i_th_error-eps-converted-to.pdf, id=90, 1681.28125pt x 898.35
+<plot850P010/plot_i_th_error-eps-converted-to.pdf, id=91, 1681.28125pt x 898.35
 625pt>
 File: plot850P010/plot_i_th_error-eps-converted-to.pdf Graphic file (type pdf)
  <use plot850P010/plot_i_th_error-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_i_th_error-eps-converted-to.pdf used 
-on input line 497.
+on input line 504.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 497--499
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 504--506
  [] 
  []
 
@@ -1549,18 +1577,18 @@ Package epstopdf Info: Source file: <plot850P010/plot_fit.eps>
 (epstopdf)                    size: 15937 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_fit-eps-c
 onverted-to.pdf plot850P010/plot_fit.eps>
-(epstopdf)             \includegraphics on input line 502.
+(epstopdf)             \includegraphics on input line 509.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_fit-eps-converted-to.pdf, id=91, 1681.28125pt x 898.35625pt>
+<plot850P010/plot_fit-eps-converted-to.pdf, id=92, 1681.28125pt x 898.35625pt>
 File: plot850P010/plot_fit-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot850P010/plot_fit-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_fit-eps-converted-to.pdf used on inpu
-t line 502.
+t line 509.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 502--504
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 509--511
  [] 
  []
 
@@ -1573,18 +1601,18 @@ Package epstopdf Info: Source file: <plot850P010/plot_exp.eps>
 (epstopdf)                    size: 12331 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_exp-eps-c
 onverted-to.pdf plot850P010/plot_exp.eps>
-(epstopdf)             \includegraphics on input line 505.
+(epstopdf)             \includegraphics on input line 512.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_exp-eps-converted-to.pdf, id=92, 1681.28125pt x 898.35625pt>
+<plot850P010/plot_exp-eps-converted-to.pdf, id=93, 1681.28125pt x 898.35625pt>
 File: plot850P010/plot_exp-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot850P010/plot_exp-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_exp-eps-converted-to.pdf used on inpu
-t line 505.
+t line 512.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 505--507
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 512--514
  [][] 
  []
 
@@ -1596,11 +1624,12 @@ l850/temp_20_ivl.png> <./plot_vcsel850/plot_all.png>] [19 <./plot_vcsel850/plot
 _3_i_th.png> <./plot_vcsel850/plot_lin_i_th.png>] [20 <./plot_vcsel850/plot_eff
 -eps-converted-to.pdf> <./plot_vcsel850/plot_eff_all_via_current-eps-converted-
 to.pdf>] [21 <./plot_vcsel850/plot_slope_eff_via_power.png> <./plot_vcsel850/pl
-ot_eff_step_by_step-eps-converted-to.pdf>] [22 <./plot635/plot_ivl_20.png>]
-[23 <./plot635/plot_3_i_th.png> <./plot635/plot_lin_i_th.png>] [24 <./plot635/f
-it_i_0.png> <./plotAll/wykres_krawedziowy_prad_progowy.png>] [25 <./plot850P010
-/plot_i_th_error-eps-converted-to.pdf>] [26 <./plot850P010/plot_fit-eps-convert
-ed-to.pdf> <./plot850P010/plot_exp-eps-converted-to.pdf>] (./praca.aux)
+ot_eff_step_by_step-eps-converted-to.pdf>] [22 <./plot635/plot_i_v_4-eps-conver
+ted-to.pdf>] [23 <./plot635/plot_ivl_20.png> <./plot635/plot_3_i_th.png>]
+[24 <./plot635/plot_lin_i_th.png> <./plot635/fit_i_0.png>] [25 <./plotAll/wykre
+s_krawedziowy_prad_progowy.png> <./plot850P010/plot_i_th_error-eps-converted-to
+.pdf>] [26 <./plot850P010/plot_fit-eps-converted-to.pdf> <./plot850P010/plot_ex
+p-eps-converted-to.pdf>] (./praca.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1609,10 +1638,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7477 strings out of 493029
- 101319 string characters out of 6136233
+ 7482 strings out of 493029
+ 101508 string characters out of 6136233
  292898 words of memory out of 5000000
- 10812 multiletter control sequences out of 15000+600000
+ 10816 multiletter control sequences out of 15000+600000
  17573 words of font info for 57 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,14n,58p,858b,1378s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1634,10 +1663,10 @@ xlive/texmf-dist/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/pl/pltt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/u
 rw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/
 uplri8a.pfb>
-Output written on praca.pdf (26 pages, 1624692 bytes).
+Output written on praca.pdf (26 pages, 1972707 bytes).
 PDF statistics:
- 237 PDF objects out of 1000 (max. 8388607)
- 150 compressed objects within 2 object streams
+ 242 PDF objects out of 1000 (max. 8388607)
+ 154 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
- 121 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 126 words of extra memory for PDF output out of 10000 (max. 10000000)
 
