@@ -33,4 +33,4 @@ dP_90 = 3*a_90*input_power_90**2 + 2*b_90*input_power_90 + c_90
 # plt.grid(True)
 # plt.show()
 
-ple90.fit_step_by_step(5.0)
+ple90.fit_step_by_step(5.0, 10)

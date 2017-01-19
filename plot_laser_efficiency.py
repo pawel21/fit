@@ -59,7 +59,7 @@ class PlotLaserEfficiency:
         fig, ax1 = plt.subplots()
         a, b, c = self.fit_via_current_poly_2(start_fit)
         x = np.linspace(start_fit, max(self.current))
-        y = self.f(x, a, b, c)
+        y = self.poly_2(x, a, b, c)
         ax1.plot(self.current, self.output_power, 'ro', markersize=4)
         ax1.plot(x, y, 'b-', linewidth=2)
         ax1.set_xlabel('Prąd [mA]')
@@ -72,7 +72,7 @@ class PlotLaserEfficiency:
         input_power = self.get_input_power()
         a, b, c = self.fit_via_power_poly_2(start_fit)
         x = np.linspace(start_fit, max(input_power))
-        y = self.f(x, a, b, c)
+        y = self.poly_2(x, a, b, c)
         ax1.plot(input_power, self.output_power, 'go', markersize=4)
         ax1.plot(x, y, 'b-', linewidth=2)
         ax1.set_xlim([0, max(input_power)])
@@ -83,7 +83,7 @@ class PlotLaserEfficiency:
 
     def fit_via_current_poly_2(self, start_fit):
         x_to_fit, y_to_fit = self.get_data_to_fit_via_current(start_fit)
-        popt, pcov = curve_fit(self.f, x_to_fit, y_to_fit)
+        popt, pcov = curve_fit(self.poly_2, x_to_fit, y_to_fit)
         a = popt[0]
         b = popt[1]
         c = popt[2]
@@ -99,7 +99,7 @@ class PlotLaserEfficiency:
 
     def fit_via_power_poly_2(self, start_fit):
         x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
-        popt, pcov = curve_fit(self.f, x_to_fit, y_to_fit)
+        popt, pcov = curve_fit(self.poly_2, x_to_fit, y_to_fit)
         a = popt[0]
         b = popt[1]
         c = popt[2]
@@ -115,7 +115,7 @@ class PlotLaserEfficiency:
 
     def fit_via_power_poly_3(self, start_fit):
         x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
-        popt, pcov = curve_fit(self.g, x_to_fit, y_to_fit)
+        popt, pcov = curve_fit(self.poly_3, x_to_fit, y_to_fit)
         a = popt[0]
         b = popt[1]
         c = popt[2]
@@ -132,16 +132,15 @@ class PlotLaserEfficiency:
         print(u"d = %s \u00B1 %s" % (d, dd))
         return a, b, c, d
 
-    def fit_step_by_step(self, start_fit):
+    def fit_step_by_step(self, start_fit, step):
         x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
         a = []
         x_a = []
-        k = 5
         for i in range(0, len(x_to_fit)):
             try:
-                popt, pcov = curve_fit(self.y, x_to_fit[i:i+k], y_to_fit[i:i+k])
+                popt, pcov = curve_fit(self.poly_1, x_to_fit[i:i + step], y_to_fit[i:i + step])
                 a.append(popt[0])
-                x_a.append(np.mean(x_to_fit[i:i+k]))
+                x_a.append(np.mean(x_to_fit[i:i+step]))
             except Exception as err:
                 break
         fig, ax1 = plt.subplots()
@@ -152,15 +151,15 @@ class PlotLaserEfficiency:
         plt.show()
 
     @staticmethod
-    def y(x, a, b):
+    def poly_1(x, a, b):
         return a*x + b
 
     @staticmethod
-    def f(x, a, b, c):
+    def poly_2(x, a, b, c):
         return a*x**2 + b*x + c
 
     @staticmethod
-    def g(x, a, b, c, d):
+    def poly_3(x, a, b, c, d):
         return a*x**3 + b*x**2 + c*x + d
 
     def get_data_to_fit_via_current(self, start_to_fit):
