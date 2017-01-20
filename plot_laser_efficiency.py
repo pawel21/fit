@@ -134,6 +134,8 @@ class PlotLaserEfficiency:
 
     def fit_step_by_step(self, start_fit, step):
         x_to_fit, y_to_fit = self.get_data_to_fit_via_power(start_fit)
+        x_to_fit = x_to_fit[::3]
+        y_to_fit = y_to_fit[::3]
         a = []
         x_a = []
         for i in range(0, len(x_to_fit)):
@@ -149,6 +151,7 @@ class PlotLaserEfficiency:
         ax1.set_ylabel('Sprawność różniczkowa [W/A]')
         plt.grid(True)
         plt.show()
+        return x_a, a
 
     @staticmethod
     def poly_1(x, a, b):
