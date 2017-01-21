@@ -8,7 +8,7 @@ import matplotlib.pyplot as plt
 from plot_laser_efficiency import PlotLaserEfficiency
 
 plt.rcParams['font.family'] = 'serif'
-plt.rcParams['font.serif'] = 'Computer Modern Sans serif'
+plt.rcParams['font.serif'] = 'Palatino'
 plt.rcParams['text.usetex'] = True
 plt.rcParams['text.latex.unicode'] = True
 plt.rcParams.update({'font.size': 28})
@@ -73,14 +73,14 @@ dP_90 = 2*a_90*input_power_90 + b_90
 
 fig, ax1 = plt.subplots()
 
-ax1.plot(input_power_20, dP_20, label="293 K")
-ax1.plot(input_power_30, dP_30, label="303 K")
-ax1.plot(input_power_40, dP_40, label="313 K")
-ax1.plot(input_power_50, dP_50, label="323 K")
-ax1.plot(input_power_60, dP_60, label="333 K")
-ax1.plot(input_power_70, dP_70, label="343 K")
-ax1.plot(input_power_80, dP_80, label="353 K")
-ax1.plot(input_power_90, dP_90, label="363 K")
+ax1.plot(input_power_20, dP_20, label="293 K", linewidth=2)
+ax1.plot(input_power_30, dP_30, label="303 K", linewidth=2)
+ax1.plot(input_power_40, dP_40, label="313 K", linewidth=2)
+ax1.plot(input_power_50, dP_50, label="323 K", linewidth=2)
+ax1.plot(input_power_60, dP_60, label="333 K", linewidth=2)
+ax1.plot(input_power_70, dP_70, label="343 K", linewidth=2)
+ax1.plot(input_power_80, dP_80, label="353 K", linewidth=2)
+ax1.plot(input_power_90, dP_90, label="363 K", linewidth=2)
 ax1.set_xlim([0, max(input_power_20)])
 ax1.set_xlabel("Moc wejściowa [mW]")
 ax1.set_ylabel("Sprawność rożniczkowa")
