@@ -30,6 +30,10 @@ class PlotLaserEfficiency:
         # return value mW
         return self.current*self.voltage
 
+    def get_output_power(self):
+        # return value mW
+        return self.output_power
+
     def get_ratio_power(self):
         input_power = self.get_input_power()
         return self.output_power / input_power
@@ -80,6 +84,7 @@ class PlotLaserEfficiency:
         ax1.set_ylabel('Moc wyjściowa [mW]')
         plt.grid(True)
         plt.show()
+        return x, y
 
     def fit_via_current_poly_2(self, start_fit):
         x_to_fit, y_to_fit = self.get_data_to_fit_via_current(start_fit)
