@@ -90,11 +90,10 @@ class Fit:
         plt.show()
 
 pl10 = Fit("temp_10.txt")
-a_10, b_10, I_0_20, dI_0_10 = pl10.do_fit(1.65, 6)
+a_10, b_10, I_0_10, dI_0_10 = pl10.do_fit(1.65, 6)
 x_10 = np.linspace(1.6, 5, 100)
 y_10 = a_10 * x_10 + b_10
 current_10, voltage_10, power_10 = pl10.get_data
-
 ax1 = plt.subplot(221)
 ax1.plot(current_10, power_10, 'r^', markersize=7)
 ax1.plot(x_10, y_10, 'b-', linewidth=2)
@@ -106,6 +105,61 @@ ax1.set_ylim([-0.3, 1.2])
 ax1.text(1.5, -0.15, "$I_{\mathrm{th}}$ = (%.2f $\pm$ %.2f)mA" % (1.70, 0.03), size=20)
 ax1.set_title("283 K")
 plt.grid(True)
+
+
+pl55 = Fit("temp_55.txt")
+a_55, b_55, I_0_55, dI_0_55 = pl55.do_fit(1.85, 6)
+x_55 = np.linspace(1.7, 5, 100)
+y_55 = a_55 * x_55 + b_55
+current_55, voltage_55, power_55 = pl55.get_data
+ax3 = plt.subplot(222)
+ax3.plot(current_55, power_55, 'r^', markersize=7)
+ax3.plot(x_55, y_55, 'b-', linewidth=2)
+ax3.axhline(color='black')
+ax3.set_xlabel(u"prąd [mA]")
+ax3.set_ylabel(u"moc wyjściowa [mW]")
+ax3.set_xlim([0, 5])
+ax3.set_ylim([-0.3, 1.2])
+ax3.text(1.7, -0.15, "$I_{\mathrm{th}}$ = (%.2f $\pm$ %.2f)mA" % (1.83, 0.04), size=20)
+ax3.set_title("328 K")
+plt.grid(True)
+
+
+pl25 = Fit("temp_25.txt")
+a_25, b_25, I_0_25, dI_0_25 = pl25.do_fit(1.55, 6)
+x_25 = np.linspace(1.5, 5, 100)
+y_25 = a_25 * x_25 + b_25
+current_25, voltage_25, power_25 = pl25.get_data
+ax2 = plt.subplot(223)
+ax2.plot(current_25, power_25, 'r^', markersize=7)
+ax2.plot(x_25, y_25, 'b-', linewidth=2)
+ax2.axhline(color='black')
+ax2.set_xlabel(u"prąd [mA]")
+ax2.set_ylabel(u"moc wyjściowa [mW]")
+ax2.set_xlim([0, 5])
+ax2.set_ylim([-0.3, 1.2])
+ax2.text(1.5, -0.15, "$I_{\mathrm{th}}$ = (%.2f $\pm$ %.2f)mA" % (1.55, 0.03), size=20)
+ax2.set_title("298 K")
+plt.grid(True)
+
+
+pl90 = Fit("temp_90.txt")
+a_90, b_90, I_0_90, dI_0_90 = pl90.do_fit(2.9, 5.5)
+x_90 = np.linspace(2.7, 5, 100)
+y_90 = a_90 * x_90 + b_90
+current_90, voltage_90, power_90 = pl90.get_data
+ax4 = plt.subplot(224)
+ax4.plot(current_90, power_90, 'r^', markersize=7)
+ax4.plot(x_90, y_90, 'b-', linewidth=2)
+ax4.axhline(color='black')
+ax4.set_xlabel(u"prąd [mA]")
+ax4.set_ylabel(u"moc wyjściowa [mW]")
+ax4.set_xlim([0, 5])
+ax4.set_ylim([-0.2, 0.7])
+ax4.text(2.5, -0.1, "$I_{\mathrm{th}}$ = (%.1f $\pm$ %.1f)mA" % (2.8, 0.1), size=20)
+ax4.set_title("363 K")
+plt.grid(True)
+
 
 plt.subplots_adjust(left=0.06, right=0.94, top=0.93, bottom=0.1, hspace=0.34, wspace=0.26)
 plt.show()
