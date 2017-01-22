@@ -81,7 +81,7 @@ class Fit:
         ax1.plot(self.current*1000, self.power*1000, 'ro', markersize=4)
         ax1.set_xlim([0, max(self.current*1000)])
         ax1.set_ylim([0, max(self.power*1000)])
-        x = np.linspace(start_to_fit, end_to_fit, 100)
+        x = np.linspace(start_to_fit-0.1*start_to_fit, end_to_fit, 100)
         y = self.a *x + self.b
         ax1.axhline(0., ls='-', color='k')
         ax1.plot(x, y, 'b-', linewidth=2)
@@ -92,5 +92,5 @@ class Fit:
         plt.show()
 
 
-fit = Fit("L850P010/L850P010_temp_80.txt", 10)
-fit.do_fit(16.8, 25)
+fit = Fit("data635/new_measure/temp_35.txt", 10)
+fit.do_fit(36, 39)

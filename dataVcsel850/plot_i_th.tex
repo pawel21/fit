@@ -1,0 +1,128 @@
+% This file was created by matplotlib2tikz v0.6.0.
+\begin{tikzpicture}
+
+\begin{axis}[
+xlabel={Temperatura [K]},
+ylabel={Prąd progowy [mA]},
+xmin=280, xmax=370,
+ymin=1.4, ymax=3,
+axis on top,
+width=16cm,
+height=9cm,
+xmajorgrids,
+ymajorgrids
+]
+\path [draw=red] (axis cs:283,1.67)
+--(axis cs:283,1.73);
+
+\path [draw=red] (axis cs:288,1.64)
+--(axis cs:288,1.7);
+
+\path [draw=red] (axis cs:293,1.57)
+--(axis cs:293,1.63);
+
+\path [draw=red] (axis cs:298,1.51)
+--(axis cs:298,1.59);
+
+\path [draw=red] (axis cs:303,1.56)
+--(axis cs:303,1.62);
+
+\path [draw=red] (axis cs:308,1.6)
+--(axis cs:308,1.66);
+
+\path [draw=red] (axis cs:313,1.62)
+--(axis cs:313,1.68);
+
+\path [draw=red] (axis cs:318,1.64)
+--(axis cs:318,1.72);
+
+\path [draw=red] (axis cs:323,1.69)
+--(axis cs:323,1.77);
+
+\path [draw=red] (axis cs:328,1.79)
+--(axis cs:328,1.87);
+
+\path [draw=red] (axis cs:333,1.85)
+--(axis cs:333,1.93);
+
+\path [draw=red] (axis cs:338,1.96)
+--(axis cs:338,2.04);
+
+\path [draw=red] (axis cs:343,2.1)
+--(axis cs:343,2.18);
+
+\path [draw=red] (axis cs:348,2.19)
+--(axis cs:348,2.29);
+
+\path [draw=red] (axis cs:353,2.33)
+--(axis cs:353,2.43);
+
+\path [draw=red] (axis cs:358,2.52)
+--(axis cs:358,2.62);
+
+\path [draw=red] (axis cs:363,2.67)
+--(axis cs:363,2.81);
+
+\addplot [red, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+283 1.67
+288 1.64
+293 1.57
+298 1.51
+303 1.56
+308 1.6
+313 1.62
+318 1.64
+323 1.69
+328 1.79
+333 1.85
+338 1.96
+343 2.1
+348 2.19
+353 2.33
+358 2.52
+363 2.67
+};
+\addplot [red, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+283 1.73
+288 1.7
+293 1.63
+298 1.59
+303 1.62
+308 1.66
+313 1.68
+318 1.72
+323 1.77
+328 1.87
+333 1.93
+338 2.04
+343 2.18
+348 2.29
+353 2.43
+358 2.62
+363 2.81
+};
+\addplot [red, mark=*, mark size=3, mark options={solid,draw=black}, only marks]
+table {%
+283 1.7
+288 1.67
+293 1.6
+298 1.55
+303 1.59
+308 1.63
+313 1.65
+318 1.68
+323 1.73
+328 1.83
+333 1.89
+338 2
+343 2.14
+348 2.24
+353 2.38
+358 2.57
+363 2.74
+};
+\end{axis}
+
+\end{tikzpicture}
