@@ -1,0 +1,68 @@
+% This file was created by matplotlib2tikz v0.6.0.
+\begin{tikzpicture}
+
+\begin{axis}[
+xlabel={Temperatura [K]},
+ylabel={Prąd progowy [mA]},
+xmin=275, xmax=310,
+ymin=15, ymax=40,
+axis on top,
+width=15cm,
+height=8cm,
+xmajorgrids,
+ymajorgrids
+]
+\path [draw=red] (axis cs:278,18.9)
+--(axis cs:278,19.3);
+
+\path [draw=red] (axis cs:283,20.5)
+--(axis cs:283,20.9);
+
+\path [draw=red] (axis cs:288,22.4)
+--(axis cs:288,22.8);
+
+\path [draw=red] (axis cs:293,24.8)
+--(axis cs:293,25.2);
+
+\path [draw=red] (axis cs:298,27.6)
+--(axis cs:298,28.2);
+
+\path [draw=red] (axis cs:303,30.9)
+--(axis cs:303,31.9);
+
+\path [draw=red] (axis cs:308,34)
+--(axis cs:308,38);
+
+\addplot [red, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+278 18.9
+283 20.5
+288 22.4
+293 24.8
+298 27.6
+303 30.9
+308 34
+};
+\addplot [red, mark=-, mark size=3, mark options={solid}, only marks]
+table {%
+278 19.3
+283 20.9
+288 22.8
+293 25.2
+298 28.2
+303 31.9
+308 38
+};
+\addplot [red, mark=*, mark size=1, mark options={solid,draw=black}, only marks]
+table {%
+278 19.1
+283 20.7
+288 22.6
+293 25
+298 27.9
+303 31.4
+308 36
+};
+\end{axis}
+
+\end{tikzpicture}

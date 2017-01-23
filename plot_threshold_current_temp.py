@@ -54,7 +54,7 @@ class PlotThresholdCurrentTemp:
         fig, ax1 = plt.subplots()
         ax1.plot(self.temp, np.log(self.threshold_current), 'bo', markersize=10)
         ax1.set_xlabel("Temperatura [K], $T$")
-        ax1.set_ylabel("logarytm z wartości prądu progowego , $\ln (I_{th})$")
+        ax1.set_ylabel("logarytm z wartości prądu progowego , $\ln (I_{\mathrm{th}})$")
         plt.grid(True)
         plt.show()
 
@@ -62,7 +62,7 @@ class PlotThresholdCurrentTemp:
         fig, ax1 = plt.subplots()
         ax1.plot(self.temp, np.log(self.threshold_current), 'bo', markersize=10)
         ax1.set_xlabel("Temperatura [K]")
-        ax1.set_ylabel("$\ln (I_{\mathtt{th}})$")
+        ax1.set_ylabel("$\ln (I_{\mathrm{th}})$")
 
         popt, pcov = curve_fit(self.f, self.temp, np.log(self.threshold_current))
         a = popt[0]
@@ -77,11 +77,11 @@ class PlotThresholdCurrentTemp:
         y = a*x + b
         ax1.plot(x, y, 'r-')
         if kwargs.__contains__('x_text') and kwargs.__contains__("y_text") and kwargs.__contains__("dy_text"):
-            plt.text(kwargs['x_text'], kwargs['y_text'], r"$\ln I_{th}=\frac{T}{T_{0}} + \ln I_{0}$", fontsize=30)
+            plt.text(kwargs['x_text'], kwargs['y_text'], r"$\ln I_{\mathrm{th}}=\frac{T}{T_{0}} + \ln I_{0}$", fontsize=30)
             plt.text(kwargs['x_text'], kwargs['y_text'] - kwargs["dy_text"],
-                     r"$T_0 = (%.d \pm %.d)$ K" % (t0, dt0),
+                     r"$T_0 = (%.d \pm %.d)$ K" % (t0, dt0+1),
                      fontsize=30)
-            plt.text(kwargs['x_text'], kwargs['y_text']-2*kwargs["dy_text"], r"$I_0 = (%.2f \pm %.2f)$ mA" %(i_0, di_0),
+            plt.text(kwargs['x_text'], kwargs['y_text']-2*kwargs["dy_text"], r"$I_0 = (%.2f \pm %.2f)$ mA" %(i_0, di_0+0.01),
                      fontsize=30)
         print(u"a = %s \u00B1 %s" %(a, da))
         print(u"b = %s \u00B1 %s" % (b, db))
