@@ -70,6 +70,7 @@ class PlotLaserEfficiency:
         ax1.set_ylabel('Moc wyjściowa [mW]')
         plt.grid(True)
         plt.show()
+        return x, y
 
     def plot_slope_efficiency_via_power(self, start_fit):
         fig, ax1 = plt.subplots()
@@ -148,6 +149,27 @@ class PlotLaserEfficiency:
                 popt, pcov = curve_fit(self.poly_1, x_to_fit[i:i + step], y_to_fit[i:i + step])
                 a.append(popt[0])
                 x_a.append(np.mean(x_to_fit[i:i+step]))
+            except Exception as err:
+                break
+        fig, ax1 = plt.subplots()
+        ax1.plot(x_a, a, 'bo')
+        ax1.set_xlabel('Moc wejściowa [mW]')
+        ax1.set_ylabel('Sprawność różniczkowa [W/A]')
+        plt.grid(True)
+        plt.show()
+        return x_a, a
+
+    def fit_step_by_step_via_current(self, start_fit, step):
+        x_to_fit, y_to_fit = self.get_data_to_fit_via_current(start_fit)
+        x_to_fit = x_to_fit[::3]
+        y_to_fit = y_to_fit[::3]
+        a = []
+        x_a = []
+        for i in range(0, len(x_to_fit)):
+            try:
+                popt, pcov = curve_fit(self.poly_1, x_to_fit[i:i + step], y_to_fit[i:i + step])
+                a.append(popt[0])
+                x_a.append(np.mean(x_to_fit[i:i + step]))
             except Exception as err:
                 break
         fig, ax1 = plt.subplots()

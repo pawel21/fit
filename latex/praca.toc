@@ -1,23 +1,23 @@
-\contentsline {chapter}{\numberline {1}Wst\IeC {\k e}p}{2}
-\contentsline {chapter}{\numberline {2}Komunikacja z urz\IeC {\k a}dzeniami pomiarowymi na platformie Linux}{4}
-\contentsline {section}{\numberline {2.1}Programowane urz\IeC {\k a}dzenia pomiarowe}{4}
-\contentsline {section}{\numberline {2.2}Komunikacja}{4}
-\contentsline {section}{\numberline {2.3}SCPI --- standard komend do komunikacji z urz\IeC {\k a}dzeniami}{5}
-\contentsline {section}{\numberline {2.4}Przyk\IeC {\l }adowe programy do sterowania sprz\IeC {\k e}tem}{6}
-\contentsline {chapter}{\numberline {3}Wykorzystania oprogramowania open source w nauce.}{7}
-\contentsline {section}{\numberline {3.1}Oprogramowanie open source}{7}
-\contentsline {section}{\numberline {3.2}Python --- idealne narz\IeC {\k e}dzie dla fizyka}{7}
-\contentsline {chapter}{\numberline {4}Py3LabDeviceIO --- modu\IeC {\l } do sterowania sprzetem laboratoryjnym}{8}
-\contentsline {section}{\numberline {4.1}Opisz programu}{8}
-\contentsline {section}{\numberline {4.2}U\IeC {\.z}ywanie programu}{9}
-\contentsline {chapter}{\numberline {5}Program okienkowy do przeprowadzania pomiar\IeC {\'o}w}{10}
-\contentsline {section}{\numberline {5.1}Opisz programu}{10}
-\contentsline {chapter}{\numberline {6}Eksperyment}{11}
-\contentsline {section}{\numberline {6.1}Teoria}{11}
-\contentsline {subsection}{\numberline {6.1.1}Pr\IeC {\k a}d progowy}{11}
-\contentsline {subsection}{\numberline {6.1.2}Sprawno\IeC {\'s}\IeC {\'c}}{13}
-\contentsline {subsection}{\numberline {6.1.3}Wp\IeC {\l }yw temperatury ch\IeC {\l }odnicy lasera na jego paramentry}{13}
-\contentsline {section}{\numberline {6.2}Badanie lasera}{14}
-\contentsline {subsection}{\numberline {6.2.1}Laser 980\tmspace +\thinmuskip {.1667em}nm}{14}
-\contentsline {subsection}{\numberline {6.2.2}Laser VCSEL 850\tmspace +\thinmuskip {.1667em}nm}{15}
-\contentsline {subsection}{\numberline {6.2.3}Laser kraw\IeC {\k e}dziowy 635\tmspace +\thinmuskip {.1667em}nm}{15}
+\contentsline {chapter}{\numberline {1\relax .\kern .5em }Wst\IeC {\k e}p}{2}
+\contentsline {chapter}{\numberline {2\relax .\kern .5em }Komunikacja z urz\IeC {\k a}dzeniami pomiarowymi na platformie Linux}{4}
+\contentsline {section}{\numberline {2.1\relax .\kern .5em }Programowane urz\IeC {\k a}dzenia pomiarowe}{4}
+\contentsline {section}{\numberline {2.2\relax .\kern .5em }Komunikacja}{4}
+\contentsline {section}{\numberline {2.3\relax .\kern .5em }SCPI --- standard komend do komunikacji z urz\IeC {\k a}dzeniami}{4}
+\contentsline {section}{\numberline {2.4\relax .\kern .5em }Przyk\IeC {\l }adowe programy do sterowania sprz\IeC {\k e}tem}{6}
+\contentsline {chapter}{\numberline {3\relax .\kern .5em }Wykorzystania oprogramowania open source w nauce.}{7}
+\contentsline {section}{\numberline {3.1\relax .\kern .5em }Oprogramowanie open source}{7}
+\contentsline {section}{\numberline {3.2\relax .\kern .5em }Python --- idealne narz\IeC {\k e}dzie dla fizyka}{7}
+\contentsline {chapter}{\numberline {4\relax .\kern .5em }Py3LabDeviceIO --- modu\IeC {\l } do sterowania sprzetem laboratoryjnym}{8}
+\contentsline {section}{\numberline {4.1\relax .\kern .5em }Opisz programu}{8}
+\contentsline {section}{\numberline {4.2\relax .\kern .5em }U\IeC {\.z}ywanie programu}{8}
+\contentsline {chapter}{\numberline {5\relax .\kern .5em }Program okienkowy do przeprowadzania pomiar\IeC {\'o}w}{9}
+\contentsline {section}{\numberline {5.1\relax .\kern .5em }Opisz programu}{9}
+\contentsline {chapter}{\numberline {6\relax .\kern .5em }Eksperyment}{10}
+\contentsline {section}{\numberline {6.1\relax .\kern .5em }Teoria}{10}
+\contentsline {subsection}{\numberline {6.1.1\relax .\kern .5em }Pr\IeC {\k a}d progowy}{10}
+\contentsline {subsection}{\numberline {6.1.2\relax .\kern .5em }Sprawno\IeC {\'s}\IeC {\'c}}{12}
+\contentsline {subsection}{\numberline {6.1.3\relax .\kern .5em }Wp\IeC {\l }yw temperatury ch\IeC {\l }odnicy lasera na jego paramentry}{13}
+\contentsline {section}{\numberline {6.2\relax .\kern .5em }Badanie lasera}{14}
+\contentsline {subsection}{\numberline {6.2.1\relax .\kern .5em }Laser 980\tmspace +\thinmuskip {.1667em}nm}{14}
+\contentsline {subsection}{\numberline {6.2.2\relax .\kern .5em }Laser VCSEL 850\tmspace +\thinmuskip {.1667em}nm}{15}
+\contentsline {subsection}{\numberline {6.2.3\relax .\kern .5em }Laser kraw\IeC {\k e}dziowy 635\tmspace +\thinmuskip {.1667em}nm}{15}

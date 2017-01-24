@@ -1,4 +1,4 @@
-\documentclass[a4paper, portrait,12pt]{report}
+\documentclass[a4paper, portrait,12pt]{mwrep}
 \usepackage{palatino}
 \renewcommand\familydefault{\sfdefault} 
 \usepackage[verbose,a4paper,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm]{geometry}
@@ -293,6 +293,14 @@ Innym ważnym parametrem, którym możemy scharakteryzować lasery półprzewodn
 \item Sprawność całkowita (ang. \textit{Wall-plug-efficiency}) --- jest zdefiniowana jako stosunek mocy wyjściowej do całkowitej mocy wejściowej lasera.
 \end{itemize}
 \subsection{Wpływ temperatury chłodnicy lasera na jego paramentry}
+Wraz ze wzrostem temperatury wartość prądu progowego $I_{\mathrm{th}}$ rośnie, natomiast sprawność różniczkowa $\eta$ maleje. Jest to spowodowane przez:
+\begin{itemize}
+\item W wyższych temperaturach funkcja Fermiego-Diraca, która opisuje prawdopodobieństwo zajmowania stanów energetycznych staje się bardziej "rozmarzana". Przez co obrządzenie poziomów energetycznych jest bliższe powłoce przewodzenia dla elektronów oraz bliższe powłoce walencyjnej dla dziur. Dzięki temu możliwość wzmocnienia promieniowania lasera na długości fali emitowanej jest zredukowane.
+\item Dodatkowo w podwójnym aktywnym regionie heterostruktury, rozkład energii elektronów i dziur w wyższych temperaturach jest przesunięty dalej od krawędzi pasma, przez co zwiększa się prawdopodobieństwo pobytu ładunków w aktywnym regionie, co powoduje obniżenie sprawności $\eta$
+\item Wraz ze wzrostem temperatury rośnie współczynnik Auger, obniżając wydajność i czas życia ładunku podczas przejścia promienistego, co zwiększa wartość prądu progowego $I_{\mathrm{th}}$.
+
+
+\end{itemize}
 \newpage
 
 
