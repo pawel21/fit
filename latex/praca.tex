@@ -181,6 +181,16 @@ Otwarte oprogramowanie (ang. \textit{open source}) jest odłamem ruch darmowego 
 \item Język programowania Python
 \end{itemize}
 \section{Python --- idealne narzędzie dla fizyka}
+Język Python jest jednym z najpopularniejszych języków używanych w nauce. Jest on projektem Open Source. Dzięki ogromnej ilości modulów, możliwe jest wykonywanie niemalże każdej czynności jakom się potrzebuje. Python używany jest między innymi w eksperymencie mający za cel znalezienie fal grawitacyjnych. W mojej pracy wykorzystywałem ten język zarówno do pisania skryptów mających na celu komunikacje i sterowaniem sprzętem laboratoryjnym jak i  wykorzystywałem do analizy danych uzyskanych w wyników pomiarów.
+Najważniejsze biblioteki, które wykorzystywałem do swoich celów to:
+\begin{itemize}
+\item $\mathtt{Matplotlib}$ --- bibliotek do sporządzania wykresów, posiada między innymi możliwość używania symboli \LaTeX. Możliwość wykonywania animacji co jest wykorzystane do robienia wykresów w czasie rzeczywistym.
+\item $\mathtt{Scipy}$ --- bibliotek do obliczeń numerycznych. Uzywałem jej do dopasowywania fukcji dla zebranych danych.
+\item $\mathtt{OS}$ --- bibliotek systemowa. Używana w celu komunikacji ze sprzętem pomiarowym przy pomocy wywołań systemowych.
+\item $\mathtt{PyQt5}$ --- biblioteka do tworzenia graficznego interfejsu. Użyłem ją aby stworzyć interfejs graficzny za pomocą, którego możliwe jest sterowanie sprzętem.
+\item $\mathtt{Threading}$ --- biblioteka do tworzenia wątków. Używam jej do wykresów w czasie rzeczywistym, ponieważ jeden wątek komunikuje się z sprzętem, gdy drugi tworzy wykres. 
+\end{itemize} 
+Python posiada także biblioteki (np. $\mathtt{Shutil}$) do operowania plikami(jak przenoszenie, usuwanie) co jest często przydatne. Połączenie bibliotek wymienionych powyżej umożliwiło stworzenia programu, który komunikuje i steruje sprzętem. A następnie na podstawie uzyskanych danych, wykonałem ich analize.
 \chapter{Py3LabDeviceIO --- moduł do sterowania sprzetem laboratoryjnym}
 \section{Opisz programu}
 PyLabDeviceIO jest modułem napisanym w języku Python umożliwającym sterowanie zasilaczem do lasera oraz miernikiem mocy. Program opiera się na wykorzystaniu wywołań systemowych oraz na komunikacji przez komendy SCPI. \\
