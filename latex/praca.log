@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.22)  25 JAN 2017 01:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.22)  26 JAN 2017 02:57
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1654,8 +1654,6 @@ Overfull \hbox (49.14417pt too wide) in paragraph at lines 537--539
  [][] 
  []
 
-
-AED: lastpage setting LastPage
 [15 <./plot980/plot_all.png>] [16 <./plot980/plot_temp_i_th_lin.png> <./plot980
 /plot_temp_i_th_fit.png>] [17 <./plot980/plot_theory_exp.png>] [18 <./plot_vcse
 l850/temp_20_ivl.png> <./plot_vcsel850/plot_all.png>] [19 <./plot_vcsel850/plot
@@ -1668,7 +1666,11 @@ l_20.png>] [24 <./plot635/plot_3_i_th.png> <./plot635/plot_lin_i_th.png>]
 [25 <./plot635/fit_i_0.png> <./plotAll/wykres_krawedziowy_prad_progowy.png>]
 [26 <./plot850P010/plot_i_th_error-eps-converted-to.pdf>] [27 <./plot850P010/pl
 ot_fit-eps-converted-to.pdf> <./plot850P010/plot_exp-eps-converted-to.pdf>]
-(./praca.aux)
+
+AED: lastpage setting LastPage
+[28
+
+] (./praca.aux)
 
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
@@ -1677,10 +1679,10 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7634 strings out of 493029
- 103865 string characters out of 6136234
- 295174 words of memory out of 5000000
- 10965 multiletter control sequences out of 15000+600000
+ 7638 strings out of 493029
+ 103928 string characters out of 6136234
+ 295180 words of memory out of 5000000
+ 10969 multiletter control sequences out of 15000+600000
  18794 words of font info for 62 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,14n,58p,858b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1702,10 +1704,10 @@ texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/pl/pltt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on praca.pdf (27 pages, 2674976 bytes).
+Output written on praca.pdf (28 pages, 2675832 bytes).
 PDF statistics:
- 254 PDF objects out of 1000 (max. 8388607)
- 163 compressed objects within 2 object streams
+ 257 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

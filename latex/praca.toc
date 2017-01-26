@@ -21,3 +21,4 @@
 \contentsline {subsection}{\numberline {6.2.1\relax .\kern .5em }Laser 980\tmspace +\thinmuskip {.1667em}nm}{14}
 \contentsline {subsection}{\numberline {6.2.2\relax .\kern .5em }Laser VCSEL 850\tmspace +\thinmuskip {.1667em}nm}{15}
 \contentsline {subsection}{\numberline {6.2.3\relax .\kern .5em }Laser kraw\IeC {\k e}dziowy 635\tmspace +\thinmuskip {.1667em}nm}{15}
+\contentsline {chapter}{Bibliografia}{28}

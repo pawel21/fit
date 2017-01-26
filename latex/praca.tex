@@ -184,8 +184,8 @@ Otwarte oprogramowanie (ang. \textit{open source}) jest odłamem ruch darmowego 
 Język Python jest jednym z najpopularniejszych języków używanych w nauce. Jest on projektem Open Source. Dzięki ogromnej ilości modulów, możliwe jest wykonywanie niemalże każdej czynności jakom się potrzebuje. Python używany jest między innymi w eksperymencie mający za cel znalezienie fal grawitacyjnych. W mojej pracy wykorzystywałem ten język zarówno do pisania skryptów mających na celu komunikacje i sterowaniem sprzętem laboratoryjnym jak i  wykorzystywałem do analizy danych uzyskanych w wyników pomiarów.
 Najważniejsze biblioteki, które wykorzystywałem do swoich celów to:
 \begin{itemize}
-\item $\mathtt{Matplotlib}$ --- bibliotek do sporządzania wykresów, posiada między innymi możliwość używania symboli \LaTeX. Możliwość wykonywania animacji co jest wykorzystane do robienia wykresów w czasie rzeczywistym.
-\item $\mathtt{Scipy}$ --- bibliotek do obliczeń numerycznych. Uzywałem jej do dopasowywania fukcji dla zebranych danych.
+\item $\mathtt{Matplotlib}$ ~\cite{matplotlib_book} --- bibliotek do sporządzania wykresów, posiada między innymi możliwość używania symboli \LaTeX. Możliwość wykonywania animacji co jest wykorzystane do robienia wykresów w czasie rzeczywistym.
+\item $\mathtt{Scipy}$ ~\cite{SciPy_book} --- bibliotek do obliczeń numerycznych. Uzywałem jej do dopasowywania fukcji dla zebranych danych.
 \item $\mathtt{OS}$ --- bibliotek systemowa. Używana w celu komunikacji ze sprzętem pomiarowym przy pomocy wywołań systemowych.
 \item $\mathtt{PyQt5}$ --- biblioteka do tworzenia graficznego interfejsu. Użyłem ją aby stworzyć interfejs graficzny za pomocą, którego możliwe jest sterowanie sprzętem.
 \item $\mathtt{Threading}$ --- biblioteka do tworzenia wątków. Używam jej do wykresów w czasie rzeczywistym, ponieważ jeden wątek komunikuje się z sprzętem, gdy drugi tworzy wykres. 
@@ -540,5 +540,15 @@ $T$ [K] &   $I_{th}$ [mA]   \\ \hline
 \end{figure}
 
 
+Partl~\cite{matplotlib_book} przedstawi\l \ldots
+
+\begin{thebibliography}{99}
+\bibitem{SciPy_book} E.~Bressert:
+\emph{Scipy and NymPy},
+O'Reilly 2013
+\bibitem{matplotlib_book}  A.~Devert:
+\emph{matplotlib Plotting Cookbook}
+Packt Publising Ltd. 2014
+\end{thebibliography}
 
 \end{document}
