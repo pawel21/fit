@@ -15,13 +15,19 @@ plt.rcParams.update({'font.size': 28})
 plt.rcParams['text.latex.preamble'] = r'\usepackage[T1]{polski}'
 
 ple10 = PlotLaserEfficiency("temp_10.txt")
-ple10.plot_slope_efficiency_via_current(20)
+ple10.plot_slope_efficiency_via_current(25)
 
 ple35 = PlotLaserEfficiency("temp_30.txt")
 ple35.plot_slope_efficiency_via_current(31)
 
 
 
-a_10, b_10, c_10 = ple10.fit_via_current_poly_2(20)
-current_10, _ = ple10.get_data_to_fit_via_current(20)
-dP_10 = 2*a_10*current_10 + b_10
+a_10_current, b_10_current, c_10 = ple10.fit_via_current_poly_2(25)
+current_10, _ = ple10.get_data_to_fit_via_current(25)
+dP_10_current = 2 * a_10_current * current_10 + b_10_current
+
+ax1 = plt.subplot()
+ax1.plot(current_10, dP_10_current)
+
+plt.grid(True)
+plt.show()

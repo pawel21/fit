@@ -76,7 +76,7 @@ ax1.plot(input_power_20, dP_20, label="293\,K", linewidth=2)
 ax1.plot(input_power_25, dP_25, label="298\,K", linewidth=2)
 ax1.plot(input_power_30, dP_30, label="303\,K", linewidth=2)
 #ax1.plot(input_power_35, dP_35, label="308\,K", linewidth=2)
-ax1.plot(x_slope_20, slope_20, 'ko')
+#ax1.plot(x_slope_20, slope_20, 'ko')
 
 ax1.set_xlim([0, max(input_power_20)])
 ax1.set_xlabel("Moc wejściowa [mW]")
