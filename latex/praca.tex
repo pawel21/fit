@@ -181,16 +181,16 @@ Otwarte oprogramowanie (ang. \textit{open source}) jest odłamem ruch darmowego 
 \item Język programowania Python
 \end{itemize}
 \section{Python --- idealne narzędzie dla fizyka}
-Język Python jest jednym z najpopularniejszych języków używanych w nauce. Jest on projektem Open Source. Dzięki ogromnej ilości modulów, możliwe jest wykonywanie niemalże każdej czynności jakom się potrzebuje. Python używany jest między innymi w eksperymencie mający za cel znalezienie fal grawitacyjnych. W mojej pracy wykorzystywałem ten język zarówno do pisania skryptów mających na celu komunikacje i sterowaniem sprzętem laboratoryjnym jak i  wykorzystywałem do analizy danych uzyskanych w wyników pomiarów.
+Język Python jest jednym z najpopularniejszych języków używanych w nauce. Jest on projektem Open Source. Posiada łatwą składnię, dzięki czemu jest się go łatwo nauczyć, a programy pisane w nim są przejrzyste. Dzięki ogromnej ilości modulów, możliwe jest wykonywanie niemalże każdej czynności jakom się potrzebuje. Python używany jest między innymi w eksperymencie mający za cel znalezienie fal grawitacyjnych. W mojej pracy wykorzystywałem ten język zarówno do pisania skryptów mających na celu komunikacje i sterowaniem sprzętem laboratoryjnym jak i  wykorzystywałem do analizy danych uzyskanych w wyników pomiarów.
 Najważniejsze biblioteki, które wykorzystywałem do swoich celów to:
 \begin{itemize}
 \item $\mathtt{Matplotlib}$ ~\cite{matplotlib_book} --- bibliotek do sporządzania wykresów, posiada między innymi możliwość używania symboli \LaTeX. Możliwość wykonywania animacji co jest wykorzystane do robienia wykresów w czasie rzeczywistym.
-\item $\mathtt{Scipy}$ ~\cite{SciPy_book} --- bibliotek do obliczeń numerycznych. Uzywałem jej do dopasowywania fukcji dla zebranych danych.
+\item $\mathtt{Scipy}$ ~\cite{SciPy_book} --- bibliotek do obliczeń numerycznych. Funkcje z niej uzywałem jej do dopasowywania fukcji dla zebranych danych w celu wyznacznie prądu progowego oraz sprawności.
 \item $\mathtt{OS}$ --- bibliotek systemowa. Używana w celu komunikacji ze sprzętem pomiarowym przy pomocy wywołań systemowych.
 \item $\mathtt{PyQt5}$ --- biblioteka do tworzenia graficznego interfejsu. Użyłem ją aby stworzyć interfejs graficzny za pomocą, którego możliwe jest sterowanie sprzętem.
 \item $\mathtt{Threading}$ --- biblioteka do tworzenia wątków. Używam jej do wykresów w czasie rzeczywistym, ponieważ jeden wątek komunikuje się z sprzętem, gdy drugi tworzy wykres. 
 \end{itemize} 
-Python posiada także biblioteki (np. $\mathtt{Shutil}$) do operowania plikami(jak przenoszenie, usuwanie) co jest często przydatne. Połączenie bibliotek wymienionych powyżej umożliwiło stworzenia programu, który komunikuje i steruje sprzętem. A następnie na podstawie uzyskanych danych, wykonałem ich analize.
+Python posiada także biblioteki (np. $\mathtt{Shutil}$) do operowania plikami(jak przenoszenie, usuwanie) co jest często przydatne. Połączenie bibliotek wymienionych powyżej umożliwiło stworzenia programu, który komunikuje i steruje sprzętem. Warto jeszcze nadmienić, że aktulalnie rozwijane są dwie wersję Python: Python 2.7 i Python 3. Większą przyszłość ma Python 3, więc skrypty do analizy danych były pisane w nim. Jednakże biblioteka matplotlib i PyQt5 na chwilę pisania mojej pracy lepiej współpracuje z Python 2.7 więc interefes pomiarowy jest napisany w Python 2.7.   
 \chapter{Py3LabDeviceIO --- moduł do sterowania sprzetem laboratoryjnym}
 \section{Opisz programu}
 PyLabDeviceIO jest modułem napisanym w języku Python umożliwającym sterowanie zasilaczem do lasera oraz miernikiem mocy. Program opiera się na wykorzystaniu wywołań systemowych oraz na komunikacji przez komendy SCPI. \\
@@ -223,8 +223,21 @@ Obie wymagają uprawnień użytkownika uprzywijowanego (sudo).
 \center
   \includegraphics[scale=0.35]{gui.png}
   \label{rys1}
-  \caption{1 --- rozpoczecie pomiarów, 2 --- zatrzymanie pomiarów, 3 --- zapisanie danych pomiarowych, 4 --- pokazuje długość fali detektora, 5 --- zmiana długości fali detektora.} 
+  \caption{1 --- rozpoczecie pomiarów, 2 --- zatrzymanie pomiarów, 3 --- zapisanie danych pomiarowych, 4 --- pokazuje długość fali detektora, 5 --- zmiana długości fali detektora 6 --- ustawia prąd początkowy do pomiarów, 7 ---.} 
 \end{figure}
+\begin{itemize}
+\item Przycisk ,,Start" [1] służący do rozpoczęcia pomiarów. Po jego wciśnięciu nastąpi wykonanie charakterystyki lasera na podstawie ustawionych parametrów.
+\item Przycisk ,,Stop" [2] służący do zatrzymania pomiarów. Po jego wciśnięciu nastąpi wyłączenie zasilacza.
+\item Przycisk ,,Save data" [3] służący do zapisania zebranych danych. Po wciśnięciu należy wybrać ścieżkę. Zapis dokonywany jest w formacie txt.
+\item Wyświetlacz długości fali wybranej na detektorze [4]. Długość fali wyświetlana jest w nanometrach.
+\item Przycisk służący do zmiany długości fali na detektorze [5]. Wartość należy wprowadzić w nanometrach i zatwierdzić.
+\item Przycisk ,,Set start current" [6] --- służy do wybrania prądu, od jakiego ma się zacząć pomiar w mA.
+\item Przycisk ,,Set points to measure" [7] --- służy do wybrania ilości punktów do charakterystyki.
+\item Przycisk ,,Set stop current" [8] --- służy do wybrania granicy prądu, do jakiego ma się odbyć pomiar w mA.
+\item Przycisk ,,Set timeout in seconds" [9] --- służy do ustawienie długości pauzy między zadaniem prądu do zasilacza, a wykonaniem pomiaru.
+\item Okienko informacyjne [10] --- wyświetla informacje o pomiarze.
+\item Przycisk "Ldc settings" [11] --- ustawia najważniejsze parametry zasilacza diod takie jako wartość maksymalna prądu.
+\end{itemize}
 \chapter{Eksperyment} \label{Eksperyment}
 \section{Teoria}
 \subsection{Prąd progowy}

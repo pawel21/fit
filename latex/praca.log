@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.22)  26 JAN 2017 02:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.22)  30 JAN 2017 01:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1225,23 +1225,23 @@ Package xcolor Warning: Incompatible color definition on input line 173.
 Rozdzia\PlPrIeC {\l } 3.
 [7
 
-]
+] [8]
 Rozdzia\PlPrIeC {\l } 4.
 
 Underfull \hbox (badness 10000) in paragraph at lines 196--197
 
  []
 
-<tree.png, id=35, 294.09875pt x 312.16624pt>
+<tree.png, id=38, 294.09875pt x 312.16624pt>
 File: tree.png Graphic file (type png)
  <use tree.png>
 Package pdftex.def Info: tree.png used on input line 208.
 (pdftex.def)             Requested size: 132.3432pt x 140.47351pt.
- [8
+ [9
 
  <./tree.png>]
 Rozdzia\PlPrIeC {\l } 5.
-<gui.png, id=41, 1342.01375pt x 928.46875pt>
+<gui.png, id=44, 1342.01375pt x 928.46875pt>
 File: gui.png Graphic file (type png)
  <use gui.png>
 Package pdftex.def Info: gui.png used on input line 224.
@@ -1251,9 +1251,9 @@ Overfull \hbox (14.46774pt too wide) in paragraph at lines 224--226
  [] 
  []
 
-[9
+[10
 
- <./gui.png>]
+ <./gui.png>] [11]
 Rozdzia\PlPrIeC {\l } 6.
 Package epstopdf Info: Source file: <plot_theory2.eps>
 (epstopdf)                    date: 2017-01-19 23:31:28
@@ -1263,133 +1263,133 @@ Package epstopdf Info: Source file: <plot_theory2.eps>
 (epstopdf)                    size: 7909 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_theory2-eps-converted
 -to.pdf plot_theory2.eps>
-(epstopdf)             \includegraphics on input line 250.
+(epstopdf)             \includegraphics on input line 263.
 Package epstopdf Info: Output file is already uptodate.
-<plot_theory2-eps-converted-to.pdf, id=46, 1681.28125pt x 898.35625pt>
+<plot_theory2-eps-converted-to.pdf, id=52, 1681.28125pt x 898.35625pt>
 File: plot_theory2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot_theory2-eps-converted-to.pdf>
 Package pdftex.def Info: plot_theory2-eps-converted-to.pdf used on input line 2
-50.
+63.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 250--252
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 263--265
  [] 
  []
 
-<plot_theory_i_th.png, id=47, 1681.0002pt x 897.5934pt>
+<plot_theory_i_th.png, id=53, 1681.0002pt x 897.5934pt>
 File: plot_theory_i_th.png Graphic file (type png)
 
 <use plot_theory_i_th.png>
-Package pdftex.def Info: plot_theory_i_th.png used on input line 256.
+Package pdftex.def Info: plot_theory_i_th.png used on input line 269.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 256--258
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 269--271
  [] 
  []
 
-[10
+[12
 
-] [11 <./plot_theory2-eps-converted-to.pdf> <./plot_theory_i_th.png>]
-[12] [13]
-Overfull \hbox (23.30844pt too wide) in paragraph at lines 325--331
+] [13 <./plot_theory2-eps-converted-to.pdf> <./plot_theory_i_th.png>]
+[14] [15]
+Overfull \hbox (23.30844pt too wide) in paragraph at lines 338--344
 \OT4/phv/m/it/12 980nm. Po-miar po-le-gaª w pierw-szej cz¦-±ci na wy-ko-na-niu 
 cha-rak-te-ry-styk pr¡dowo-napi¦ciowych
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 332--333
+Underfull \hbox (badness 10000) in paragraph at lines 345--346
 
  []
 
-[14] <plot980/plot_all.png, id=74, 1681.0002pt x 897.5934pt>
+[16] <plot980/plot_all.png, id=80, 1681.0002pt x 897.5934pt>
 File: plot980/plot_all.png Graphic file (type png)
 
 <use plot980/plot_all.png>
-Package pdftex.def Info: plot980/plot_all.png used on input line 363.
+Package pdftex.def Info: plot980/plot_all.png used on input line 376.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 363--365
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 376--378
  [] 
  []
 
-<plot980/plot_temp_i_th_lin.png, id=75, 1681.0002pt x 897.5934pt>
+<plot980/plot_temp_i_th_lin.png, id=81, 1681.0002pt x 897.5934pt>
 File: plot980/plot_temp_i_th_lin.png Graphic file (type png)
 
 <use plot980/plot_temp_i_th_lin.png>
-Package pdftex.def Info: plot980/plot_temp_i_th_lin.png used on input line 369.
+Package pdftex.def Info: plot980/plot_temp_i_th_lin.png used on input line 382.
 
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 369--371
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 382--384
  [] 
  []
 
-<plot980/plot_temp_i_th_fit.png, id=76, 1681.0002pt x 897.5934pt>
+<plot980/plot_temp_i_th_fit.png, id=82, 1681.0002pt x 897.5934pt>
 File: plot980/plot_temp_i_th_fit.png Graphic file (type png)
 
 <use plot980/plot_temp_i_th_fit.png>
-Package pdftex.def Info: plot980/plot_temp_i_th_fit.png used on input line 375.
+Package pdftex.def Info: plot980/plot_temp_i_th_fit.png used on input line 388.
 
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 375--377
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 388--390
  [] 
  []
 
-<plot980/plot_theory_exp.png, id=77, 1681.0002pt x 897.5934pt>
+<plot980/plot_theory_exp.png, id=83, 1681.0002pt x 897.5934pt>
 File: plot980/plot_theory_exp.png Graphic file (type png)
 
 <use plot980/plot_theory_exp.png>
-Package pdftex.def Info: plot980/plot_theory_exp.png used on input line 381.
+Package pdftex.def Info: plot980/plot_theory_exp.png used on input line 394.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 381--383
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 394--396
  [] 
  []
 
-<plot_vcsel850/temp_20_ivl.png, id=78, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/temp_20_ivl.png, id=84, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/temp_20_ivl.png Graphic file (type png)
 
 <use plot_vcsel850/temp_20_ivl.png>
-Package pdftex.def Info: plot_vcsel850/temp_20_ivl.png used on input line 416.
+Package pdftex.def Info: plot_vcsel850/temp_20_ivl.png used on input line 429.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 416--418
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 429--431
  [] 
  []
 
-<plot_vcsel850/plot_all.png, id=79, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_all.png, id=85, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_all.png Graphic file (type png)
 
 <use plot_vcsel850/plot_all.png>
-Package pdftex.def Info: plot_vcsel850/plot_all.png used on input line 422.
+Package pdftex.def Info: plot_vcsel850/plot_all.png used on input line 435.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 422--424
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 435--437
  [] 
  []
 
-<plot_vcsel850/plot_3_i_th.png, id=80, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_3_i_th.png, id=86, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_3_i_th.png Graphic file (type png)
 
 <use plot_vcsel850/plot_3_i_th.png>
-Package pdftex.def Info: plot_vcsel850/plot_3_i_th.png used on input line 428.
+Package pdftex.def Info: plot_vcsel850/plot_3_i_th.png used on input line 441.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 428--430
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 441--443
  [] 
  []
 
-<plot_vcsel850/plot_lin_i_th.png, id=81, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_lin_i_th.png, id=87, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_lin_i_th.png Graphic file (type png)
 
 <use plot_vcsel850/plot_lin_i_th.png>
-Package pdftex.def Info: plot_vcsel850/plot_lin_i_th.png used on input line 434
+Package pdftex.def Info: plot_vcsel850/plot_lin_i_th.png used on input line 447
 .
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 434--436
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 447--449
  [] 
  []
 
@@ -1402,18 +1402,18 @@ f>
 (epstopdf)                    size: 73432 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff-eps
 -converted-to.pdf plot_vcsel850/plot_eff.eps>
-(epstopdf)             \includegraphics on input line 440.
+(epstopdf)             \includegraphics on input line 453.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot_vcsel850/plot_eff-eps-converted-to.pdf, id=82, 1681.28125pt x 898.35625pt
+<plot_vcsel850/plot_eff-eps-converted-to.pdf, id=88, 1681.28125pt x 898.35625pt
 >
 File: plot_vcsel850/plot_eff-eps-converted-to.pdf Graphic file (type pdf)
  <use plot_vcsel850/plot_eff-eps-converted-to.pdf>
 Package pdftex.def Info: plot_vcsel850/plot_eff-eps-converted-to.pdf used on in
-put line 440.
+put line 453.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 440--442
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 453--455
  [] 
  []
 
@@ -1427,32 +1427,32 @@ Package epstopdf Info: Source file: <plot_vcsel850/plot_eff_all_via_current.eps
 (epstopdf)                    size: 10370 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff_all
 _via_current-eps-converted-to.pdf plot_vcsel850/plot_eff_all_via_current.eps>
-(epstopdf)             \includegraphics on input line 446.
+(epstopdf)             \includegraphics on input line 459.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf, id=83, 1681.28125
+<plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf, id=89, 1681.28125
 pt x 898.35625pt>
 File: plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf Graphic file 
 (type pdf)
 
 <use plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf>
 Package pdftex.def Info: plot_vcsel850/plot_eff_all_via_current-eps-converted-t
-o.pdf used on input line 446.
+o.pdf used on input line 459.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 446--448
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 459--461
  [] 
  []
 
-<plot_vcsel850/plot_slope_eff_via_power.png, id=84, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_slope_eff_via_power.png, id=90, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_slope_eff_via_power.png Graphic file (type png)
 
 <use plot_vcsel850/plot_slope_eff_via_power.png>
 Package pdftex.def Info: plot_vcsel850/plot_slope_eff_via_power.png used on inp
-ut line 452.
+ut line 465.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 452--454
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 465--467
  [] 
  []
 
@@ -1465,19 +1465,19 @@ nverted-to.pdf>
 (epstopdf)                    size: 38099 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff_ste
 p_by_step-eps-converted-to.pdf plot_vcsel850/plot_eff_step_by_step.eps>
-(epstopdf)             \includegraphics on input line 458.
+(epstopdf)             \includegraphics on input line 471.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf, id=85, 1681.28125pt 
+<plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf, id=91, 1681.28125pt 
 x 898.35625pt>
 File: plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf Graphic file (ty
 pe pdf)
  <use plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf>
 Package pdftex.def Info: plot_vcsel850/plot_eff_step_by_step-eps-converted-to.p
-df used on input line 458.
+df used on input line 471.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 458--460
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 471--473
  [] 
  []
 
@@ -1489,17 +1489,17 @@ Package epstopdf Info: Source file: <plot635/plot_ivl_4.eps>
 (epstopdf)                    size: 701314 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot635/plot_ivl_4-eps-con
 verted-to.pdf plot635/plot_ivl_4.eps>
-(epstopdf)             \includegraphics on input line 480.
+(epstopdf)             \includegraphics on input line 493.
 Package epstopdf Info: Output file is already uptodate.
-<plot635/plot_ivl_4-eps-converted-to.pdf, id=86, 1681.28125pt x 898.35625pt>
+<plot635/plot_ivl_4-eps-converted-to.pdf, id=92, 1681.28125pt x 898.35625pt>
 File: plot635/plot_ivl_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot635/plot_ivl_4-eps-converted-to.pdf>
 Package pdftex.def Info: plot635/plot_ivl_4-eps-converted-to.pdf used on input 
-line 480.
+line 493.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 480--482
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 493--495
  [] 
  []
 
@@ -1511,74 +1511,74 @@ Package epstopdf Info: Source file: <plot635/plot_i_v_4.eps>
 (epstopdf)                    size: 353752 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot635/plot_i_v_4-eps-con
 verted-to.pdf plot635/plot_i_v_4.eps>
-(epstopdf)             \includegraphics on input line 487.
+(epstopdf)             \includegraphics on input line 500.
 Package epstopdf Info: Output file is already uptodate.
-<plot635/plot_i_v_4-eps-converted-to.pdf, id=87, 1681.28125pt x 898.35625pt>
+<plot635/plot_i_v_4-eps-converted-to.pdf, id=93, 1681.28125pt x 898.35625pt>
 File: plot635/plot_i_v_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot635/plot_i_v_4-eps-converted-to.pdf>
 Package pdftex.def Info: plot635/plot_i_v_4-eps-converted-to.pdf used on input 
-line 487.
+line 500.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 487--489
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 500--502
  [] 
  []
 
-<plot635/plot_ivl_20.png, id=88, 1681.0002pt x 897.5934pt>
+<plot635/plot_ivl_20.png, id=94, 1681.0002pt x 897.5934pt>
 File: plot635/plot_ivl_20.png Graphic file (type png)
 
 <use plot635/plot_ivl_20.png>
-Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 494.
+Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 507.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 494--496
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 507--509
  [] 
  []
 
-<plot635/plot_3_i_th.png, id=89, 1681.0002pt x 897.5934pt>
+<plot635/plot_3_i_th.png, id=95, 1681.0002pt x 897.5934pt>
 File: plot635/plot_3_i_th.png Graphic file (type png)
 
 <use plot635/plot_3_i_th.png>
-Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 501.
+Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 514.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 501--503
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 514--516
  [] 
  []
 
-<plot635/plot_lin_i_th.png, id=90, 1681.0002pt x 897.5934pt>
+<plot635/plot_lin_i_th.png, id=96, 1681.0002pt x 897.5934pt>
 File: plot635/plot_lin_i_th.png Graphic file (type png)
 
 <use plot635/plot_lin_i_th.png>
-Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 508.
+Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 521.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 508--510
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 521--523
  [] 
  []
 
-<plot635/fit_i_0.png, id=91, 1681.0002pt x 897.5934pt>
+<plot635/fit_i_0.png, id=97, 1681.0002pt x 897.5934pt>
 File: plot635/fit_i_0.png Graphic file (type png)
 
 <use plot635/fit_i_0.png>
-Package pdftex.def Info: plot635/fit_i_0.png used on input line 515.
+Package pdftex.def Info: plot635/fit_i_0.png used on input line 528.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 515--517
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 528--530
  [] 
  []
 
 
-<plotAll/wykres_krawedziowy_prad_progowy.png, id=92, 1681.0002pt x 897.5934pt>
+<plotAll/wykres_krawedziowy_prad_progowy.png, id=98, 1681.0002pt x 897.5934pt>
 File: plotAll/wykres_krawedziowy_prad_progowy.png Graphic file (type png)
 
 <use plotAll/wykres_krawedziowy_prad_progowy.png>
 Package pdftex.def Info: plotAll/wykres_krawedziowy_prad_progowy.png used on in
-put line 522.
+put line 535.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 522--524
+Overfull \hbox (49.05984pt too wide) in paragraph at lines 535--537
  [] 
  []
 
@@ -1591,18 +1591,18 @@ to.pdf>
 (epstopdf)                    size: 11559 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_i_th_erro
 r-eps-converted-to.pdf plot850P010/plot_i_th_error.eps>
-(epstopdf)             \includegraphics on input line 529.
+(epstopdf)             \includegraphics on input line 542.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_i_th_error-eps-converted-to.pdf, id=93, 1681.28125pt x 898.35
+<plot850P010/plot_i_th_error-eps-converted-to.pdf, id=99, 1681.28125pt x 898.35
 625pt>
 File: plot850P010/plot_i_th_error-eps-converted-to.pdf Graphic file (type pdf)
  <use plot850P010/plot_i_th_error-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_i_th_error-eps-converted-to.pdf used 
-on input line 529.
+on input line 542.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 529--531
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 542--544
  [] 
  []
 
@@ -1615,18 +1615,17 @@ Package epstopdf Info: Source file: <plot850P010/plot_fit.eps>
 (epstopdf)                    size: 15937 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_fit-eps-c
 onverted-to.pdf plot850P010/plot_fit.eps>
-(epstopdf)             \includegraphics on input line 534.
+(epstopdf)             \includegraphics on input line 547.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_fit-eps-converted-to.pdf, id=94, 1681.28125pt x 898.35625pt>
+<plot850P010/plot_fit-eps-converted-to.pdf, id=100, 1681.28125pt x 898.35625pt>
 File: plot850P010/plot_fit-eps-converted-to.pdf Graphic file (type pdf)
-
 <use plot850P010/plot_fit-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_fit-eps-converted-to.pdf used on inpu
-t line 534.
+t line 547.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 534--536
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 547--549
  [] 
  []
 
@@ -1639,36 +1638,35 @@ Package epstopdf Info: Source file: <plot850P010/plot_exp.eps>
 (epstopdf)                    size: 12331 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_exp-eps-c
 onverted-to.pdf plot850P010/plot_exp.eps>
-(epstopdf)             \includegraphics on input line 537.
+(epstopdf)             \includegraphics on input line 550.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_exp-eps-converted-to.pdf, id=95, 1681.28125pt x 898.35625pt>
+<plot850P010/plot_exp-eps-converted-to.pdf, id=101, 1681.28125pt x 898.35625pt>
 File: plot850P010/plot_exp-eps-converted-to.pdf Graphic file (type pdf)
-
 <use plot850P010/plot_exp-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_exp-eps-converted-to.pdf used on inpu
-t line 537.
+t line 550.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 537--539
+Overfull \hbox (49.14417pt too wide) in paragraph at lines 550--552
  [][] 
  []
 
-[15 <./plot980/plot_all.png>] [16 <./plot980/plot_temp_i_th_lin.png> <./plot980
-/plot_temp_i_th_fit.png>] [17 <./plot980/plot_theory_exp.png>] [18 <./plot_vcse
-l850/temp_20_ivl.png> <./plot_vcsel850/plot_all.png>] [19 <./plot_vcsel850/plot
-_3_i_th.png> <./plot_vcsel850/plot_lin_i_th.png>] [20 <./plot_vcsel850/plot_eff
+[17 <./plot980/plot_all.png>] [18 <./plot980/plot_temp_i_th_lin.png> <./plot980
+/plot_temp_i_th_fit.png>] [19 <./plot980/plot_theory_exp.png>] [20 <./plot_vcse
+l850/temp_20_ivl.png> <./plot_vcsel850/plot_all.png>] [21 <./plot_vcsel850/plot
+_3_i_th.png> <./plot_vcsel850/plot_lin_i_th.png>] [22 <./plot_vcsel850/plot_eff
 -eps-converted-to.pdf> <./plot_vcsel850/plot_eff_all_via_current-eps-converted-
-to.pdf>] [21 <./plot_vcsel850/plot_slope_eff_via_power.png> <./plot_vcsel850/pl
-ot_eff_step_by_step-eps-converted-to.pdf>] [22 <./plot635/plot_ivl_4-eps-conver
-ted-to.pdf>] [23 <./plot635/plot_i_v_4-eps-converted-to.pdf> <./plot635/plot_iv
-l_20.png>] [24 <./plot635/plot_3_i_th.png> <./plot635/plot_lin_i_th.png>]
-[25 <./plot635/fit_i_0.png> <./plotAll/wykres_krawedziowy_prad_progowy.png>]
-[26 <./plot850P010/plot_i_th_error-eps-converted-to.pdf>] [27 <./plot850P010/pl
+to.pdf>] [23 <./plot_vcsel850/plot_slope_eff_via_power.png> <./plot_vcsel850/pl
+ot_eff_step_by_step-eps-converted-to.pdf>] [24 <./plot635/plot_ivl_4-eps-conver
+ted-to.pdf>] [25 <./plot635/plot_i_v_4-eps-converted-to.pdf> <./plot635/plot_iv
+l_20.png>] [26 <./plot635/plot_3_i_th.png> <./plot635/plot_lin_i_th.png>]
+[27 <./plot635/fit_i_0.png> <./plotAll/wykres_krawedziowy_prad_progowy.png>]
+[28 <./plot850P010/plot_i_th_error-eps-converted-to.pdf>] [29 <./plot850P010/pl
 ot_fit-eps-converted-to.pdf> <./plot850P010/plot_exp-eps-converted-to.pdf>]
 
 AED: lastpage setting LastPage
-[28
+[30
 
 ] (./praca.aux)
 
@@ -1704,10 +1702,10 @@ texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/pl/pltt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on praca.pdf (28 pages, 2675832 bytes).
+Output written on praca.pdf (30 pages, 2678382 bytes).
 PDF statistics:
- 257 PDF objects out of 1000 (max. 8388607)
- 165 compressed objects within 2 object streams
+ 263 PDF objects out of 1000 (max. 8388607)
+ 169 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 
