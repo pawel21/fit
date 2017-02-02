@@ -60,9 +60,9 @@ class Eff:
         return np.array(current_to_fit), np.array(output_power_to_fit )
 
 
-data = ["temp_10.txt", "temp_20.txt", "temp_30.txt", "temp_40.txt",
-        "temp_50.txt", "temp_60.txt", "temp_70.txt", "temp_80.txt"]
-i_th = [ 1.  ,  0.98,  1.1 ,  1.23,  1.36,  1.59,  1.76,  2.07]
+data = ["L850P010_temp_10.txt", "L850P010_temp_20.txt", "L850P010_temp_30.txt", "L850P010_temp_40.txt",
+        "L850P010_temp_50.txt", "L850P010_temp_60.txt", "L850P010_temp_70.txt", "L850P010_temp_80.txt"]
+i_th = [10.48,  11.05,  11.65,  12.34,  13.11,  14.08,  15.18,  16.55]
 temperature = np.array([283.,  293.,  303.,  313.,  323.,  333.,  343.,  353.], dtype=np.uint16)
 
 for name_file, fit_start, temp in zip(data, i_th, temperature):

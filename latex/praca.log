@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.22)  30 JAN 2017 01:50
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.1.22)  1 FEB 2017 23:18
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -820,14 +820,14 @@ LaTeX Font Warning: Font shape `OT4/phv/m/n' undefined
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
 * modes: 
-* h-part:(L,W,R)=(71.13188pt, 455.24411pt, 71.13188pt)
+* h-part:(L,W,R)=(99.58464pt, 426.79135pt, 71.13188pt)
 * v-part:(T,H,B)=(71.13188pt, 702.78308pt, 71.13188pt)
 * \paperwidth=597.50787pt
 * \paperheight=845.04684pt
-* \textwidth=455.24411pt
+* \textwidth=426.79135pt
 * \textheight=702.78308pt
-* \oddsidemargin=-1.1381pt
-* \evensidemargin=-1.1381pt
+* \oddsidemargin=27.31465pt
+* \evensidemargin=27.31465pt
 * \topmargin=-32.1381pt
 * \headheight=14.5pt
 * \headsep=16.5pt
@@ -949,56 +949,56 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [1]
 Rozdzia\PlPrIeC {\l } 1.
 
-Underfull \hbox (badness 10000) in paragraph at lines 80--81
+Underfull \hbox (badness 10000) in paragraph at lines 110--111
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 82--84
+Underfull \hbox (badness 10000) in paragraph at lines 112--114
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 85--98
+Underfull \hbox (badness 10000) in paragraph at lines 115--128
 
  []
 
 
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
- [2
+ [1
 
 ]
-[3]
+[2]
 Rozdzia\PlPrIeC {\l } 2.
 
 LaTeX Font Warning: Font shape `OT4/phv/m/it' undefined
-(Font)              using `OT4/phv/m/n' instead on input line 117.
+(Font)              using `OT4/phv/m/n' instead on input line 147.
 
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <12> on input line 117.
-LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 117
+(Font)              <12> on input line 147.
+LaTeX Font Info:    Try loading font information for OT4+cmtt on input line 147
 .
 (/usr/share/texlive/texmf-dist/tex/latex/polski/ot4cmtt.fd
 File: ot4cmtt.fd 2008/02/24 v1.2.1 Font defs for fonts PL (MW)
 )
-Underfull \hbox (badness 10000) in paragraph at lines 126--127
+Underfull \hbox (badness 10000) in paragraph at lines 156--157
 
  []
 
-[4
+[3
 
 ]
 
 Package Fancyhdr Warning: \headheight is too small (14.5pt): 
- Make it at least 25.22336pt.
+ Make it at least 38.82336pt.
  We now make it that large for the rest of the document.
  This may cause the page layout to be inconsistent, however.
 
-[5] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+[4] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
 (./deviceio.py
@@ -1030,7 +1030,7 @@ File: omsphv.fd
 LaTeX Font Info:    Font shape `OMS/phv/m/n' in size <10> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 7.
 
-Overfull \hbox (0.76053pt too wide) in paragraph at lines 7--9
+Overfull \hbox (29.21329pt too wide) in paragraph at lines 7--9
 [][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
 ][][][][][][][][][][][][][][][][][][][][][][][][]  
  []
@@ -1109,151 +1109,157 @@ Package xcolor Warning: Incompatible color definition on input line 20.
 
 )
 
-Package xcolor Warning: Incompatible color definition on input line 154.
+Package xcolor Warning: Incompatible color definition on input line 184.
 
-LaTeX Font Info:    Try loading font information for OML+phv on input line 154.
+LaTeX Font Info:    Try loading font information for OML+phv on input line 184.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/omlphv.fd
 File: omlphv.fd 
 )
 LaTeX Font Info:    Font shape `OML/phv/m/n' in size <10> not available
-(Font)              Font shape `OML/cmm/m/it' tried instead on input line 154.
+(Font)              Font shape `OML/cmm/m/it' tried instead on input line 184.
 
 
-Package xcolor Warning: Incompatible color definition on input line 155.
+Package xcolor Warning: Incompatible color definition on input line 185.
 
 
-Package xcolor Warning: Incompatible color definition on input line 156.
+Package xcolor Warning: Incompatible color definition on input line 186.
 
 
-Package xcolor Warning: Incompatible color definition on input line 157.
+Package xcolor Warning: Incompatible color definition on input line 187.
 
 
-Package xcolor Warning: Incompatible color definition on input line 159.
+Package xcolor Warning: Incompatible color definition on input line 189.
 
 
-Package xcolor Warning: Incompatible color definition on input line 159.
+Package xcolor Warning: Incompatible color definition on input line 189.
 
 
-Package xcolor Warning: Incompatible color definition on input line 160.
+Package xcolor Warning: Incompatible color definition on input line 190.
 
 
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 161.
+Package xcolor Warning: Incompatible color definition on input line 191.
 
 
-Package xcolor Warning: Incompatible color definition on input line 162.
+Package xcolor Warning: Incompatible color definition on input line 192.
 
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <10> on input line 162.
+(Font)              <10> on input line 192.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <7> on input line 162.
+(Font)              <7> on input line 192.
 LaTeX Font Info:    External font `plex10' loaded for size
-(Font)              <5> on input line 162.
+(Font)              <5> on input line 192.
 
-Package xcolor Warning: Incompatible color definition on input line 163.
-
-
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 193.
 
 
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 193.
 
 
-Package xcolor Warning: Incompatible color definition on input line 163.
+Package xcolor Warning: Incompatible color definition on input line 193.
 
 
-Package xcolor Warning: Incompatible color definition on input line 164.
+Package xcolor Warning: Incompatible color definition on input line 193.
 
 
-Package xcolor Warning: Incompatible color definition on input line 165.
+Package xcolor Warning: Incompatible color definition on input line 194.
 
 
-Package xcolor Warning: Incompatible color definition on input line 166.
+Package xcolor Warning: Incompatible color definition on input line 195.
 
 
-Package xcolor Warning: Incompatible color definition on input line 166.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
-Package xcolor Warning: Incompatible color definition on input line 166.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
-Package xcolor Warning: Incompatible color definition on input line 166.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
-Package xcolor Warning: Incompatible color definition on input line 166.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
-Package xcolor Warning: Incompatible color definition on input line 166.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
-Package xcolor Warning: Incompatible color definition on input line 167.
+Package xcolor Warning: Incompatible color definition on input line 196.
 
 
-Package xcolor Warning: Incompatible color definition on input line 168.
+Package xcolor Warning: Incompatible color definition on input line 197.
 
 
-Package xcolor Warning: Incompatible color definition on input line 169.
+Package xcolor Warning: Incompatible color definition on input line 198.
 
 
-Package xcolor Warning: Incompatible color definition on input line 170.
+Package xcolor Warning: Incompatible color definition on input line 199.
 
 
-Package xcolor Warning: Incompatible color definition on input line 171.
+Package xcolor Warning: Incompatible color definition on input line 200.
 
 
-Package xcolor Warning: Incompatible color definition on input line 173.
+Package xcolor Warning: Incompatible color definition on input line 201.
 
-[6]
+
+Package xcolor Warning: Incompatible color definition on input line 203.
+
+[5]
 Rozdzia\PlPrIeC {\l } 3.
-[7
+[6
 
-] [8]
+] [7]
 Rozdzia\PlPrIeC {\l } 4.
 
-Underfull \hbox (badness 10000) in paragraph at lines 196--197
+Underfull \hbox (badness 10000) in paragraph at lines 226--227
 
  []
 
-<tree.png, id=38, 294.09875pt x 312.16624pt>
+
+Overfull \hbox (7.50253pt too wide) in paragraph at lines 234--235
+[]$[]$ \OT4/phv/m/it/12 --- kla-sa za-wie-ra-j¡-ca funk-cje do ob-sªu-gi de-tek
+-to-ra mo-cy Thor-labs PM100. 
+ []
+
+<tree.png, id=41, 294.09875pt x 312.16624pt>
 File: tree.png Graphic file (type png)
  <use tree.png>
-Package pdftex.def Info: tree.png used on input line 208.
+Package pdftex.def Info: tree.png used on input line 239.
 (pdftex.def)             Requested size: 132.3432pt x 140.47351pt.
- [9
+ [8
 
  <./tree.png>]
 Rozdzia\PlPrIeC {\l } 5.
-<gui.png, id=44, 1342.01375pt x 928.46875pt>
+<gui.png, id=47, 1342.01375pt x 928.46875pt>
 File: gui.png Graphic file (type png)
  <use gui.png>
-Package pdftex.def Info: gui.png used on input line 224.
+Package pdftex.def Info: gui.png used on input line 255.
 (pdftex.def)             Requested size: 469.71185pt x 324.96893pt.
 
-Overfull \hbox (14.46774pt too wide) in paragraph at lines 224--226
+Overfull \hbox (42.9205pt too wide) in paragraph at lines 255--257
  [] 
  []
 
-[10
+[9
 
- <./gui.png>] [11]
+ <./gui.png>] [10]
 Rozdzia\PlPrIeC {\l } 6.
 Package epstopdf Info: Source file: <plot_theory2.eps>
 (epstopdf)                    date: 2017-01-19 23:31:28
@@ -1263,133 +1269,127 @@ Package epstopdf Info: Source file: <plot_theory2.eps>
 (epstopdf)                    size: 7909 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_theory2-eps-converted
 -to.pdf plot_theory2.eps>
-(epstopdf)             \includegraphics on input line 263.
+(epstopdf)             \includegraphics on input line 294.
 Package epstopdf Info: Output file is already uptodate.
-<plot_theory2-eps-converted-to.pdf, id=52, 1681.28125pt x 898.35625pt>
+<plot_theory2-eps-converted-to.pdf, id=55, 1681.28125pt x 898.35625pt>
 File: plot_theory2-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot_theory2-eps-converted-to.pdf>
 Package pdftex.def Info: plot_theory2-eps-converted-to.pdf used on input line 2
-63.
+94.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 263--265
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 294--296
  [] 
  []
 
-<plot_theory_i_th.png, id=53, 1681.0002pt x 897.5934pt>
+<plot_theory_i_th.png, id=56, 1681.0002pt x 897.5934pt>
 File: plot_theory_i_th.png Graphic file (type png)
 
 <use plot_theory_i_th.png>
-Package pdftex.def Info: plot_theory_i_th.png used on input line 269.
+Package pdftex.def Info: plot_theory_i_th.png used on input line 300.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 269--271
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 300--302
  [] 
  []
 
-[12
+[11
 
-] [13 <./plot_theory2-eps-converted-to.pdf> <./plot_theory_i_th.png>]
-[14] [15]
-Overfull \hbox (23.30844pt too wide) in paragraph at lines 338--344
-\OT4/phv/m/it/12 980nm. Po-miar po-le-gaª w pierw-szej cz¦-±ci na wy-ko-na-niu 
-cha-rak-te-ry-styk pr¡dowo-napi¦ciowych
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 345--346
+] [12 <./plot_theory2-eps-converted-to.pdf> <./plot_theory_i_th.png>]
+[13] [14]
+Underfull \hbox (badness 10000) in paragraph at lines 376--377
 
  []
 
-[16] <plot980/plot_all.png, id=80, 1681.0002pt x 897.5934pt>
+[15] <plot980/plot_all.png, id=83, 1681.0002pt x 897.5934pt>
 File: plot980/plot_all.png Graphic file (type png)
 
 <use plot980/plot_all.png>
-Package pdftex.def Info: plot980/plot_all.png used on input line 376.
+Package pdftex.def Info: plot980/plot_all.png used on input line 407.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 376--378
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 407--409
  [] 
  []
 
-<plot980/plot_temp_i_th_lin.png, id=81, 1681.0002pt x 897.5934pt>
+<plot980/plot_temp_i_th_lin.png, id=84, 1681.0002pt x 897.5934pt>
 File: plot980/plot_temp_i_th_lin.png Graphic file (type png)
 
 <use plot980/plot_temp_i_th_lin.png>
-Package pdftex.def Info: plot980/plot_temp_i_th_lin.png used on input line 382.
+Package pdftex.def Info: plot980/plot_temp_i_th_lin.png used on input line 413.
 
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 382--384
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 413--415
  [] 
  []
 
-<plot980/plot_temp_i_th_fit.png, id=82, 1681.0002pt x 897.5934pt>
+<plot980/plot_temp_i_th_fit.png, id=85, 1681.0002pt x 897.5934pt>
 File: plot980/plot_temp_i_th_fit.png Graphic file (type png)
 
 <use plot980/plot_temp_i_th_fit.png>
-Package pdftex.def Info: plot980/plot_temp_i_th_fit.png used on input line 388.
+Package pdftex.def Info: plot980/plot_temp_i_th_fit.png used on input line 419.
 
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 388--390
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 419--421
  [] 
  []
 
-<plot980/plot_theory_exp.png, id=83, 1681.0002pt x 897.5934pt>
+<plot980/plot_theory_exp.png, id=86, 1681.0002pt x 897.5934pt>
 File: plot980/plot_theory_exp.png Graphic file (type png)
 
 <use plot980/plot_theory_exp.png>
-Package pdftex.def Info: plot980/plot_theory_exp.png used on input line 394.
+Package pdftex.def Info: plot980/plot_theory_exp.png used on input line 425.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 394--396
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 425--427
  [] 
  []
 
-<plot_vcsel850/temp_20_ivl.png, id=84, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/temp_20_ivl.png, id=87, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/temp_20_ivl.png Graphic file (type png)
 
 <use plot_vcsel850/temp_20_ivl.png>
-Package pdftex.def Info: plot_vcsel850/temp_20_ivl.png used on input line 429.
+Package pdftex.def Info: plot_vcsel850/temp_20_ivl.png used on input line 460.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 429--431
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 460--462
  [] 
  []
 
-<plot_vcsel850/plot_all.png, id=85, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_all.png, id=88, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_all.png Graphic file (type png)
 
 <use plot_vcsel850/plot_all.png>
-Package pdftex.def Info: plot_vcsel850/plot_all.png used on input line 435.
+Package pdftex.def Info: plot_vcsel850/plot_all.png used on input line 466.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 435--437
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 466--468
  [] 
  []
 
-<plot_vcsel850/plot_3_i_th.png, id=86, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_3_i_th.png, id=89, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_3_i_th.png Graphic file (type png)
 
 <use plot_vcsel850/plot_3_i_th.png>
-Package pdftex.def Info: plot_vcsel850/plot_3_i_th.png used on input line 441.
+Package pdftex.def Info: plot_vcsel850/plot_3_i_th.png used on input line 472.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 441--443
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 472--474
  [] 
  []
 
-<plot_vcsel850/plot_lin_i_th.png, id=87, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_lin_i_th.png, id=90, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_lin_i_th.png Graphic file (type png)
 
 <use plot_vcsel850/plot_lin_i_th.png>
-Package pdftex.def Info: plot_vcsel850/plot_lin_i_th.png used on input line 447
+Package pdftex.def Info: plot_vcsel850/plot_lin_i_th.png used on input line 478
 .
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 447--449
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 478--480
  [] 
  []
 
@@ -1402,18 +1402,18 @@ f>
 (epstopdf)                    size: 73432 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff-eps
 -converted-to.pdf plot_vcsel850/plot_eff.eps>
-(epstopdf)             \includegraphics on input line 453.
+(epstopdf)             \includegraphics on input line 484.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot_vcsel850/plot_eff-eps-converted-to.pdf, id=88, 1681.28125pt x 898.35625pt
+<plot_vcsel850/plot_eff-eps-converted-to.pdf, id=91, 1681.28125pt x 898.35625pt
 >
 File: plot_vcsel850/plot_eff-eps-converted-to.pdf Graphic file (type pdf)
  <use plot_vcsel850/plot_eff-eps-converted-to.pdf>
 Package pdftex.def Info: plot_vcsel850/plot_eff-eps-converted-to.pdf used on in
-put line 453.
+put line 484.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 453--455
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 484--486
  [] 
  []
 
@@ -1427,32 +1427,32 @@ Package epstopdf Info: Source file: <plot_vcsel850/plot_eff_all_via_current.eps
 (epstopdf)                    size: 10370 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff_all
 _via_current-eps-converted-to.pdf plot_vcsel850/plot_eff_all_via_current.eps>
-(epstopdf)             \includegraphics on input line 459.
+(epstopdf)             \includegraphics on input line 490.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf, id=89, 1681.28125
+<plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf, id=92, 1681.28125
 pt x 898.35625pt>
 File: plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf Graphic file 
 (type pdf)
 
 <use plot_vcsel850/plot_eff_all_via_current-eps-converted-to.pdf>
 Package pdftex.def Info: plot_vcsel850/plot_eff_all_via_current-eps-converted-t
-o.pdf used on input line 459.
+o.pdf used on input line 490.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 459--461
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 490--492
  [] 
  []
 
-<plot_vcsel850/plot_slope_eff_via_power.png, id=90, 1681.0002pt x 897.5934pt>
+<plot_vcsel850/plot_slope_eff_via_power.png, id=93, 1681.0002pt x 897.5934pt>
 File: plot_vcsel850/plot_slope_eff_via_power.png Graphic file (type png)
 
 <use plot_vcsel850/plot_slope_eff_via_power.png>
 Package pdftex.def Info: plot_vcsel850/plot_slope_eff_via_power.png used on inp
-ut line 465.
+ut line 496.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 465--467
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 496--498
  [] 
  []
 
@@ -1465,19 +1465,19 @@ nverted-to.pdf>
 (epstopdf)                    size: 38099 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot_vcsel850/plot_eff_ste
 p_by_step-eps-converted-to.pdf plot_vcsel850/plot_eff_step_by_step.eps>
-(epstopdf)             \includegraphics on input line 471.
+(epstopdf)             \includegraphics on input line 502.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf, id=91, 1681.28125pt 
+<plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf, id=94, 1681.28125pt 
 x 898.35625pt>
 File: plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf Graphic file (ty
 pe pdf)
  <use plot_vcsel850/plot_eff_step_by_step-eps-converted-to.pdf>
 Package pdftex.def Info: plot_vcsel850/plot_eff_step_by_step-eps-converted-to.p
-df used on input line 471.
+df used on input line 502.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 471--473
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 502--504
  [] 
  []
 
@@ -1489,17 +1489,17 @@ Package epstopdf Info: Source file: <plot635/plot_ivl_4.eps>
 (epstopdf)                    size: 701314 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot635/plot_ivl_4-eps-con
 verted-to.pdf plot635/plot_ivl_4.eps>
-(epstopdf)             \includegraphics on input line 493.
+(epstopdf)             \includegraphics on input line 524.
 Package epstopdf Info: Output file is already uptodate.
-<plot635/plot_ivl_4-eps-converted-to.pdf, id=92, 1681.28125pt x 898.35625pt>
+<plot635/plot_ivl_4-eps-converted-to.pdf, id=95, 1681.28125pt x 898.35625pt>
 File: plot635/plot_ivl_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot635/plot_ivl_4-eps-converted-to.pdf>
 Package pdftex.def Info: plot635/plot_ivl_4-eps-converted-to.pdf used on input 
-line 493.
+line 524.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 493--495
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 524--526
  [] 
  []
 
@@ -1511,74 +1511,73 @@ Package epstopdf Info: Source file: <plot635/plot_i_v_4.eps>
 (epstopdf)                    size: 353752 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot635/plot_i_v_4-eps-con
 verted-to.pdf plot635/plot_i_v_4.eps>
-(epstopdf)             \includegraphics on input line 500.
+(epstopdf)             \includegraphics on input line 531.
 Package epstopdf Info: Output file is already uptodate.
-<plot635/plot_i_v_4-eps-converted-to.pdf, id=93, 1681.28125pt x 898.35625pt>
+<plot635/plot_i_v_4-eps-converted-to.pdf, id=96, 1681.28125pt x 898.35625pt>
 File: plot635/plot_i_v_4-eps-converted-to.pdf Graphic file (type pdf)
 
 <use plot635/plot_i_v_4-eps-converted-to.pdf>
 Package pdftex.def Info: plot635/plot_i_v_4-eps-converted-to.pdf used on input 
-line 500.
+line 531.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 500--502
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 531--533
  [] 
  []
 
-<plot635/plot_ivl_20.png, id=94, 1681.0002pt x 897.5934pt>
+<plot635/plot_ivl_20.png, id=97, 1681.0002pt x 897.5934pt>
 File: plot635/plot_ivl_20.png Graphic file (type png)
 
 <use plot635/plot_ivl_20.png>
-Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 507.
+Package pdftex.def Info: plot635/plot_ivl_20.png used on input line 538.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 507--509
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 538--540
  [] 
  []
 
-<plot635/plot_3_i_th.png, id=95, 1681.0002pt x 897.5934pt>
+<plot635/plot_3_i_th.png, id=98, 1681.0002pt x 897.5934pt>
 File: plot635/plot_3_i_th.png Graphic file (type png)
 
 <use plot635/plot_3_i_th.png>
-Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 514.
+Package pdftex.def Info: plot635/plot_3_i_th.png used on input line 545.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 514--516
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 545--547
  [] 
  []
 
-<plot635/plot_lin_i_th.png, id=96, 1681.0002pt x 897.5934pt>
+<plot635/plot_lin_i_th.png, id=99, 1681.0002pt x 897.5934pt>
 File: plot635/plot_lin_i_th.png Graphic file (type png)
 
 <use plot635/plot_lin_i_th.png>
-Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 521.
+Package pdftex.def Info: plot635/plot_lin_i_th.png used on input line 552.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 521--523
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 552--554
  [] 
  []
 
-<plot635/fit_i_0.png, id=97, 1681.0002pt x 897.5934pt>
+<plot635/fit_i_0.png, id=100, 1681.0002pt x 897.5934pt>
 File: plot635/fit_i_0.png Graphic file (type png)
 
 <use plot635/fit_i_0.png>
-Package pdftex.def Info: plot635/fit_i_0.png used on input line 528.
+Package pdftex.def Info: plot635/fit_i_0.png used on input line 559.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 528--530
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 559--561
  [] 
  []
 
 
-<plotAll/wykres_krawedziowy_prad_progowy.png, id=98, 1681.0002pt x 897.5934pt>
+<plotAll/wykres_krawedziowy_prad_progowy.png, id=101, 1681.0002pt x 897.5934pt>
 File: plotAll/wykres_krawedziowy_prad_progowy.png Graphic file (type png)
-
 <use plotAll/wykres_krawedziowy_prad_progowy.png>
 Package pdftex.def Info: plotAll/wykres_krawedziowy_prad_progowy.png used on in
-put line 535.
+put line 566.
 (pdftex.def)             Requested size: 504.30396pt x 269.28009pt.
 
-Overfull \hbox (49.05984pt too wide) in paragraph at lines 535--537
+Overfull \hbox (77.5126pt too wide) in paragraph at lines 566--568
  [] 
  []
 
@@ -1591,18 +1590,18 @@ to.pdf>
 (epstopdf)                    size: 11559 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_i_th_erro
 r-eps-converted-to.pdf plot850P010/plot_i_th_error.eps>
-(epstopdf)             \includegraphics on input line 542.
+(epstopdf)             \includegraphics on input line 573.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_i_th_error-eps-converted-to.pdf, id=99, 1681.28125pt x 898.35
-625pt>
+<plot850P010/plot_i_th_error-eps-converted-to.pdf, id=102, 1681.28125pt x 898.3
+5625pt>
 File: plot850P010/plot_i_th_error-eps-converted-to.pdf Graphic file (type pdf)
  <use plot850P010/plot_i_th_error-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_i_th_error-eps-converted-to.pdf used 
-on input line 542.
+on input line 573.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 542--544
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 573--575
  [] 
  []
 
@@ -1615,17 +1614,17 @@ Package epstopdf Info: Source file: <plot850P010/plot_fit.eps>
 (epstopdf)                    size: 15937 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_fit-eps-c
 onverted-to.pdf plot850P010/plot_fit.eps>
-(epstopdf)             \includegraphics on input line 547.
+(epstopdf)             \includegraphics on input line 578.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_fit-eps-converted-to.pdf, id=100, 1681.28125pt x 898.35625pt>
+<plot850P010/plot_fit-eps-converted-to.pdf, id=103, 1681.28125pt x 898.35625pt>
 File: plot850P010/plot_fit-eps-converted-to.pdf Graphic file (type pdf)
 <use plot850P010/plot_fit-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_fit-eps-converted-to.pdf used on inpu
-t line 547.
+t line 578.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 547--549
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 578--580
  [] 
  []
 
@@ -1638,35 +1637,35 @@ Package epstopdf Info: Source file: <plot850P010/plot_exp.eps>
 (epstopdf)                    size: 12331 bytes
 (epstopdf)             Command: <repstopdf --outfile=plot850P010/plot_exp-eps-c
 onverted-to.pdf plot850P010/plot_exp.eps>
-(epstopdf)             \includegraphics on input line 550.
+(epstopdf)             \includegraphics on input line 581.
 Package epstopdf Info: Output file is already uptodate.
 
-<plot850P010/plot_exp-eps-converted-to.pdf, id=101, 1681.28125pt x 898.35625pt>
+<plot850P010/plot_exp-eps-converted-to.pdf, id=104, 1681.28125pt x 898.35625pt>
 File: plot850P010/plot_exp-eps-converted-to.pdf Graphic file (type pdf)
 <use plot850P010/plot_exp-eps-converted-to.pdf>
 Package pdftex.def Info: plot850P010/plot_exp-eps-converted-to.pdf used on inpu
-t line 550.
+t line 581.
 (pdftex.def)             Requested size: 504.38828pt x 269.50894pt.
 
-Overfull \hbox (49.14417pt too wide) in paragraph at lines 550--552
+Overfull \hbox (77.59692pt too wide) in paragraph at lines 581--583
  [][] 
  []
 
-[17 <./plot980/plot_all.png>] [18 <./plot980/plot_temp_i_th_lin.png> <./plot980
-/plot_temp_i_th_fit.png>] [19 <./plot980/plot_theory_exp.png>] [20 <./plot_vcse
-l850/temp_20_ivl.png> <./plot_vcsel850/plot_all.png>] [21 <./plot_vcsel850/plot
-_3_i_th.png> <./plot_vcsel850/plot_lin_i_th.png>] [22 <./plot_vcsel850/plot_eff
+[16 <./plot980/plot_all.png>] [17 <./plot980/plot_temp_i_th_lin.png> <./plot980
+/plot_temp_i_th_fit.png>] [18 <./plot980/plot_theory_exp.png>] [19 <./plot_vcse
+l850/temp_20_ivl.png> <./plot_vcsel850/plot_all.png>] [20 <./plot_vcsel850/plot
+_3_i_th.png> <./plot_vcsel850/plot_lin_i_th.png>] [21 <./plot_vcsel850/plot_eff
 -eps-converted-to.pdf> <./plot_vcsel850/plot_eff_all_via_current-eps-converted-
-to.pdf>] [23 <./plot_vcsel850/plot_slope_eff_via_power.png> <./plot_vcsel850/pl
-ot_eff_step_by_step-eps-converted-to.pdf>] [24 <./plot635/plot_ivl_4-eps-conver
-ted-to.pdf>] [25 <./plot635/plot_i_v_4-eps-converted-to.pdf> <./plot635/plot_iv
-l_20.png>] [26 <./plot635/plot_3_i_th.png> <./plot635/plot_lin_i_th.png>]
-[27 <./plot635/fit_i_0.png> <./plotAll/wykres_krawedziowy_prad_progowy.png>]
-[28 <./plot850P010/plot_i_th_error-eps-converted-to.pdf>] [29 <./plot850P010/pl
+to.pdf>] [22 <./plot_vcsel850/plot_slope_eff_via_power.png> <./plot_vcsel850/pl
+ot_eff_step_by_step-eps-converted-to.pdf>] [23 <./plot635/plot_ivl_4-eps-conver
+ted-to.pdf>] [24 <./plot635/plot_i_v_4-eps-converted-to.pdf> <./plot635/plot_iv
+l_20.png>] [25 <./plot635/plot_3_i_th.png> <./plot635/plot_lin_i_th.png>]
+[26 <./plot635/fit_i_0.png> <./plotAll/wykres_krawedziowy_prad_progowy.png>]
+[27 <./plot850P010/plot_i_th_error-eps-converted-to.pdf>] [28 <./plot850P010/pl
 ot_fit-eps-converted-to.pdf> <./plot850P010/plot_exp-eps-converted-to.pdf>]
 
 AED: lastpage setting LastPage
-[30
+[29
 
 ] (./praca.aux)
 
@@ -1677,11 +1676,11 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 7638 strings out of 493029
- 103928 string characters out of 6136234
- 295180 words of memory out of 5000000
- 10969 multiletter control sequences out of 15000+600000
- 18794 words of font info for 62 fonts, out of 8000000 for 9000
+ 7641 strings out of 493029
+ 103979 string characters out of 6136234
+ 295186 words of memory out of 5000000
+ 10972 multiletter control sequences out of 15000+600000
+ 19290 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  38i,14n,58p,858b,1478s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/pl/plmi.enc}{/usr/share/texliv
@@ -1702,10 +1701,10 @@ texlive/texmf-dist/fonts/type1/public/pl/plr8.pfb></usr/share/texlive/texmf-dis
 t/fonts/type1/public/pl/plsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/p
 ublic/pl/pltt12.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/upl
 r8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on praca.pdf (30 pages, 2678382 bytes).
+Output written on praca.pdf (31 pages, 2727366 bytes).
 PDF statistics:
- 263 PDF objects out of 1000 (max. 8388607)
- 169 compressed objects within 2 object streams
+ 267 PDF objects out of 1000 (max. 8388607)
+ 172 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  131 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -1,7 +1,7 @@
 \documentclass[a4paper, portrait,12pt]{mwrep}
 \usepackage{palatino}
 \renewcommand\familydefault{\sfdefault} 
-\usepackage[verbose,a4paper,tmargin=2.5cm,bmargin=2.5cm,lmargin=2.5cm,rmargin=2.5cm]{geometry}
+\usepackage[verbose,a4paper,tmargin=2.5cm, bmargin=2.5cm, lmargin=3.5cm, rmargin=2.5cm]{geometry}
 \usepackage[utf8]{inputenc}
 \usepackage{polski}
 \usepackage{amsmath}
@@ -75,7 +75,37 @@ Instytut Fizyki PŁ}
 \begin{document}
 \tableofcontents    % generuje spis treści ze stronami !!! 
 \newpage
-
+\begin{titlepage}
+ \begin{center}
+%  \includegraphics[width=0.15\textwidth]{./Rysunki/logo.jpg}
+  
+  \vspace{0.5cm} 
+  \large{POLITECHNIKA ŁÓDZKA}
+  
+  \vspace{1cm}
+  \normalsize{WYDZIAŁ FIZYKI TECHNICZNEJ, \\
+  INFORMATYKI I MATEMATYKI STOSOWANEJ}
+  
+  \vspace{1.5cm}
+  \large{PRACA INŻYNIERSKA \\kierunek: FIZYKA TECHNICZNA}   
+   
+  \vspace{2cm}  
+  \Large\textbf{{Analiza danych z dwustronnych, paskowych detektorów krzemowych (DSSD) dla eksperymentu Belle II,\\ KEK, Japonia}}
+   
+  \vspace{2cm}
+  \large\textbf{Milena Kaźmierczak} 
+   
+  \large{nr albumu: 191391}
+   
+  \vspace{1cm}
+  \begin{flushright}
+  \large{Opiekunowie pracy:\\ \textbf{dr hab. Andrzej Bożek \\dr Rafał Ledzion}} 
+  \end{flushright}
+  
+  \vfill
+  \normalsize{Łódź, 2017}
+  \end{center}
+\end{titlepage}
 \chapter{Wstęp} \label{rozdz.wstep}
 Niniejsza praca dotyczy zakresu inżynierii oprogramowania sprzętu pomiarowego w celu wykorzystania go w badaniu charakterystyk laserów półprzewodnikowych w laboratorium fotoniki Politechniki Łódzkiej. \\
 
@@ -203,6 +233,7 @@ zwraca instancje danego urządzenia, co umażliwa korzystanie z jego funkcji.
 \item $\mathtt{LDC4005.py}$ --- klasa zawierająca funkcje od obsługi zasilacza diód laserowych Thorlabs 4005.
 \item $\mathtt{PM100.py}$ --- klasa zawierająca funkcje do obsługi detektora mocy Thorlabs PM100.
 \end{itemize}
+
 \begin{figure}[h]
 \center
   \includegraphics[scale=0.45]{tree.png}
