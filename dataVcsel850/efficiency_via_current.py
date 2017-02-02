@@ -80,17 +80,17 @@ dP_90 = 2*a_90*current_90 + b_90
 
 fig, ax1 = plt.subplots()
 
-ax1.plot(current_10, dP_10, label="283 K")
-ax1.plot(current_20, dP_20, label="293 K")
-ax1.plot(current_30, dP_30, label="303 K")
-ax1.plot(current_40, dP_40, label="313 K")
-ax1.plot(current_50, dP_50, label="323 K")
-ax1.plot(current_60, dP_60, label="333 K")
-ax1.plot(current_70, dP_70, label="343 K")
-ax1.plot(current_80, dP_80, label="353 K")
-ax1.plot(current_90, dP_90, label="363 K")
-ax1.set_xlabel("Prąd [mA]")
-ax1.set_ylabel(r"Sprawność rożniczkowa [W/A]")
+ax1.plot(current_10, dP_10, label="283 K", lw=2)
+ax1.plot(current_20, dP_20, label="293 K", lw=2)
+ax1.plot(current_30, dP_30, label="303 K", lw=2)
+ax1.plot(current_40, dP_40, label="313 K", lw=2)
+ax1.plot(current_50, dP_50, label="323 K", lw=2)
+ax1.plot(current_60, dP_60, label="333 K", lw=2)
+ax1.plot(current_70, dP_70, label="343 K", lw=2)
+ax1.plot(current_80, dP_80, label="353 K", lw=2)
+ax1.plot(current_90, dP_90, label="363 K", lw=2)
+ax1.set_xlabel("prąd [mA]")
+ax1.set_ylabel(r"sprawność rożniczkowa [W/A]")
 
 
 plt.legend()

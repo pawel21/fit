@@ -60,10 +60,10 @@ class Eff:
         return np.array(current_to_fit), np.array(output_power_to_fit )
 
 
-data = ["temp_10.txt", "temp_20.txt", "temp_30.txt", "temp_40.txt",
-        "temp_50.txt", "temp_60.txt", "temp_70.txt", "temp_80.txt"]
-i_th = [ 1.,  0.98,  1.1,  1.23,  1.36,  1.59,  1.76,  2.07]
-temperature = np.array([283.,  293.,  303.,  313.,  323.,  333.,  343.,  353.], dtype=np.uint16)
+data = ["temp_5.txt", "temp_10.txt", "temp_15.txt", "temp_20.txt",
+        "temp_25.txt", "temp_30.txt"]
+i_th = np.array([19.1, 20.7, 22.6, 25.0, 27.9, 31.4]) + 1
+temperature = np.linspace(5, 30, 6) + 273
 
 for name_file, fit_start, temp in zip(data, i_th, temperature):
     print(name_file, fit_start, temp)
@@ -71,8 +71,8 @@ for name_file, fit_start, temp in zip(data, i_th, temperature):
     x, y = eff.fit_slope_eff(fit_start)
     plt.plot(x, y, label=str(temp)+"\,K", lw=2)
 
-plt.xlabel("Prąd [mA]")
-plt.ylabel(r"Sprawność rożniczkowa [W/A]")
+plt.xlabel("prąd [mA]")
+plt.ylabel(r"sprawność rożniczkowa [W/A]")
 plt.grid(True)
 plt.legend(loc=3)
 plt.show()
